@@ -1,1 +1,3 @@
-// place files you want to import through the `$lib` alias in this folder.
+export async function hash(str: string) {
+	return btoa(str);
+}

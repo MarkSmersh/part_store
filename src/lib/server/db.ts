@@ -1,11 +1,7 @@
-import { Sequelize } from "sequelize";
+import { Sequelize } from 'sequelize';
+import { DB_STRING } from '$env/static/private';
 
-//TODO: make dotenv
-export const sq = new Sequelize('postgres://postgres:445552@localhost:5432/part_store',
-    { dialect: "postgres" }
-);
-
-(async () => {
-    await sq.authenticate();
-    await sq.sync();
-})();
+export const sq = new Sequelize(DB_STRING, {
+	dialect: 'postgres',
+	logging: false
+});

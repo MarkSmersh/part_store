@@ -1,11 +1,3 @@
-export {
-    sq
-} from "./db";
+export { sq } from './db';
 
-export {
-    User,
-    Cart,
-    Product,
-    Review,
-    Category
-} from "./models";
+export { User, Cart, Product, Review, Category } from './models';
