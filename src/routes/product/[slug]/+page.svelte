@@ -10,3 +10,9 @@
 <p>{data.description}</p>
 <img src={data.image} alt="123" />
 <h2>Price: {data.price}</h2>
+
+<style>
+	img {
+		width: 200px;
+	}
+</style>

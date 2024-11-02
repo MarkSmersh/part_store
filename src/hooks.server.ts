@@ -3,7 +3,13 @@ import { jwtVerify, jwtAccessToken, accessFromSession } from '$lib/server/jwt';
 import { sq } from '$lib/server';
 
 export const handle: Handle = async ({ event, resolve }) => {
-	if (event.url.pathname.startsWith('/api') && !event.url.pathname.split('/').includes('user')) {
+	if (
+        event.url.pathname.startsWith('/api') &&
+        !( 
+            event.url.pathname.split('/').includes('user')
+            || event.url.pathname.split('/').includes('search')
+        )
+    ) {
 		const accessToken = event.cookies.get('access-token');
 
 		if (!accessToken) {
