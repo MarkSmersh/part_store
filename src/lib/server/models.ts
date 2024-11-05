@@ -6,11 +6,10 @@ interface User {
 	username: string;
 	password: string;
 	sessionToken: string;
+	CartId: number
 }
 
-type UserAttributes = Optional<User, 'id'>;
-
-export const User: ModelDefined<User, UserAttributes> = sq.define(
+export const User: ModelDefined<User, Optional<User, 'id'>> = sq.define(
 	'User',
 	{
 		username: {
@@ -18,13 +17,15 @@ export const User: ModelDefined<User, UserAttributes> = sq.define(
 			unique: true
 		},
 		password: DT.STRING,
-		sessionToken: DT.STRING
+		sessionToken: DT.STRING,
+		cartId: DT.INTEGER
 	},
-	{ tableName: 'users' }
+	{ modelName: "user", tableName: "users" }
 );
 
 interface Cart {
 	id: number;
+	UserId: number;
 }
 
 export const Cart: ModelDefined<Cart, Optional<Cart, 'id'>> = sq.define(
@@ -36,7 +37,7 @@ export const Cart: ModelDefined<Cart, Optional<Cart, 'id'>> = sq.define(
 			primaryKey: true
 		}
 	},
-	{ tableName: 'carts' }
+	{ modelName: "cart", tableName: "carts" }
 );
 
 interface Product {
@@ -55,43 +56,41 @@ export const Product: ModelDefined<Product, Optional<Product, 'id'>> = sq.define
 		image: DT.STRING,
 		price: DT.INTEGER
 	},
-	{ tableName: 'products' }
+	{ modelName: "product", tableName: "products" }
 );
 
-interface Review {
-	id: number;
-	rate: number;
-	text: string;
-}
+// interface Review {
+// 	id: number;
+// 	rate: number;
+// 	text: string;
+// }
 
-export const Review: ModelDefined<Review, Optional<Review, 'id'>> = sq.define(
-	'Review',
-	{
-		rate: DT.INTEGER,
-		text: DT.TEXT('medium')
-	},
-	{ tableName: 'reviews' }
-);
+// export const Review: ModelDefined<Review, Optional<Review, 'id'>> = sq.define(
+// 	'Review',
+// 	{
+// 		rate: DT.INTEGER,
+// 		text: DT.TEXT('medium')
+// 	},
+// 	{ tableName: 'reviews' }
+// );
 
-interface Category {
-	id: number;
-	name: string;
-	description: string;
-	image: string;
-}
+// interface Category {
+// 	id: number;
+// 	name: string;
+// 	description: string;
+// 	image: string;
+// }
 
-export const Category: ModelDefined<Category, Optional<Category, 'id'>> = sq.define(
-	'Category',
-	{
-		name: DT.STRING,
-		description: DT.STRING,
-		image: DT.STRING
-	},
-	{ tableName: 'categories' }
-);
+// export const Category: ModelDefined<Category, Optional<Category, 'id'>> = sq.define(
+// 	'Category',
+// 	{
+// 		name: DT.STRING,
+// 		description: DT.STRING,
+// 		image: DT.STRING
+// 	},
+// 	{ tableName: 'categories' }
+// );
 
-User.hasOne(Cart);
-Cart.hasMany(Product);
-Product.hasMany(Review);
-Review.hasOne(User);
-Category.hasMany(Product);
+Cart.belongsTo(User);
+User.belongsTo(Cart);
+Cart.belongsToMany(Product, { through: "carts_products" });

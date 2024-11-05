@@ -1,4 +1,4 @@
-import { User } from '$lib/server';
+import { Cart, User } from '$lib/server';
 import { passwordHash } from '$lib/server/crypto';
 import { jwtAccessToken, jwtSessionToken } from '$lib/server/jwt';
 import { type RequestHandler } from '@sveltejs/kit';
@@ -27,11 +27,16 @@ export const GET: RequestHandler = async ({ url, cookies }) => {
 	const accessToken = jwtAccessToken(username);
 	const hashedPassword = await passwordHash(password);
 
-	await User.create({
+	const cart = await Cart.create();
+
+	const user  = await User.create({
 		username: username,
 		password: hashedPassword,
-		sessionToken: sessionToken
+		sessionToken: sessionToken,
+		CartId: cart.dataValues.id
 	});
+
+	await cart.update({ UserId: user.dataValues.id });
 
 	cookies.set('access-token', accessToken, { path: '/' });
 
