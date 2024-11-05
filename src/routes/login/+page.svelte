@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { goto } from '$app/navigation';
+	import { goto, invalidateAll } from '$app/navigation';
 	import { hash } from '$lib/index';
 
 	let username = $state('');
@@ -15,6 +15,7 @@
 
 		if (res.status == 200) {
 			logged = true;
+			invalidateAll();
 
 			setTimeout(() => (timer = 4), 1000);
 			setTimeout(() => (timer = 3), 2000);
@@ -36,7 +37,7 @@
 		<h1 class="error">{error}</h1>
 	{/if}
 	<input bind:value={username} />
-	<input bind:value={password} />
+	<input type="password" bind:value={password} />
 	<button onclick={() => login()}>Log in</button>
 
 	<style>

@@ -50,8 +50,8 @@ interface Product {
 export const Product: ModelDefined<Product, Optional<Product, 'id'>> = sq.define(
 	'Product',
 	{
-		name: DT.STRING,
-		description: DT.TEXT('long'),
+		name: DT.CITEXT,
+		description: DT.CITEXT,
 		image: DT.STRING,
 		price: DT.INTEGER
 	},

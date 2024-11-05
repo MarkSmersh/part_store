@@ -12,7 +12,7 @@ export const GET: RequestHandler = async ({ url }) => {
     const productModels = await Product.findAll({
         where: {
             name: {
-                [Op.substring]: q 
+                [Op.substring]: q
             }
         },
         limit: 5,

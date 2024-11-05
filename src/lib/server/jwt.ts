@@ -4,18 +4,16 @@ import { User } from './models';
 
 export function jwtAccessToken(username: string): string {
 	//TODO: this is why server wont work in the future
-	return jwt.sign({ data: username }, JWT_TOKEN, { expiresIn: '60s' });
-}
-
-export function jwtSessionToken(username: string): string {
 	return jwt.sign({ data: username }, JWT_TOKEN, { expiresIn: '30d' });
 }
 
-export function jwtVerify(userToken: string): boolean {
-	try {
-		jwt.verify(userToken, JWT_TOKEN);
+export function jwtSessionToken(username: string): string {
+	return jwt.sign({ data: username }, JWT_TOKEN, { expiresIn: '60s' });
+}
 
-		return true;
+export function jwtVerify(userToken: string) {
+	try {
+		return jwt.verify(userToken, JWT_TOKEN);
 	} catch (e) {
 		return false;
 	}
@@ -39,6 +37,10 @@ export async function accessFromSession(userToken: string) {
 	} catch (e) {
 		return undefined;
 	}
+}
+
+export function jwtDecode(userToken: string): JWTToken {
+	return (jwt.decode(userToken) as JWTToken);
 }
 
 interface JWTToken {

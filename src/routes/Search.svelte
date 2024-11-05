@@ -26,6 +26,7 @@
         oninput={() => search()}
         placeholder="Search for..."
         onfocus={() => isShow = true}
+        onfocusout={() => setTimeout(() => isShow = false, 100)}
     />
     <div class="products-wrapper">
         {#if isShow}
@@ -34,8 +35,8 @@
                     <img src={p.image} alt="img" />
                     <div class="text-wrapper">
                         <h5>{p.name}</h5>
-                        <p>{p.description}</p>
-                        <h6>{p.price}</h6>
+                        <h6>{p.description}</h6>
+                        <p>{p.price} zł</p>
                     </div>
                 </a>
             {/each}
@@ -91,14 +92,22 @@
         flex-direction: column;
         flex-wrap: nowrap;
         justify-content: center;
-        gap: 0px;
+        width: 100%;
 
-        h6 {
+        p {
             align-self: flex-end;
         }
 
         * {
             margin: 0;
+        }
+
+        h6 {
+            color: red;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            width: 200px;
         }
     }
 </style>
