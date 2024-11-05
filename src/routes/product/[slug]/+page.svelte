@@ -3,6 +3,10 @@
 
 	let { data }: { data: PageData } = $props();
 
+	async function addToCart() {
+		await fetch("/api/cart?product="+data.id)
+	}
+
 	$inspect(data);
 </script>
 
@@ -14,7 +18,7 @@
 		</div>
 		<div class="price">
 			<h2>Price: {data.price}</h2>
-			<button class="cart">Add to the cart</button>
+			<button class="cart" onclick={() => addToCart()}>Add to the cart</button>
 		</div>	
 	</div>
 	<img src={data.image} alt="123" />

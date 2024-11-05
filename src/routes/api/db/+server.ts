@@ -1,8 +1,8 @@
-import { Product } from '$lib/server';
+import { em, Product } from '$lib/server';
 import type { RequestHandler } from '@sveltejs/kit';
 
 export const GET: RequestHandler = async ({}) => {
-	await Product.create({
+	em.create(Product, {
 		name: 'Pierla chmielowa',
 		image: 'https://piweczko.net/piwo,19,perla-chmielowa',
 		description: 'Dobre piwko',

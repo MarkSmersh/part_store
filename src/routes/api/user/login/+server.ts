@@ -1,4 +1,4 @@
-import { User } from '$lib/server';
+import { em, User } from '$lib/server';
 import { passwordCompare, passwordHash } from '$lib/server/crypto';
 import { jwtAccessToken, jwtSessionToken } from '$lib/server/jwt';
 import type { RequestHandler } from '@sveltejs/kit';
@@ -11,13 +11,13 @@ export const GET: RequestHandler = async ({ url, cookies }) => {
 		return new Response('No required params', { status: 400 });
 	}
 
-	const user = await User.findOne({ where: { username: username } });
+	const user = await em.findOne(User, { username: username });
 
 	if (!user) {
 		return new Response('No user with such username.', { status: 404 });
 	}
 
-	const isPasswordSame = await passwordCompare(password, user.dataValues.password);
+	const isPasswordSame = await passwordCompare(password, user.password);
 
 	if (!isPasswordSame) {
 		return new Response('Incorrect auth data.', { status: 400 });
@@ -26,9 +26,7 @@ export const GET: RequestHandler = async ({ url, cookies }) => {
 	const sessionToken = jwtSessionToken(username);
 	const accessToken = jwtAccessToken(username);
 
-	await user.update({
-		sessionToken: sessionToken
-	});
+	await em.upsert(User, { id: user.id, sessionToken: sessionToken });
 
 	cookies.set('access-token', accessToken, { path: '/' });
 

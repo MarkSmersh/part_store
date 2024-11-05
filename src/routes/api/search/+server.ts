@@ -1,6 +1,7 @@
 import { Product } from "$lib/server";
 import { json, type RequestHandler } from "@sveltejs/kit";
-import { Op } from "sequelize";
+import { em } from "$lib/server/db"
+import { QueryOrder } from "@mikro-orm/core";
 
 export const GET: RequestHandler = async ({ url }) => {
     const q = url.searchParams.get("q");
@@ -9,17 +10,13 @@ export const GET: RequestHandler = async ({ url }) => {
         return new Response("No required params", { status: 200 });
     }
 
-    const productModels = await Product.findAll({
+    const products = await em.findAll(Product, {
         where: {
-            name: {
-                [Op.substring]: q
-            }
+            name: { $ilike: `%${q}%` },
         },
         limit: 5,
-        order: [['id', 'DESC']]
+        orderBy: { id: QueryOrder.DESC }
     })
-
-    const products = productModels.map((p) => p.dataValues);
 
     return json(JSON.stringify(products), { status: 200 });
 }

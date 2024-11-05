@@ -1,7 +1,14 @@
-import { Sequelize } from 'sequelize';
+import { MikroORM } from '@mikro-orm/postgresql';
+import { TsMorphMetadataProvider } from '@mikro-orm/reflection';
+import { User, Cart, Product } from './models';
 import { DB_STRING } from '$env/static/private';
 
-export const sq = new Sequelize(DB_STRING, {
-	dialect: 'postgres',
-	logging: false
+export const orm = await MikroORM.init({
+	entities: [User, Cart, Product],
+  	metadataProvider: TsMorphMetadataProvider,
+	clientUrl: DB_STRING,
+	allowGlobalContext: true,
+	forceEntityConstructor: true,
 });
+
+export const em = orm.em;

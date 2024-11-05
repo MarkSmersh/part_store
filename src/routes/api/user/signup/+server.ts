@@ -1,4 +1,4 @@
-import { Cart, User } from '$lib/server';
+import { Cart, em, User } from '$lib/server';
 import { passwordHash } from '$lib/server/crypto';
 import { jwtAccessToken, jwtSessionToken } from '$lib/server/jwt';
 import { type RequestHandler } from '@sveltejs/kit';
@@ -17,7 +17,7 @@ export const GET: RequestHandler = async ({ url, cookies }) => {
 		return new Response('No required params', { status: 400 });
 	}
 
-	const users = await User.findAll({ where: { username: username } });
+	const users = await em.findAll(User, { where: { username: username } });
 
 	if (users.length !== 0) {
 		return new Response('User with such username exists', { status: 409 });
@@ -27,16 +27,14 @@ export const GET: RequestHandler = async ({ url, cookies }) => {
 	const accessToken = jwtAccessToken(username);
 	const hashedPassword = await passwordHash(password);
 
-	const cart = await Cart.create();
+	const cart = em.create(Cart, {});
 
-	const user  = await User.create({
+	em.create(User, {
 		username: username,
 		password: hashedPassword,
 		sessionToken: sessionToken,
-		CartId: cart.dataValues.id
-	});
-
-	await cart.update({ UserId: user.dataValues.id });
+		cart: cart
+	})
 
 	cookies.set('access-token', accessToken, { path: '/' });
 

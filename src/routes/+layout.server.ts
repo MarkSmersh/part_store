@@ -11,6 +11,6 @@ export const load: LayoutServerLoad = ({ cookies }) => {
     if (!data) return;
 
     return {
-        username: data.data
+        username: data.username
     }
 }

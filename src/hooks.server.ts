@@ -1,6 +1,6 @@
 import { redirect, type Handle } from '@sveltejs/kit';
 import { jwtVerify, jwtAccessToken, accessFromSession } from '$lib/server/jwt';
-import { sq } from '$lib/server';
+import { em, orm } from '$lib/server';
 
 export const handle: Handle = async ({ event, resolve }) => {
 	if (
@@ -39,8 +39,12 @@ export const handle: Handle = async ({ event, resolve }) => {
 };
 
 (async () => {
-	await sq.authenticate();
-	await sq.sync();
+	// FIXME: DATA ARE NOT SAVED TO DB WHILE
+	// ADDED WITHOUT SAVING BUT I DO NOT
+	// UNDERSTAND NOW WHY AND HOW
+	// I GO SLEEP <3
+
+	await orm.schema.refreshDatabase()
 
 	console.log('DATABASE INIT COMPLETE');
 })();
