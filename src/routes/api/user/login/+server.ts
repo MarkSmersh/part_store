@@ -26,7 +26,9 @@ export const GET: RequestHandler = async ({ url, cookies }) => {
 	const sessionToken = jwtSessionToken(username);
 	const accessToken = jwtAccessToken(username);
 
-	await em.upsert(User, { id: user.id, sessionToken: sessionToken });
+	const updateUser = await em.upsert(User, { id: user.id, sessionToken: sessionToken });
+
+	await em.persistAndFlush([updateUser])
 
 	cookies.set('access-token', accessToken, { path: '/' });
 

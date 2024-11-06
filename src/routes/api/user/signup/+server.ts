@@ -29,12 +29,14 @@ export const GET: RequestHandler = async ({ url, cookies }) => {
 
 	const cart = em.create(Cart, {});
 
-	em.create(User, {
+	const user = em.create(User, {
 		username: username,
 		password: hashedPassword,
 		sessionToken: sessionToken,
 		cart: cart
 	})
+
+	await em.persistAndFlush([cart, user])
 
 	cookies.set('access-token', accessToken, { path: '/' });
 

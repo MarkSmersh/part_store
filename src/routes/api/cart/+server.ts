@@ -25,9 +25,9 @@ export const GET: RequestHandler = async ({ cookies, url }) => {
         return new Response("User not found by current access token", { status: 404 });
     }
 
-    await em.upsert(Cart, { id: user.cart.id, products: parseInt(productId)});
+    const updateProduct = await em.upsert(Cart, { id: user.cart.id, products: parseInt(productId)});
 
-    console.log("sex");
+    await em.persistAndFlush([updateProduct]);
 
     return new Response("Product was added to cart", { status: 201 });
 }
