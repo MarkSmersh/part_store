@@ -39,7 +39,10 @@ export const handle: Handle = async ({ event, resolve }) => {
 };
 
 (async () => {
-	// await orm.schema.refreshDatabase()
+	// DATABASE CURSED TECHNIQUE...
+	// ...DISMANTLE
+
+	// await orm.schema.refreshDatabase();
 
 	console.log('DATABASE INIT COMPLETE');
 })();

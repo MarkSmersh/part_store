@@ -1,5 +1,6 @@
 import { Cart, em, Product, User } from "$lib/server";
 import { jwtDecode } from "$lib/server/jwt";
+import { ItemCart } from "$lib/server/models";
 import type { RequestHandler } from "@sveltejs/kit";
 
 // FIXME: MODULE DOESNT WORK
@@ -25,9 +26,23 @@ export const GET: RequestHandler = async ({ cookies, url }) => {
         return new Response("User not found by current access token", { status: 404 });
     }
 
-    const updateProduct = await em.upsert(Cart, { id: user.cart.id, products: parseInt(productId)});
+    const cartRef = em.getReference(Cart, user.cart.id);
 
-    await em.persistAndFlush([updateProduct]);
+    const cartItem = cartRef.cartItems.find((c) => c.id === product.id);
+
+    if (!cartItem) {
+        const newItemCart = em.create(ItemCart, {
+            cart: cartRef,
+            product: product,
+            quantity: 1
+        })
+
+        cartRef.cartItems.add(newItemCart);
+        await em.persistAndFlush([cartRef, newItemCart]);
+    } else {
+        cartItem.quantity = cartItem.quantity + 1;
+        await em.persistAndFlush([cartItem]);
+    }
 
     return new Response("Product was added to cart", { status: 201 });
 }

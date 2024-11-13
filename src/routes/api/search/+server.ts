@@ -7,7 +7,7 @@ export const GET: RequestHandler = async ({ url }) => {
     const q = url.searchParams.get("q");
 
     if (!q) {
-        return new Response("No required params", { status: 200 });
+        return new Response("No required params", { status: 400 });
     }
 
     const products = await em.findAll(Product, {
