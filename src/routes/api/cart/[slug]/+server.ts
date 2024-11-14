@@ -3,16 +3,14 @@ import { jwtDecode } from "$lib/server/jwt";
 import { ItemCart } from "$lib/server/models";
 import type { RequestHandler } from "@sveltejs/kit";
 
-// FIXME: MODULE DOESNT WORK
-
-export const GET: RequestHandler = async ({ cookies, url }) => {
-    const productId = url.searchParams.get("product");
+export const PATCH: RequestHandler = async ({ params, cookies }) => {
+    const productId = params.slug;
 
     if (!productId) {
-        return new Response("No required params", { status: 400 });
+        return new Response("No required slug", { status: 400 });
     }
     
-    const username  = (jwtDecode(cookies.get("access-token") as string)).username;
+    const username  = jwtDecode(cookies.get("access-token"))?.username;
 
     const product = await em.findOne(Product, parseInt(productId));
 
@@ -45,4 +43,26 @@ export const GET: RequestHandler = async ({ cookies, url }) => {
     }
 
     return new Response("Product was added to cart", { status: 201 });
+}
+
+export const DELETE: RequestHandler = async ({ cookies, params }) => {
+    const productId = params.slug;
+
+    if (!productId) {
+        return new Response("No required slug", { status: 400 });
+    }
+
+    const username = jwtDecode(cookies.get("access-token"))?.username;
+
+    const user = await em.findOne(User, { username: username })
+
+    if (!user) {
+        return new Response("User not found by current access token", { status: 404 });
+    }
+
+    user.cart.cartItems.remove((ic) => ic.product.id === parseInt(productId));
+
+    await em.persistAndFlush(user);
+
+    return new Response("Product was removed");
 }

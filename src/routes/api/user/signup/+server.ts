@@ -1,6 +1,8 @@
 import { Cart, em, User } from '$lib/server';
 import { passwordHash } from '$lib/server/crypto';
 import { jwtAccessToken, jwtSessionToken } from '$lib/server/jwt';
+import type { ItemCart } from '$lib/server/models';
+import { Collection } from '@mikro-orm/core';
 import { type RequestHandler } from '@sveltejs/kit';
 
 export const GET: RequestHandler = async ({ url, cookies }) => {
@@ -37,6 +39,7 @@ export const GET: RequestHandler = async ({ url, cookies }) => {
 	})
 
 	cart.user = user;
+	cart.cartItems = new Collection<ItemCart>(cart);
 	
 	await em.persistAndFlush([user, cart]);
 

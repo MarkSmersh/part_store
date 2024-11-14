@@ -4,7 +4,9 @@
 	let { data }: { data: PageData } = $props();
 
 	async function addToCart() {
-		await fetch("/api/cart?product="+data.id)
+		await fetch(`/api/cart/${data.id}`, {
+			method: "PATCH",
+		})
 	}
 
 	$inspect(data);
