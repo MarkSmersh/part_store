@@ -1,6 +1,7 @@
 import { Cart, em, Product, User } from "$lib/server";
 import { jwtDecode } from "$lib/server/jwt";
 import { ItemCart } from "$lib/server/models";
+import { Collection } from "@mikro-orm/core";
 import type { RequestHandler } from "@sveltejs/kit";
 
 export const PATCH: RequestHandler = async ({ params, cookies }) => {
@@ -26,7 +27,7 @@ export const PATCH: RequestHandler = async ({ params, cookies }) => {
 
     const cartRef = em.getReference(Cart, user.cart.id);
 
-    const cartItem = cartRef.cartItems.find((c) => c.id === product.id);
+    const cartItem = cartRef.cartItems.find((c) => c.product.id === product.id);
 
     if (!cartItem) {
         const newItemCart = em.create(ItemCart, {

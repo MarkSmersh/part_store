@@ -11,8 +11,6 @@ export const load: PageServerLoad = async ({ params }) => {
 
 	const p = await em.findOne(Product, parseInt(slug));
 
-	console.log(p)
-
 	if (p) return {
 		id: p.id,
 		name: p.name,

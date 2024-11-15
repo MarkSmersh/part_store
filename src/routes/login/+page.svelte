@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { goto, invalidateAll } from '$app/navigation';
-	import { hash } from '$lib/index';
+	import { hash, request } from '$lib/index';
 
 	let username = $state('');
 	let password = $state('');
@@ -11,7 +11,7 @@
 	async function login() {
 		const hashedPassword = await hash(password);
 		const urlParams = new URLSearchParams(`username=${username}&password=${hashedPassword}`);
-		const res = await fetch(`./api/user/login?${urlParams.toString()}`);
+		const res = await request(`./api/user/login?${urlParams.toString()}`);
 
 		if (res.status == 200) {
 			logged = true;
@@ -23,7 +23,7 @@
 			setTimeout(() => (timer = 1), 4000);
 			setTimeout(() => {
 				timer = 0;
-				goto('./');
+				goto('/');
 			}, 5000);
 			return;
 		}

@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { goto, invalidateAll } from '$app/navigation';
-	import { hash } from '$lib/index';
+	import { hash, request } from '$lib/index';
 
 	let username = $state('');
 	let password = $state('');
@@ -10,7 +10,7 @@
 
 	async function signup() {
 		const hashedPassword = await hash(password);
-		const res = await fetch(`./api/user/signup?username=${username}&password=${hashedPassword}`);
+		const res = await request(`./api/user/signup?username=${username}&password=${hashedPassword}`);
 
 		if (res.status == 201) {
 			created = true;
@@ -22,7 +22,7 @@
 			setTimeout(() => (timer = 1), 4000);
 			setTimeout(() => {
 				timer = 0;
-				goto('./');
+				goto('/');
 			}, 5000);
 			return;
 		}

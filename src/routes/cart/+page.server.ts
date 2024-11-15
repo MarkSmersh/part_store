@@ -1,4 +1,4 @@
-import { Cart, em, User } from "$lib/server";
+import { em, User } from "$lib/server";
 import { jwtDecode } from "$lib/server/jwt";
 import { error } from "@sveltejs/kit";
 import type { PageServerLoad } from "./$types";

@@ -1,7 +1,7 @@
 import { Cart, em, User } from '$lib/server';
 import { passwordHash } from '$lib/server/crypto';
 import { jwtAccessToken, jwtSessionToken } from '$lib/server/jwt';
-import type { ItemCart } from '$lib/server/models';
+import { ItemCart } from '$lib/server/models';
 import { Collection } from '@mikro-orm/core';
 import { type RequestHandler } from '@sveltejs/kit';
 

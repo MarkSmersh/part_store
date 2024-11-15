@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { goto, invalidate, invalidateAll } from "$app/navigation";
+	import { request } from "$lib";
 	import Search from "./Search.svelte";
     let { username } = $props();
 
@@ -9,9 +10,12 @@
     <a href="/">Sklep z częściami do komputera.</a>
     <div>
         {#if username}
+                <button onclick={() => goto("/cart")}>
+                    Cart
+                </button>
                 <p>{username}</p>
                 <button onclick={async () => {
-                    await fetch("/api/user/logout");
+                    await request("/api/user/logout");
                     invalidateAll();
                 }}>Log out</button>
             {:else}

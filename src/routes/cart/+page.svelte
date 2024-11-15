@@ -1,13 +1,13 @@
 <script lang="ts">
 	import { invalidateAll } from '$app/navigation';
+	import { setContext } from 'svelte';
 	import type { PageData } from './$types';
+	import { request } from '$lib';
 
 	let { data }: { data: PageData } = $props();
 
     async function deleteProduct(productId: string) {
-        await fetch(`/api/cart/${productId}`, {
-            method: "DELETE"
-        });
+        await request(`/api/cart/${productId}`, "DELETE");
 		invalidateAll();
     }
 

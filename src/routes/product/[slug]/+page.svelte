@@ -1,12 +1,11 @@
 <script lang="ts">
+	import { request } from '$lib';
 	import type { PageData } from './$types';
 
 	let { data }: { data: PageData } = $props();
 
 	async function addToCart() {
-		await fetch(`/api/cart/${data.id}`, {
-			method: "PATCH",
-		})
+		await request(`/api/cart/${data.id}`, "PATCH")
 	}
 
 	$inspect(data);

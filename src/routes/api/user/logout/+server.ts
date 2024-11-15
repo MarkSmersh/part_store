@@ -9,5 +9,5 @@ export const GET: RequestHandler = ({ cookies }) => {
 
     cookies.delete("access-token", { path: "/" });
 
-    return new Response();
+    return new Response("Log out");
 }

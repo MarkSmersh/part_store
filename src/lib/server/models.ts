@@ -26,7 +26,7 @@ export class Cart {
 	@OneToOne(() => User, { orphanRemoval: true, mappedBy: "cart" })
 	user!: User
 
-	@OneToMany(() => ItemCart, "cart")
+	@OneToMany(() => ItemCart, "cart", { orphanRemoval: true })
 	cartItems: Collection<ItemCart> = new Collection<ItemCart>(this);
 }
 
@@ -56,7 +56,7 @@ export class ItemCart {
 	@ManyToOne()
 	cart!: Cart;
 
-	@OneToOne()
+	@ManyToOne(() => Product)
 	product!: Product;
 
 	@Property({ default: 0 })

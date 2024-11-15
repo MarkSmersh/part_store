@@ -1,6 +1,10 @@
-import { redirect, type Handle } from '@sveltejs/kit';
+import { redirect, type Handle, type HandleFetch } from '@sveltejs/kit';
 import { jwtVerify, accessFromSession } from '$lib/server/jwt';
 import { orm } from '$lib/server';
+
+export const handleFetch: HandleFetch = async ({ request, fetch }) => {	
+	return fetch(request);
+};
 
 export const handle: Handle = async ({ event, resolve }) => {
 	if (
@@ -20,6 +24,7 @@ export const handle: Handle = async ({ event, resolve }) => {
 
 		if (isTokenOk) {
 			const response = await resolve(event);
+			
 			return response;
 		}
 

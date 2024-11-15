@@ -1,6 +1,8 @@
 <script lang="ts">
+	import { request } from "$lib";
+
 	async function createProduct() {
-		await fetch('./api/db');
+		await request('./api/db');
 	}
 </script>
 
