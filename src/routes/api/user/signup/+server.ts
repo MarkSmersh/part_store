@@ -39,7 +39,6 @@ export const GET: RequestHandler = async ({ url, cookies }) => {
 	})
 
 	cart.user = user;
-	cart.cartItems = new Collection<ItemCart>(cart);
 	
 	await em.persistAndFlush([user, cart]);
 

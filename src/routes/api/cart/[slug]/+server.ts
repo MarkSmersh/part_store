@@ -25,19 +25,25 @@ export const PATCH: RequestHandler = async ({ params, cookies }) => {
         return new Response("User not found by current access token", { status: 404 });
     }
 
-    const cartRef = em.getReference(Cart, user.cart.id);
+    const fetchItemCarts = await em.findAll(ItemCart, { 
+        where: {
+            cart: user.cart
+        }
+    })
 
-    const cartItem = cartRef.cartItems.find((c) => c.product.id === product.id);
+    user.cart.itemCarts = new Collection<ItemCart>(user.cart, fetchItemCarts);
+
+    const cartItem = user.cart.itemCarts.find((c) => c.product.id === product.id);
 
     if (!cartItem) {
         const newItemCart = em.create(ItemCart, {
-            cart: cartRef,
+            cart: user.cart,
             product: product,
             quantity: 1
         })
 
-        cartRef.cartItems.add(newItemCart);
-        await em.persistAndFlush([cartRef, newItemCart]);
+        user.cart.itemCarts.add(newItemCart);
+        await em.persistAndFlush([user.cart, newItemCart]);
     } else {
         cartItem.quantity = cartItem.quantity + 1;
         await em.persistAndFlush([cartItem]);
@@ -61,7 +67,15 @@ export const DELETE: RequestHandler = async ({ cookies, params }) => {
         return new Response("User not found by current access token", { status: 404 });
     }
 
-    user.cart.cartItems.remove((ic) => ic.product.id === parseInt(productId));
+    const fetchItemCarts = await em.findAll(ItemCart, { 
+        where: {
+            cart: user.cart
+        }
+    })
+
+    user.cart.itemCarts = new Collection<ItemCart>(user.cart, fetchItemCarts);
+
+    user.cart.itemCarts.remove((ic) => ic.product.id === parseInt(productId));
 
     await em.persistAndFlush(user);
 

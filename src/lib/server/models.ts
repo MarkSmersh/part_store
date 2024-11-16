@@ -26,8 +26,8 @@ export class Cart {
 	@OneToOne(() => User, { orphanRemoval: true, mappedBy: "cart" })
 	user!: User
 
-	@OneToMany(() => ItemCart, "cart", { orphanRemoval: true })
-	cartItems: Collection<ItemCart> = new Collection<ItemCart>(this);
+	@OneToMany(() => ItemCart, "cart", { eager: true, orphanRemoval: true })
+	itemCarts?: Collection<ItemCart> = new Collection<ItemCart>(this);
 }
 
 @Entity()
@@ -46,6 +46,9 @@ export class Product {
 
 	@Property()
 	price!: number;
+
+	@OneToMany(() => ItemCart, 'product', { orphanRemoval: true })
+	itemCarts = new Collection<ItemCart>(this);
 }
 
 @Entity()

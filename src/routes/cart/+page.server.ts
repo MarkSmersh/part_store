@@ -2,6 +2,7 @@ import { em, User } from "$lib/server";
 import { jwtDecode } from "$lib/server/jwt";
 import { error } from "@sveltejs/kit";
 import type { PageServerLoad } from "./$types";
+import { ItemCart } from "$lib/server/models";
 
 export const load: PageServerLoad = async ({ cookies }) => {
     const username = jwtDecode(cookies.get("access-token"))?.username;
@@ -14,9 +15,13 @@ export const load: PageServerLoad = async ({ cookies }) => {
 
     if (!user) error(404, "No user with so access token")
 
-    const cartItems = user.cart.cartItems.getItems(true);
+    const fetchItemCarts = await em.findAll(ItemCart, { 
+        where: {
+            cart: user.cart
+        }
+    })
 
-    const cartItemsSorted = cartItems.map((ic) => {
+    const cartItemsSorted = fetchItemCarts.map((ic) => {
         return {
             id: ic.id,
             product: {
