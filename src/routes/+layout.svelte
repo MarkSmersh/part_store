@@ -9,7 +9,9 @@
 
 <Header username={data.username} />
 <Notify  />
-{@render children()}
+<main>
+	{@render children()}
+</main>
 <Footer />
 
 <style>
@@ -17,5 +19,9 @@
 		margin: 0;
 		padding: 0;
 		border: 0;
+	}
+
+	main {
+		margin: 20px 100px;
 	}
 </style>

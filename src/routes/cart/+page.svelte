@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { invalidateAll } from '$app/navigation';
+	import { goto, invalidateAll } from '$app/navigation';
 	import { setContext } from 'svelte';
 	import type { PageData } from './$types';
 	import { request } from '$lib';
@@ -30,6 +30,7 @@
 			</div>
 		</div>
 	{/each}
+	<button onclick={() => goto("/cart/order")}>Commit order</button>
 {:else}
 	Your cart is currently empty. Search somethind and than add it to cart via button on the bottom!
 {/if}

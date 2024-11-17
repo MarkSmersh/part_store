@@ -10,8 +10,12 @@
     <a href="/">Sklep z częściami do komputera.</a>
     <div>
         {#if username}
+            
                 <button onclick={() => goto("/cart")}>
                     Cart
+                </button>
+                <button onclick={() => goto("/orders")}>
+                    Orders
                 </button>
                 <p>{username}</p>
                 <button onclick={async () => {

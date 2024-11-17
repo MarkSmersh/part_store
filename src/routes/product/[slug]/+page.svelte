@@ -32,9 +32,7 @@
 
 	.product-wrapper {
 		display: flex;
-		width: calc(100% - 192px);
 		justify-content: space-between;
-		padding: 48px 96px;
 		gap: 200px;
 
 		.product-data {
@@ -42,7 +40,5 @@
 			flex-direction: column;
 			justify-content: space-between;
 		}
-
-
 	}
 </style>

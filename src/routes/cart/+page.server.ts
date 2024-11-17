@@ -2,26 +2,26 @@ import { em, User } from "$lib/server";
 import { jwtDecode } from "$lib/server/jwt";
 import { error } from "@sveltejs/kit";
 import type { PageServerLoad } from "./$types";
-import { ItemCart } from "$lib/server/models";
 
 export const load: PageServerLoad = async ({ cookies }) => {
     const username = jwtDecode(cookies.get("access-token"))?.username;
 
     if (!username) error(400, "Firstly, you need to log in/sign up before using for cart")
     
+    // TODO: Refactor code by doing populate on all
+    // of cases where data was fetched instead
+    // not for overall performance, but for the
+    // sake like it should be done
+
     const user = await em.findOne(User, {
-        username: username
-    })
+        username: username,
+    }, { populate: ['cart.itemCarts.product'] })
 
-    if (!user) error(404, "No user with so access token")
+    if (!user) {
+        return new Response("No user found by access token", { status: 404 });
+    }
 
-    const fetchItemCarts = await em.findAll(ItemCart, { 
-        where: {
-            cart: user.cart
-        }
-    })
-
-    const cartItemsSorted = fetchItemCarts.map((ic) => {
+    const cartItemsSorted = user.cart.itemCarts.map((ic) => {
         return {
             id: ic.id,
             product: {

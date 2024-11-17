@@ -11,6 +11,13 @@ export async function request(
 ) {
 	const res= await fetch(url, {
 		method: method,
+		headers: 
+			body ?
+				{
+					"Content-Type": "application/json"
+				}
+				:
+				{},
 		body: body
 	})
 
