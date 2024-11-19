@@ -10,8 +10,6 @@
         await request(`/api/cart/${productId}`, "DELETE");
 		invalidateAll();
     }
-
-	$inspect(data);
 </script>
 
 {#if data.cartItems && data.cartItems?.length !== 0}

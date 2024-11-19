@@ -8,8 +8,6 @@
     let sexy= $derived(notifications);
 
     notify.subscribe((no) => notifications = no)
-    
-    $inspect(notifications);
 </script>
 
 <div class="notifications">

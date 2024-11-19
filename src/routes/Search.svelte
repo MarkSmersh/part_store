@@ -26,7 +26,7 @@
         oninput={() => search()}
         placeholder="Search for..."
         onfocus={() => isShow = true}
-        onfocusout={() => setTimeout(() => isShow = false, 100)}
+        onfocusout={() => setTimeout(() => isShow = false, 250)}
     />
     <div class="products-wrapper">
         {#if isShow}

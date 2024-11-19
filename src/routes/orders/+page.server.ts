@@ -10,7 +10,7 @@ export const load: PageServerLoad = async ({ cookies }) => {
 
     const user = await em.findOne(User, {
         username: username,
-    }, { populate: ['orders'] })
+    }, { populate: ['orders.address'] })
 
     if (!user) error(400, "Firstly, you need to log in/sign up to watch your orders");
 
@@ -26,7 +26,7 @@ export const load: PageServerLoad = async ({ cookies }) => {
             createdAt: o.createdAt,
             total: o.total
         }
-    })
+    }).reverse()
 
     return {
         orders: ordersSorted

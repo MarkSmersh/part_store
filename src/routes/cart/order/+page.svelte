@@ -43,8 +43,6 @@
 			phone: formatRange
 		}))
     }
-
-	$inspect(firstName);
 </script>
 
 <h2>To order order product fill next form:</h2>

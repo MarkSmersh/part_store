@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { goto, invalidate, invalidateAll } from "$app/navigation";
+	import { goto, invalidateAll } from "$app/navigation";
 	import { request } from "$lib";
 	import Search from "./Search.svelte";
     let { username } = $props();

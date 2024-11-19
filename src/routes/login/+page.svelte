@@ -48,3 +48,9 @@
 {:else}
 	<p>Successfully logged in. You will be redirected to the main page in... {timer}</p>
 {/if}
+
+<style>
+	input {
+		border: 1px solid purple;
+	}
+</style>

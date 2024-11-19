@@ -7,8 +7,6 @@
 	async function addToCart() {
 		await request(`/api/cart/${data.id}`, "PATCH")
 	}
-
-	$inspect(data);
 </script>
 
 <div class="product-wrapper">
