@@ -1,10 +1,10 @@
 <script lang="ts">
 	import { goto, invalidateAll } from '$app/navigation';
 	import { hash, request } from '$lib/index';
+	import Button from '../ui/Button.svelte';
 
 	let username = $state('');
 	let password = $state('');
-	let error = $state();
 	let created = $state(false);
 	let timer = $state(5);
 
@@ -26,31 +26,70 @@
 			}, 5000);
 			return;
 		}
-
-		error = (await res.text()) || 'Unknown error occured. Reload page and try again';
 	}
 </script>
 
-{#if !created}
-	{#if error}
-		<h1 class="error">{error}</h1>
+<main>
+	{#if !created}
+		<div class="container">
+			<div class="form">
+				<h2>Rejestracja</h2>
+				<label>
+					Nazwa uzytkownika
+					<input bind:value={username} />
+				</label>
+				<label>
+					Hasło
+					<input type="password" bind:value={password} />
+				</label>
+				<Button style="secondary" onClick={() => signup()}>Sign up</Button>
+			</div>
+		</div>
+	{:else}
+		<p>Successfully registered. You will be redirected to the main page in... {timer}</p>
 	{/if}
-
-	<input bind:value={username} />
-	<input type="password" bind:value={password} />
-	<button onclick={() => signup()}>Log in</button>
-
-	<style>
-		.error {
-			color: red;
-		}
-	</style>
-{:else}
-	<p>Successfully registered. You will be redirected to the main page in... {timer}</p>
-{/if}
+</main>
 
 <style>
-	input {
-		border: 1px solid pink;
+	main {
+		background-image: url('../../lib/assets/kompudahter.png');
+		background-position: center;
+	}
+
+	.container {
+		display: flex;
+		justify-content: center;
+		padding: 100px 0px;
+	}
+
+	.form {
+		display: flex;
+		flex-direction: column;
+		width: 40%;
+		background-color: var(--primary);
+		background-color: var(--primary-transparent);
+		backdrop-filter: blur(20px);
+		border: 2px var(--primary-text) solid;
+		border-radius: 8px;
+		padding: 32px;
+		gap: 32px;
+
+		h2 {
+			text-align: center;
+			color: var(--primary-text);
+		}
+
+		label {
+			display: flex;
+			flex-direction: column;
+			color: var(--primary-text);
+			position: relative;
+
+			input {
+				margin-top: 16px;
+				padding: 8px;
+				border-radius: 8px;
+			}
+		}
 	}
 </style>

@@ -1,4 +1,4 @@
-import { Entity, PrimaryKey, OneToOne, Property, ManyToMany, Collection, OneToMany, ManyToOne } from '@mikro-orm/core';
+import { Entity, PrimaryKey, OneToOne, Property, Collection, OneToMany, ManyToOne } from '@mikro-orm/core';
 
 @Entity()
 export class User {
@@ -41,7 +41,7 @@ export class Product {
 	@Property()
 	name!: string;
 
-	@Property()
+	@Property({ length: 1000 })
 	description!: string;
 
 	@Property()

@@ -1,113 +1,176 @@
 <script lang="ts">
-    interface Product {
-        id: number;
-        name: string;
-        description: string;
-        image: string;
-        price: number;
-    }
+	import { goto } from '$app/navigation';
+	import { blur, fly } from 'svelte/transition';
+	import Button from './ui/Button.svelte';
 
-    let string = $state("");
-    let isShow = $state(false);
-    let products: Product[] = $state([])
+	interface Product {
+		id: number;
+		name: string;
+		description: string;
+		image: string;
+		price: number;
+	}
 
-    async function search() {
-        try {
-            products = JSON.parse(await (await fetch(`/api/search?q=${string}`)).json())
-        } catch (e) {
-            products = []
-        }
-    }
+	let string = $state('');
+	let isShow = $state(false);
+	let products: Product[] = $state([]);
+
+	async function search() {
+		try {
+			products = JSON.parse(await (await fetch(`/api/search?q=${string}`)).json());
+		} catch (e) {
+			products = [];
+		}
+	}
+
+	$inspect(products);
 </script>
 
-<div class="input-wrapper">
-    <input
-        bind:value={string}
-        oninput={() => search()}
-        placeholder="Search for..."
-        onfocus={() => isShow = true}
-        onfocusout={() => setTimeout(() => isShow = false, 250)}
-    />
-    <div class="products-wrapper">
-        {#if isShow}
-            {#each products as p}
-                <a class="product-preview" href="/product/{p.id}">
-                    <img src={p.image} alt="img" />
-                    <div class="text-wrapper">
-                        <h5>{p.name}</h5>
-                        <h6>{p.description}</h6>
-                        <p>{p.price} zł</p>
-                    </div>
-                </a>
-            {/each}
-        {/if}
-    </div>
-</div>
-
+<Button
+	onClick={() => (isShow = true)}
+	style="secondary"
+>
+	Poszukiwanie
+</Button>
+{#if isShow}
+	<!-- svelte-ignore a11y_click_events_have_key_events, a11y_no_static_element_interactions (because of nth) -->
+	<div transition:blur class="search-wrapper">
+		<div class="close" onclick={() => (isShow = false)}>❌</div>
+		<div class="search">
+			<input
+				transition:fly={{ delay: 50, y: -200 }}
+				class="input"
+				placeholder="Search for.."
+				bind:value={string}
+				oninput={() => search()}
+			/>
+			{#if products.length > 0}
+				<div class="products"
+                    transition:blur
+                >
+					{#each products as p}
+						<div
+							onclick={() => {
+								goto(`/product/${p.id}`);
+								isShow = false;
+							}}
+							class="product"
+                            transition:blur={{ duration: 200 }}
+						>
+							<img src={p.image} alt={p.name} />
+							<div class="text">
+								<h2>{p.name}</h2>
+								<p>{p.description}</p>
+							</div>
+							<div class="price">
+								<h3>Cena: {p.price}</h3>
+							</div>
+						</div>
+					{/each}
+				</div>
+			{/if}
+		</div>
+	</div>
+{/if}
 
 <style scoped>
-    .input-wrapper {
-        width: 300px;
-    }
+	.close {
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		font-size: 24px;
+		cursor: pointer;
+	}
 
-    input {
-        width: 100%;
-    }
+	.search-wrapper {
+		width: 600px;
+		background-color: rgba(0, 0, 0, 0.2);
+		backdrop-filter: blur(10px);
+		position: fixed;
+		top: 0;
+		left: 0;
+		/* transform: translate(-50%, -50%); */
+		height: 100vh;
+		width: 100vw;
+		display: flex;
+		flex-direction: column;
+		z-index: 1;
+	}
 
-    .products-wrapper {
-        display: flex;
-        flex-direction: column;
-        text-decoration: none;
-        color: black;
-        position: absolute;
-        width: 306px;
+	.search {
+		margin: 100px;
+	}
 
-        * {
-            text-decoration: none;
-            color: black;
-        }
-    }
+	.input {
+		width: calc(100% - 40px);
+		padding: 20px;
+	}
 
-    .product-preview {
-        display: flex;
-        background-color: grey;
-        height: 70px;
-        padding: 8px;
-        gap: 8px;
+	.products {
+		display: flex;
+		background: #454545;
+		display: flex;
+		flex-direction: column;
+		color: white;
+	}
 
-        img {
-            height: 100%;
-            border-radius: 8px;
-        }
+	.product {
+		display: flex;
+		height: 100px;
+		padding: 10px;
+		gap: 20px;
+		align-items: center;
+		cursor: pointer;
+		transition: 0.2s;
 
-        transition: .2s;
-    }
+		img {
+			object-fit: contain;
+			width: 100px;
+			height: 100%;
+			background-color: white;
+			border-radius: 8px;
+		}
 
-    .product-preview:hover {
-        background-color: darkgray;
-    }
+		.text {
+			display: flex;
+			flex-direction: column;
+			background-color: white;
+			border-radius: 8px;
+			color: black;
+			padding: 8px;
+			height: calc(100% - 16px);
+			flex: 1;
+			overflow: hidden;
+			justify-content: center;
 
-    .text-wrapper {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: center;
-        width: 100%;
+			p,
+			h2 {
+				width: 100%;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+				overflow: hidden;
+			}
+		}
 
-        p {
-            align-self: flex-end;
-        }
+		.price {
+			background-color: white;
+			color: black;
+			border-radius: 8px;
+			height: 100%;
+			text-align: right;
+			display: flex;
+			align-items: center;
 
-        * {
-            margin: 0;
-        }
+			h3 {
+				transform: rotate(-45deg);
+				color: red;
+				border: 3px solid red;
+				padding: 5px;
+			}
+		}
+	}
 
-        h6 {
-            color: red;
-            overflow: hidden;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            width: 200px;
-        }
-    }
+	.product:hover {
+		scale: 97%;
+	}
 </style>

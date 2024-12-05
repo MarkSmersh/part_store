@@ -1,27 +1,30 @@
 <script lang="ts">
 	import { request } from '$lib';
+	import Button from '../../ui/Button.svelte';
 	import type { PageData } from './$types';
 
 	let { data }: { data: PageData } = $props();
 
 	async function addToCart() {
-		await request(`/api/cart/${data.id}`, "PATCH")
+		await request(`/api/cart/${data.id}`, 'PATCH');
 	}
 </script>
 
-<div class="product-wrapper">
-	<div class="product-data">
-		<div class="text">
-			<h1>{data.name}</h1>
-			<p>{data.description}</p>
+<main>
+	<div class="product-wrapper">
+		<div class="product-data">
+			<div class="text">
+				<h1>{data.name}</h1>
+				<p>{data.description}</p>
+			</div>
+			<div class="price">
+				<h2>Price: {data.price}</h2>
+				<Button onClick={() => addToCart()}>Add to the cart</Button>
+			</div>
 		</div>
-		<div class="price">
-			<h2>Price: {data.price}</h2>
-			<button class="cart" onclick={() => addToCart()}>Add to the cart</button>
-		</div>	
+		<img src={data.image} alt="123" />
 	</div>
-	<img src={data.image} alt="123" />
-</div>
+</main>
 
 <style>
 	img {

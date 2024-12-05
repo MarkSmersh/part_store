@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { goto, invalidateAll } from '$app/navigation';
 	import { hash, request } from '$lib/index';
+	import Button from '../ui/Button.svelte';
 
 	let username = $state('');
 	let password = $state('');
@@ -32,22 +33,24 @@
 	}
 </script>
 
-{#if !logged}
-	{#if error}
-		<h1 class="error">{error}</h1>
-	{/if}
-	<input bind:value={username} />
-	<input type="password" bind:value={password} />
-	<button onclick={() => login()}>Log in</button>
+<main>
+	{#if !logged}
+		{#if error}
+			<h1 class="error">{error}</h1>
+		{/if}
+		<input bind:value={username} />
+		<input type="password" bind:value={password} />
+		<Button onClick={() => login()}>Log in</Button>
 
-	<style>
-		.error {
-			color: red;
-		}
-	</style>
-{:else}
-	<p>Successfully logged in. You will be redirected to the main page in... {timer}</p>
-{/if}
+		<style>
+			.error {
+				color: red;
+			}
+		</style>
+	{:else}
+		<p>Successfully logged in. You will be redirected to the main page in... {timer}</p>
+	{/if}
+</main>
 
 <style>
 	input {

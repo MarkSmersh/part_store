@@ -1,8 +1,6 @@
 import { Cart, em, User } from '$lib/server';
 import { passwordHash } from '$lib/server/crypto';
 import { jwtAccessToken, jwtSessionToken } from '$lib/server/jwt';
-import { ItemCart } from '$lib/server/models';
-import { Collection } from '@mikro-orm/core';
 import { type RequestHandler } from '@sveltejs/kit';
 
 export const GET: RequestHandler = async ({ url, cookies }) => {
@@ -13,6 +11,7 @@ export const GET: RequestHandler = async ({ url, cookies }) => {
 	// from user's request. In this case, it need be hashed via client-side bcrypto
 	// but I'm kinda tired today, so I'll instead prapare for Kuziola's
 	// narzedzia.
+	// UPD: Seems HTTPS should deal with that
 	const password = url.searchParams.toString().split('password=')[1];
 
 	if (!username || !password) {

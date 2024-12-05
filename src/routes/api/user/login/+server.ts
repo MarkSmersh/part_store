@@ -1,5 +1,5 @@
 import { em, User } from '$lib/server';
-import { passwordCompare, passwordHash } from '$lib/server/crypto';
+import { passwordCompare } from '$lib/server/crypto';
 import { jwtAccessToken, jwtSessionToken } from '$lib/server/jwt';
 import type { RequestHandler } from '@sveltejs/kit';
 

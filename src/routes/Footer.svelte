@@ -1,13 +1,15 @@
 <footer>
     <ul>
-        <li>Mariusz Śniadkowski</li>
-        <li>Rostyslav Celiński</li>
+        <li>Marian Senchyshen</li>
+        <li>Maksym Brukvach</li>
+        <li>Łukasz Zduniak</li>
+        <!-- <li>Mark Smotkin</li> -->
     </ul>
 </footer>
 
 <style>
     footer {
-        background-color: #333333;
+        background-color: var(--primary);
         display: flex;
         justify-content: right;
         padding: 24px;
@@ -19,7 +21,7 @@
     }
 
     li {
-        color: white;
+        color: var(--primary-text);
         text-decoration: solid;
         font-size: 24px;
     }
