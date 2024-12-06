@@ -28,30 +28,30 @@
         cursor: pointer;
         font-size: 16px;
         padding: 8px 16px;
-        transition: .1s ease-out; 
-        box-shadow: 0px 0px black;
+        transition: .25s ease-out; 
         border-radius: 8px;
+        /* backdrop-filter: blur(10px) */
     }
 
     button:hover {
-        box-shadow: 3px 3px black;
         scale: 105%;
+        backdrop-filter: blur(100px) brightness(40%);
     }
 
     button:active {
         transition: 0s;
-        box-shadow: 0px 0px black;
         scale: 100%;
     }
     
-
     .primary {
-        background-color: var(--primary);
         color: var(--primary-text);
+        border: 1px solid var(--primary-text);
+        background: rgba(0, 0, 0, 0);
     }
 
     .secondary {
-        background-color: var(--secondary);
         color: var(--secondary-text);
+        border: 1px solid var(--secondary-text);
+        background: rgba(0, 0, 0, 0);
     }
 </style>

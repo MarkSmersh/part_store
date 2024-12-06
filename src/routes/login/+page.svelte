@@ -42,7 +42,7 @@
 					Hasło
 					<input type="password" bind:value={password} />
 				</label>
-				<Button style="secondary" onClick={() => login()}>Sign up</Button>
+				<Button style="primary" onClick={() => login()}>Zalogować się</Button>
 			</div>
 		</div>
 	{:else}
@@ -68,7 +68,7 @@
 		width: 40%;
 		background-color: var(--primary);
 		background-color: var(--primary-transparent);
-		backdrop-filter: blur(20px);
+		backdrop-filter: blur(20px) brightness(40%);
 		border: 2px var(--primary-text) solid;
 		border-radius: 8px;
 		padding: 32px;

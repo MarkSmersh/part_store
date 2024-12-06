@@ -29,8 +29,4 @@
         gap: 8px;
         width: 100%;
     }
-
-    img {
-        width: 400px;
-    }
 </style>

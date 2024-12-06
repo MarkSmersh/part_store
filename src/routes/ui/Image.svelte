@@ -38,10 +38,11 @@
 </script>
 
 <!-- svelte-ignore a11y_no_static_element_interactions -->
-<div
+<div class="image-wrapper">
+	<div
 	onmousemove={(e) => onMouseMove(e)}
 	onmouseleave={(e) => onMouseLeave(e)}
-	class="image-wrapper"
+	class="image"
 	style:background-image={`url("${src}")`}
 	style:height={`${height}px`}
 	class:zoomed={isHover}
@@ -56,16 +57,27 @@
 		</div>
 	{/if}
 </div>
+</div>
 
 <style>
 	.image-wrapper {
 		display: flex;
+		width: 100%;
+		padding: 8px;
+		border: 1px solid var(--primary-text);
+		border-radius: 8px;
+		height: fit-content;
+		background-color: var(--primary-transparent);
+	}
+
+	.image {
+		display: flex;
 		justify-content: center;
 		align-items: end;
-		border-radius: 16px;
+		border-radius: 8px;
 		overflow: hidden;
 		cursor: pointer;
-		width: 100%;
+		flex: 1;
 		background-size: cover;
 	}
 
@@ -74,12 +86,12 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		width: 100%;
+		flex: 1;
 		color: var(--primary-text);
 		background-color: var(--primary-transparent);
 		text-align: center;
 		padding: 8px 0px;
-		backdrop-filter: blur(4px);
+		backdrop-filter: blur(4px) brightness(40%);
 		font-size: 12px;
 	}
 

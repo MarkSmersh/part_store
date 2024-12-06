@@ -31,7 +31,8 @@
 		--primary-text: #ffffff;
 
 		--secondary: #f3f3f3;
-		--secondary-text: #333333;
+		--secondary-transparent: rgb(243, 243, 243, .5);
+		--secondary-text: #000000;
 	}
 
 	:global(main) {

@@ -76,11 +76,11 @@
         align-items: center;
     }
 
-	.success {
+	/* .success {
 		color: green;
 	}
 
 	.error {
 		color: red;
-	}
+	} */
 </style>

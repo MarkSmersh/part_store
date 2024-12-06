@@ -13,20 +13,20 @@
 	</a>
 	<div>
 		{#if username}
-			<Button onClick={() => goto('/cart')} style="secondary">Koszyk</Button>
-			<Button onClick={() => goto('/orders')} style="secondary">Zamówenia</Button>
+			<Button onClick={() => goto('/cart')} style="primary">Koszyk</Button>
+			<Button onClick={() => goto('/orders')} style="primary">Zamówenia</Button>
 			<Button
 				onClick={async () => {
 					await request('/api/user/logout');
 					invalidateAll();
 				}}
-				style="secondary"
+				style="primary"
 			>
 				{username} | Wylogowanie
 			</Button>
 		{:else}
-			<Button onClick={() => goto('/login')} style="secondary">Logowanie</Button>
-			<Button onClick={() => goto('/signup')} style="secondary">Rejestracja</Button>
+			<Button onClick={() => goto('/login')} style="primary">Logowanie</Button>
+			<Button onClick={() => goto('/signup')} style="primary">Rejestracja</Button>
 		{/if}
 		<Search />
 	</div>
@@ -49,7 +49,10 @@
 	}
 
 	header {
-		background-color: var(--primary);
+		/* background-color: var(--primary); */
+		
+		background: var(--primary);
+		background: linear-gradient(90deg, var(--primary) 0%, #000057 70%, var(--primary) 100%);
 		display: flex;
 		justify-content: space-between;
 		padding: 24px;

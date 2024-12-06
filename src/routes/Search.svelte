@@ -12,7 +12,7 @@
 	}
 
 	let string = $state('');
-	let isShow = $state(false);
+	let isShow = $state(true);
 	let products: Product[] = $state([]);
 
 	async function search() {
@@ -26,12 +26,7 @@
 	$inspect(products);
 </script>
 
-<Button
-	onClick={() => (isShow = true)}
-	style="secondary"
->
-	Wyszukiwanie
-</Button>
+<Button onClick={() => (isShow = true)} style="primary">Wyszukiwanie</Button>
 {#if isShow}
 	<!-- svelte-ignore a11y_click_events_have_key_events, a11y_no_static_element_interactions (because of nth) -->
 	<div transition:blur class="search-wrapper">
@@ -45,9 +40,7 @@
 				oninput={() => search()}
 			/>
 			{#if products.length > 0}
-				<div class="products"
-                    transition:blur
-                >
+				<div class="products" transition:blur>
 					{#each products as p}
 						<div
 							onclick={() => {
@@ -55,7 +48,7 @@
 								isShow = false;
 							}}
 							class="product"
-                            transition:blur={{ duration: 200 }}
+							transition:blur={{ duration: 200 }}
 						>
 							<img src={p.image} alt={p.name} />
 							<div class="text">
@@ -84,12 +77,11 @@
 
 	.search-wrapper {
 		width: 600px;
-		background-color: rgba(0, 0, 0, 0.2);
-		backdrop-filter: blur(10px);
+		background-color: var(--primary-transparent);
+		backdrop-filter: blur(10px) brightness(40%);
 		position: fixed;
 		top: 0;
 		left: 0;
-		/* transform: translate(-50%, -50%); */
 		height: 100vh;
 		width: 100vw;
 		display: flex;
@@ -99,19 +91,29 @@
 
 	.search {
 		margin: 100px;
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
 	}
 
 	.input {
-		width: calc(100% - 40px);
-		padding: 20px;
+		width: calc(100% - 32px);
+		padding: 16px;
+		background-color: var(--secondary-transparent);
+		color: var(--primary);
+		border-radius: 8px;
+		font-size: 18px;
+		border: 1px solid var(--primary-text);
 	}
 
 	.products {
 		display: flex;
-		background: #454545;
+		border-radius: 8px;
 		display: flex;
 		flex-direction: column;
 		color: white;
+		background: var(--primary-transparent);
+		border: 1px solid var(--primary-text);
 	}
 
 	.product {
@@ -129,12 +131,14 @@
 			height: 100%;
 			background-color: white;
 			border-radius: 8px;
+			background: var(--primary-transparent);
+			border: 1px solid var(--primary-text);
+			object-fit: cover;
 		}
 
 		.text {
 			display: flex;
 			flex-direction: column;
-			background-color: white;
 			border-radius: 8px;
 			color: black;
 			padding: 8px;
@@ -142,6 +146,9 @@
 			flex: 1;
 			overflow: hidden;
 			justify-content: center;
+			background: var(--primary-transparent);
+			border: 1px solid var(--primary-text);
+			color: var(--primary-text);
 
 			p,
 			h2 {
@@ -160,11 +167,15 @@
 			text-align: right;
 			display: flex;
 			align-items: center;
+			border: 1px solid var(--primary-text);
+			background: var(--primary-transparent);
+			background: radial-gradient(circle, rgba(255,0,0,1) 0%, var(--primary-transparent) 100%);
+
 
 			h3 {
 				transform: rotate(-45deg);
-				color: red;
-				border: 3px solid red;
+				color: var(--primary-text);
+				border: 2px solid var(--primary-text);
 				padding: 5px;
 			}
 		}
