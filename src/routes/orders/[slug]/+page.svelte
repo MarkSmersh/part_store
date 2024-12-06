@@ -22,17 +22,17 @@
         </div>
     
         <div class="address">
-            <h4>Address:</h4>
-            <p>Firstname: {data.address.firstName}</p>
-            <p>Secondname: {data.address.secondName}</p>
-            <p>Phone: {data.address.phone}</p>
-            <p>Street: {data.address.street}</p>
+            <h4>Adresa:</h4>
+            <p>Imię: {data.address.firstName}</p>
+            <p>Nazwisko: {data.address.secondName}</p>
+            <p>Numer telefonu komórkowego: {data.address.phone}</p>
+            <p>Ulica i nr: {data.address.street}</p>
         </div>
     
         <h2>Suma ogólna: {data.total} zł</h2>
         
         {#if data.comment}
-            <h2>Comentarz:</h2>
+            <h2>Komentarz:</h2>
             <p>{data.comment}</p>
         {/if}
     

@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { request } from '$lib';
 	import Button from '../../ui/Button.svelte';
+	import Image from '../../ui/Image.svelte';
 	import type { PageData } from './$types';
 
 	let { data }: { data: PageData } = $props();
@@ -11,35 +12,32 @@
 </script>
 
 <main>
-	<div class="product-wrapper">
-		<div class="product-data">
+	<div class="product">
+		<div class="data">
 			<div class="text">
 				<h1>{data.name}</h1>
 				<p>{data.description}</p>
 			</div>
 			<div class="price">
-				<h2>Price: {data.price}</h2>
-				<Button onClick={() => addToCart()}>Add to the cart</Button>
+				<h2>Cena: {data.price} zł</h2>
+				<Button onClick={() => addToCart()}>Dodaj do koszyka</Button>
 			</div>
 		</div>
-		<img src={data.image} alt="123" />
+		<Image src={data.image} alt={data.name} height={300} />
 	</div>
 </main>
 
 <style>
-	img {
-		width: 400px;
-	}
-
-	.product-wrapper {
+	.product {
 		display: flex;
 		justify-content: space-between;
 		gap: 200px;
 
-		.product-data {
+		.data {
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
+			width: 150%;
 		}
 	}
 </style>

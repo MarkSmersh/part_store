@@ -8,19 +8,19 @@ export const GET: RequestHandler = async ({ url, cookies }) => {
 	const password = url.searchParams.toString().split('password=')[1];
 
 	if (!username || !password) {
-		return new Response('No required params', { status: 400 });
+		return new Response('Nie ma potrzebowanych atrybutów.', { status: 400 });
 	}
 
 	const user = await em.findOne(User, { username: username });
 
 	if (!user) {
-		return new Response('No user with such username.', { status: 404 });
+		return new Response('Nie ma takiego użytkownika.', { status: 404 });
 	}
 
 	const isPasswordSame = await passwordCompare(password, user.password);
 
 	if (!isPasswordSame) {
-		return new Response('Incorrect auth data.', { status: 400 });
+		return new Response('Nieprawidlowe dane.', { status: 400 });
 	}
 
 	const sessionToken = jwtSessionToken(username);
@@ -32,5 +32,5 @@ export const GET: RequestHandler = async ({ url, cookies }) => {
 
 	cookies.set('access-token', accessToken, { path: '/' });
 
-	return new Response('Signed successfully', { status: 200 });
+	return new Response('Zalogowany.', { status: 200 });
 };

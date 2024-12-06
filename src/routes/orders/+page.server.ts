@@ -6,13 +6,13 @@ import type { PageServerLoad } from "./$types";
 export const load: PageServerLoad = async ({ cookies }) => {
     const username = jwtDecode(cookies.get("access-token"))?.username;
 
-    if (!username) error(400, "Firstly, you need to log in/sign up before using for cart")
+    if (!username) error(400, "Nie znaliżono użytkownika.")
 
     const user = await em.findOne(User, {
         username: username,
     }, { populate: ['orders.address'] })
 
-    if (!user) error(400, "Firstly, you need to log in/sign up to watch your orders");
+    if (!user) error(400, "Musisz najpierw zalogować, aby uzyskać dostęp do zamówień.");
 
     const ordersSorted = user.orders.map((o) => {
         return {

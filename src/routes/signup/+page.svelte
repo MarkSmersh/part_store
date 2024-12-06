@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { goto, invalidateAll } from '$app/navigation';
+	import { countdown } from '$lib/countdown';
 	import { hash, request } from '$lib/index';
 	import Button from '../ui/Button.svelte';
 
@@ -15,15 +16,13 @@
 		if (res.status == 201) {
 			created = true;
 			invalidateAll();
-
-			setTimeout(() => (timer = 4), 1000);
-			setTimeout(() => (timer = 3), 2000);
-			setTimeout(() => (timer = 2), 3000);
-			setTimeout(() => (timer = 1), 4000);
-			setTimeout(() => {
-				timer = 0;
-				goto('/');
-			}, 5000);
+			countdown(
+				timer,
+				(n) => (timer = n),
+				() => {
+					goto('/');
+				}
+			);
 			return;
 		}
 	}
@@ -35,7 +34,7 @@
 			<div class="form">
 				<h2>Rejestracja</h2>
 				<label>
-					Nazwa uzytkownika
+					Nazwa użytkownika
 					<input bind:value={username} />
 				</label>
 				<label>

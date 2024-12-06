@@ -30,9 +30,9 @@
 				</div>
 			</div>
 		{/each}
-		<Button onClick={() => goto('/cart/order')}>Commit order</Button>
+		<Button onClick={() => goto('/cart/order')}>Założyć zamówenie</Button>
 	{:else}
-		Your cart is currently empty. Search somethind and than add it to cart via button on the bottom!
+		Koszyka niema
 	{/if}
 </main>
 

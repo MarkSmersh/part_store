@@ -5,7 +5,7 @@ export const POST: RequestHandler = async ({ request }) => {
 	const data: Body = await request.json();
 
 	if (!data.name || !data.image || !data.description || !data.price) {
-		return new Response("No required params. Required params are: name, image, description, price", {
+		return new Response("Nie ma potrzebowanego atrybutu. Są potrzebowane: name, image, description, price.", {
 			status: 400
 		})
 	}
@@ -21,7 +21,7 @@ export const POST: RequestHandler = async ({ request }) => {
 
 	await em.persistAndFlush([product]);
 
-	return new Response("Product was created succesfully", { status: 201 });
+	return new Response("Produkt jest stworzony.", { status: 201 });
 };
 
 interface Body {

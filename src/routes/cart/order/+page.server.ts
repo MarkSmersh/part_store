@@ -6,7 +6,7 @@ import type { PageServerLoad } from "./$types";
 export const load: PageServerLoad = async ({ cookies }) => {
     const username = jwtDecode(cookies.get("access-token"))?.username;
 
-    if (!username) error(400, "Firstly, you need to log in/sign up before using for cart");
+    if (!username) error(400, "Musisz najpierw zalogować, aby korzystać z koszyka.");
     
     const user = await em.findOne(User, {
         username: username,
@@ -16,7 +16,7 @@ export const load: PageServerLoad = async ({ cookies }) => {
         return new Response("No user found by access token", { status: 404 });
     }
 
-    if (user.cart.itemCarts.length <= 0) error(400, "User cart is empty");
+    if (user.cart.itemCarts.length <= 0) error(400, "Koszyk jest pusty.");
 
     return;
 }

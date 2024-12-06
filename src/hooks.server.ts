@@ -1,6 +1,5 @@
 import { redirect, type Handle, type HandleFetch } from '@sveltejs/kit';
 import { jwtVerify, accessFromSession } from '$lib/server/jwt';
-import { orm } from '$lib/server';
 
 export const handleFetch: HandleFetch = async ({ request, fetch }) => {	
 	return fetch(request);
@@ -17,7 +16,7 @@ export const handle: Handle = async ({ event, resolve }) => {
 		const accessToken = event.cookies.get('access-token');
 
 		if (!accessToken) {
-			return new Response('Access Denied', { status: 401 });
+			return new Response('Odmowa dostępu. Nie zalogowany.', { status: 401 });
 		}
 
 		const isTokenOk = jwtVerify(accessToken);

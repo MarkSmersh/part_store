@@ -9,7 +9,7 @@ export const load: PageServerLoad = async ({ cookies, params }) => {
 
     const slug = params.slug;
 
-    if (!username) error(400, "Firstly, you need to log in/sign up before using for cart")
+    if (!username) error(400, "Aby korzystać z koszyka musisz najpierw zalogować.")
 
     const order = await em.findOne(Order, {
         user: {

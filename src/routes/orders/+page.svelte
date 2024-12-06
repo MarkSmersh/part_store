@@ -12,11 +12,11 @@
 				<div class="order">
 					<a href="/orders/{o.id}"> <h3>ID: {o.id}</h3></a>
 					<div class="address">
-						<h4>Address:</h4>
-						<p>Firstname: {o.address.firstName}</p>
-						<p>Secondname: {o.address.secondName}</p>
-						<p>Phone: {o.address.phone}</p>
-						<p>Street: {o.address.street}</p>
+						<h4>Adresa:</h4>
+						<p>Imię: {o.address.firstName}</p>
+						<p>Nazwisko: {o.address.secondName}</p>
+						<p>Numer telefonu komórkowego: {o.address.phone}</p>
+						<p>Ulica i nr: {o.address.street}</p>
 					</div>
 					<h4>{o.createdAt.toLocaleString()}</h4>
 					<h3>{o.total} zł</h3>
@@ -24,7 +24,7 @@
 			{/each}
 		</div>
 	{:else}
-		There are no orders before it creation
+		Aby zobaczyć zamówenia najpierw muszą być dodane
 	{/if}
 </main>
 

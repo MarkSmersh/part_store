@@ -52,9 +52,9 @@
 </script>
 
 <main>
-	<h2>To order order product fill next form:</h2>
+	<h2>Uzupełniceie dane do założenia zamówenia: </h2>
 	<form onsubmit={(e) => creatOrder(e)}>
-		First Name: <input
+		Imię: <input
 			bind:value={firstName}
 			autocomplete="given-name"
 			name="firstName"
@@ -63,7 +63,7 @@
 			maxlength="30"
 			required
 		/>
-		Surname:
+		Nazwisko:
 		<input
 			bind:value={secondName}
 			autocomplete="family-name"
@@ -73,7 +73,7 @@
 			maxlength="30"
 			required
 		/>
-		Phone number ({formatRange}):
+		Numer telefonu komórkowego ({formatRange}):
 		<input
 			style:accent-color={`rgb(${color})`}
 			style:background-color={`rgb(${color})`}
@@ -85,7 +85,7 @@
 			minlength="1"
 			required
 		/>
-		Postal:
+		Kod pocztowy:
 		<input
 			bind:value={postal}
 			autocomplete="postal-code"
@@ -95,7 +95,7 @@
 			minlength="4"
 			maxlength="8"
 		/>
-		Street:
+		Ulica i nr:
 		<input
 			bind:value={street}
 			autocomplete="street-address"
@@ -105,24 +105,24 @@
 			minlength="5"
 			maxlength="90"
 		/>
-		Comment:
+		Komentarz:
 		<textarea
 			bind:value={comment}
 			name="comment"
-			placeholder="Add some commentary for you order. For example, your apartment number if exists or some contact data for the delivery agent. (max 200)"
+			placeholder="Dodaj komentarz do zamówenia (maks. 200)"
 			rows="5"
 			cols="40"
 			maxlength="200"
 		></textarea>
 
-		Did you like our service? (your opinion is important to us!)
+		Czy podoba Cię nasz sklep? (twoja opinia jest ważna dla nas!)
 		<input
 			oninput={(v) => (v.currentTarget.checked = true)}
 			type="checkbox"
 			checked
 			style:accent-color={`rgb(${color})`}
 		/>
-		<Button onClick={() => {}} type="submit">Sent form</Button>
+		<Button onClick={() => {}} type="submit">Gotowo</Button>
 	</form>
 </main>
 

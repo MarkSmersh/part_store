@@ -9,7 +9,7 @@ export const POST: RequestHandler = async ({ cookies, request }) => {
     const username = jwtDecode(cookies.get("access-token"))?.username;
 
     if (!username) {
-        return new Response("No access token found", { status: 404 });
+        return new Response("Nie ma access tokenu.", { status: 404 });
     }
 
     if (
@@ -20,7 +20,7 @@ export const POST: RequestHandler = async ({ cookies, request }) => {
         || !data.street
         || !data.phone
     ) {
-        return new Response("No required params", { status: 400 });
+        return new Response("Nie ma potrzebowanych atrybutów.", { status: 400 });
     }
 
     const {
@@ -37,7 +37,7 @@ export const POST: RequestHandler = async ({ cookies, request }) => {
     }, { populate: ["cart.itemCarts.product"] })
 
     if (!user) {
-        return new Response("No user found by current access token", { status: 404 });
+        return new Response("Nie ma takiego użytkownika.", { status: 404 });
     }
 
     const orderItems = user.cart.itemCarts.map((ic) => em.create(OrderItem, {
@@ -72,7 +72,7 @@ export const POST: RequestHandler = async ({ cookies, request }) => {
 
     await em.persistAndFlush([address, ...orderItems, order]);
 
-    return new Response("Order was created successfully", { status: 201 });
+    return new Response("Zamówienie jest stworzone.", { status: 201 });
 }
 
 interface Body {

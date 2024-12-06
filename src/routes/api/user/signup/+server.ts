@@ -15,13 +15,13 @@ export const GET: RequestHandler = async ({ url, cookies }) => {
 	const password = url.searchParams.toString().split('password=')[1];
 
 	if (!username || !password) {
-		return new Response('No required params', { status: 400 });
+		return new Response('Nie ma potrzebowanych atrybutów.', { status: 400 });
 	}
 
 	const users = await em.findAll(User, { where: { username: username } });
 
 	if (users.length !== 0) {
-		return new Response('User with such username exists', { status: 409 });
+		return new Response('Taki użytkownik już istnieje.', { status: 409 });
 	}
 
 	const sessionToken = jwtSessionToken(username);
@@ -43,5 +43,5 @@ export const GET: RequestHandler = async ({ url, cookies }) => {
 
 	cookies.set('access-token', accessToken, { path: '/' });
 
-	return new Response('Registered succesfully', { status: 201 });
+	return new Response('Zarejestrowany.', { status: 201 });
 };

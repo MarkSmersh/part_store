@@ -4,14 +4,17 @@
 	import Search from './Search.svelte';
 	import Button from './ui/Button.svelte';
 	let { username } = $props();
+	import logo from '$lib/assets/sklep-komputerowy-high-resolution-logo-grayscale-transparent.png';
 </script>
 
 <header>
-	<a href="/">Sklep z częściami do komputera.</a>
+	<a class="logo-wrapper" href="/">
+		<img class="logo" alt="Sklep komputerowy" src={logo} />
+	</a>
 	<div>
 		{#if username}
-			<Button onClick={() => goto('/cart')} style="secondary">Cart</Button>
-			<Button onClick={() => goto('/orders')} style="secondary">Orders</Button>
+			<Button onClick={() => goto('/cart')} style="secondary">Koszyk</Button>
+			<Button onClick={() => goto('/orders')} style="secondary">Zamówenia</Button>
 			<Button
 				onClick={async () => {
 					await request('/api/user/logout');
@@ -19,17 +22,32 @@
 				}}
 				style="secondary"
 			>
-				{username} | Log out
+				{username} | Wylogowanie
 			</Button>
 		{:else}
-			<Button onClick={() => goto('/login')} style="secondary">Log In</Button>
-			<Button onClick={() => goto('/signup')} style="secondary">Sign Up</Button>
+			<Button onClick={() => goto('/login')} style="secondary">Logowanie</Button>
+			<Button onClick={() => goto('/signup')} style="secondary">Rejestracja</Button>
 		{/if}
 		<Search />
 	</div>
 </header>
 
 <style>
+	.logo-wrapper {
+		width: 20%;
+		display: flex;
+		transition: .2s;
+	}
+
+	.logo-wrapper:hover {
+		scale: 105%;
+	}
+
+	.logo {
+		object-fit: contain;
+		width: 100%;
+	}
+
 	header {
 		background-color: var(--primary);
 		display: flex;
@@ -47,7 +65,7 @@
 	}
 
 	a {
-		color:var(--primary-text);
+		color: var(--primary-text);
 		text-decoration: solid;
 		font-size: 24px;
 		justify-self: flex-end;

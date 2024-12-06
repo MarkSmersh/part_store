@@ -4,10 +4,10 @@ export const GET: RequestHandler = ({ cookies }) => {
     const accessToken = cookies.get("access-token");
 
     if (!accessToken) {
-        return new Response("Not logged in", { status: 404 })
+        return new Response("Nie zalogowany.", { status: 404 })
     }
 
     cookies.delete("access-token", { path: "/" });
 
-    return new Response("Log out");
+    return new Response("Wylogowany.");
 }

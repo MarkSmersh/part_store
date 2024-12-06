@@ -1,4 +1,4 @@
-import { Cart, em, Product, User } from "$lib/server";
+import { em, Product, User } from "$lib/server";
 import { jwtDecode } from "$lib/server/jwt";
 import { ItemCart } from "$lib/server/models";
 import { Collection } from "@mikro-orm/core";
@@ -8,7 +8,7 @@ export const PATCH: RequestHandler = async ({ params, cookies }) => {
     const productId = params.slug;
 
     if (!productId) {
-        return new Response("No required slug", { status: 400 });
+        return new Response("Nie ma potrzebowanego slagu.", { status: 400 });
     }
     
     const username  = jwtDecode(cookies.get("access-token"))?.username;
@@ -16,13 +16,13 @@ export const PATCH: RequestHandler = async ({ params, cookies }) => {
     const product = await em.findOne(Product, parseInt(productId));
 
     if (!product) {
-        return new Response("No such product", { status: 404 });
+        return new Response("Nie ma takiego produktu.", { status: 404 });
     }
 
     const user = await em.findOne(User, { username: username })
 
     if (!user) {
-        return new Response("User not found by current access token", { status: 404 });
+        return new Response("Nie znalieżono użytkownika.", { status: 404 });
     }
 
     const fetchItemCarts = await em.findAll(ItemCart, { 
@@ -49,14 +49,14 @@ export const PATCH: RequestHandler = async ({ params, cookies }) => {
         await em.persistAndFlush([cartItem]);
     }
 
-    return new Response("Product was added to cart", { status: 201 });
+    return new Response("Produkt jest dodany do koszyka.", { status: 201 });
 }
 
 export const DELETE: RequestHandler = async ({ cookies, params }) => {
     const productId = params.slug;
 
     if (!productId) {
-        return new Response("No required slug", { status: 400 });
+        return new Response("Nie ma potrzebowanego slagu.", { status: 400 });
     }
 
     const username = jwtDecode(cookies.get("access-token"))?.username;
@@ -64,7 +64,7 @@ export const DELETE: RequestHandler = async ({ cookies, params }) => {
     const user = await em.findOne(User, { username: username })
 
     if (!user) {
-        return new Response("User not found by current access token", { status: 404 });
+        return new Response("Nie znalieżono użytkownika.", { status: 404 });
     }
 
     const fetchItemCarts = await em.findAll(ItemCart, { 
@@ -79,5 +79,5 @@ export const DELETE: RequestHandler = async ({ cookies, params }) => {
 
     await em.persistAndFlush(user);
 
-    return new Response("Product was removed");
+    return new Response("Produkt jest usunięty.");
 }

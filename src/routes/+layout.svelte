@@ -36,11 +36,6 @@
 
 	:global(main) {
 		padding: 20px 100px;
+		min-height: 100vh;
 	}
-
-	/* :global(*) {
-		background-color: purple;
-		padding: 16px;
-		transform: rotate(1deg);
-	} */
 </style>

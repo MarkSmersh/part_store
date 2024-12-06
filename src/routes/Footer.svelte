@@ -24,5 +24,10 @@
         color: var(--primary-text);
         text-decoration: solid;
         font-size: 24px;
+        transition: .2s;    
+    }
+
+    li:hover  {
+        scale: 105%;
     }
 </style>

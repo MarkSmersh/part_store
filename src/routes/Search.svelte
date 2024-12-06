@@ -30,7 +30,7 @@
 	onClick={() => (isShow = true)}
 	style="secondary"
 >
-	Poszukiwanie
+	Wyszukiwanie
 </Button>
 {#if isShow}
 	<!-- svelte-ignore a11y_click_events_have_key_events, a11y_no_static_element_interactions (because of nth) -->
@@ -40,7 +40,7 @@
 			<input
 				transition:fly={{ delay: 50, y: -200 }}
 				class="input"
-				placeholder="Search for.."
+				placeholder="Wyszukiwanie..."
 				bind:value={string}
 				oninput={() => search()}
 			/>
@@ -76,8 +76,8 @@
 <style scoped>
 	.close {
 		position: absolute;
-		top: 20px;
-		right: 20px;
+		top: 30px;
+		right: 30px;
 		font-size: 24px;
 		cursor: pointer;
 	}

@@ -6,7 +6,7 @@ export const load: PageServerLoad = async ({ params }) => {
 	const slug = params.slug;
 
 	if (!params.slug) {
-		error(404, 'Not found');
+		error(404, 'Nie ma slagu.');
 	}
 
 	const p = await em.findOne(Product, parseInt(slug));
@@ -19,5 +19,5 @@ export const load: PageServerLoad = async ({ params }) => {
 		price: p.price
 	}
 
-	error(404, 'Not found');
+	error(404, 'Not znalieżono takiej strony.');
 };

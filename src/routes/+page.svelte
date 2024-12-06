@@ -1,3 +1,7 @@
+<script>
+	import Image from "./ui/Image.svelte";
+	import img from "$lib/assets/8a6c2e45cfb9e32859e9e7fa80350ad1.jpg"
+</script>
 <main>
 	<div class="container">
 		<div class="text">
@@ -56,10 +60,7 @@
 			wszystkimi aktualizacjami. Zrób swój komputer mocniejszym razem z nami! Odwiedź nasz sklep już
 			dziś i znajdź idealne części do swojego systemu!
 		</div>
-		<img
-			src="https://www.art-comp24.pl/c/41-category_default/czesci-komputerowe.jpg"
-			alt="welcum"
-		/>
+		<Image src={img} alt={"Komputer normalny taki podstawowy"} height={500} />
 	</div>
 </main>
 
@@ -67,6 +68,7 @@
 	.container {
 		display: flex;
 		align-items: center;
+		gap: 64px;
 	}
 
 	.text > * {

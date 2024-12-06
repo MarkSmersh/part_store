@@ -6,7 +6,7 @@ import type { PageServerLoad } from "./$types";
 export const load: PageServerLoad = async ({ cookies }) => {
     const username = jwtDecode(cookies.get("access-token"))?.username;
 
-    if (!username) error(400, "Firstly, you need to log in/sign up before using for cart")
+    if (!username) error(400, "Musisz najpierw zalogować, aby korzystać z koszyka")
     
     // TODO: Refactor code by doing populate on all
     // of cases where data was fetched instead
@@ -18,7 +18,7 @@ export const load: PageServerLoad = async ({ cookies }) => {
     }, { populate: ['cart.itemCarts.product'] })
 
     if (!user) {
-        return new Response("No user found by access token", { status: 404 });
+        return new Response("Nie ma takiego użytkownika.", { status: 404 });
     }
 
     const cartItemsSorted = user.cart.itemCarts.map((ic) => {
