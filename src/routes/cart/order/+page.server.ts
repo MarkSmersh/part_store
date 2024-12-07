@@ -13,7 +13,7 @@ export const load: PageServerLoad = async ({ cookies }) => {
     }, { populate: ['cart.itemCarts'] })
 
     if (!user) {
-        return new Response("No user found by access token", { status: 404 });
+        error(404, "Nie znalieżono użytkownika.")
     }
 
     if (user.cart.itemCarts.length <= 0) error(400, "Koszyk jest pusty.");

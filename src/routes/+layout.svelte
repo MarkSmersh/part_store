@@ -33,10 +33,14 @@
 		--secondary: #f3f3f3;
 		--secondary-transparent: rgb(243, 243, 243, .5);
 		--secondary-text: #000000;
+
+		--accent: hsl(240, 100%, 20%);
 	}
 
 	:global(main) {
 		padding: 20px 100px;
 		min-height: 100vh;
+		background-color: var(--primary);
+		color: var(--primary-text);
 	}
 </style>

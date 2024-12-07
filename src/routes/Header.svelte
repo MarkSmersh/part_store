@@ -52,7 +52,7 @@
 		/* background-color: var(--primary); */
 		
 		background: var(--primary);
-		background: linear-gradient(90deg, var(--primary) 0%, #000057 70%, var(--primary) 100%);
+		background: linear-gradient(90deg, var(--primary) 0%, var(--accent) 70%, var(--primary) 100%);
 		display: flex;
 		justify-content: space-between;
 		padding: 24px;

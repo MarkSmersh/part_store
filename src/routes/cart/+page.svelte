@@ -1,53 +1,53 @@
 <script lang="ts">
 	import { goto, invalidateAll } from '$app/navigation';
-	import { setContext } from 'svelte';
 	import type { PageData } from './$types';
 	import { request } from '$lib';
 	import Button from '../ui/Button.svelte';
+	import Card from '../ui/Card.svelte';
 
 	let { data }: { data: PageData } = $props();
 
-	async function deleteProduct(productId: string) {
-		await request(`/api/cart/${productId}`, 'DELETE');
+	async function deleteCartItem(cartItem: number) {
+		await request(`/api/cart/${cartItem.toString()}`, 'DELETE');
 		invalidateAll();
 	}
 </script>
 
 <main>
 	{#if data.cartItems && data.cartItems?.length !== 0}
-		{#each data.cartItems as item}
-			<div class="product">
-				<div>
-					<img height="100" src={item.product.image} alt="productimage" />
-					<div>
-						<h3>{item.product.name}</h3>
-						<p>{item.product.description}</p>
-					</div>
-				</div>
-				<div>
-					<p>{item.quantity} szt.</p>
-					<Button onClick={() => deleteProduct(item.product.id.toString())}>DELETE</Button>
-				</div>
+		<div class="cart">
+			<div class="cart-items">
+				{#each data.cartItems as ci}
+					<Card
+						title={ci.product.name}
+						description={ci.product.description}
+						img={ci.product.image}
+						price={ci.product.price}
+						quantity={ci.quantity}
+						onClick={() => goto(`/product/${ci.product.id}`)}
+						onRemove={() => deleteCartItem(ci.product.id)}
+					/>
+				{/each}
 			</div>
-		{/each}
-		<Button onClick={() => goto('/cart/order')}>Założyć zamówenie</Button>
+			<h2>Cena ogólna: { data.total }.00 zł</h2>
+			<Button onClick={() => goto('/cart/order')}>Założyć zamówenie</Button>
+		</div>
 	{:else}
 		Koszyka niema
 	{/if}
 </main>
 
 <style>
-	.product {
-		border: 1px solid black;
-		margin: 20px 100px;
+	main
+
+	.cart {
 		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		padding: 20px 20px;
+		flex-direction: column;
+		gap: 32px;
 	}
 
-	.product > div {
+	.cart-items {
 		display: flex;
-		gap: 20px;
+		gap: 16px;
 	}
 </style>

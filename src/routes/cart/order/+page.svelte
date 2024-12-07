@@ -54,7 +54,8 @@
 <main>
 	<h2>Uzupełniceie dane do założenia zamówenia: </h2>
 	<form onsubmit={(e) => creatOrder(e)}>
-		Imię: <input
+		Imię: 
+		<input
 			bind:value={firstName}
 			autocomplete="given-name"
 			name="firstName"
@@ -127,9 +128,18 @@
 </main>
 
 <style>
+	main {
+		display: flex;
+		gap: 16px;
+		flex-direction: column;
+	}
+
 	input {
 		border: 1px solid grey;
 		transition: 0.1s;
+		padding: 8px;
+		border-radius: 8px;
+		width: 100%;
 	}
 
 	input[type='range'] {
@@ -140,11 +150,14 @@
 	form {
 		display: flex;
 		flex-direction: column;
-		align-items: start;
+		align-self: center;
+		gap: 8px;
 	}
 
 	textarea {
-		max-width: 100%;
+		width: 100%;
 		resize: horizontal;
+		border-radius: 8px;
+		padding: 8px;
 	}
 </style>

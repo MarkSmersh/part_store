@@ -14,7 +14,7 @@
         justify-content: right;
         padding: 24px;
         background: var(--primary);
-		background: linear-gradient(90deg, var(--primary) 0%, #000057 30%, var(--primary) 100%);
+		background: linear-gradient(90deg, var(--primary) 0%, var(--accent) 30%, var(--primary) 100%);
     }
 
     ul {

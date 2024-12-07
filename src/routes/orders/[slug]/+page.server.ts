@@ -18,7 +18,7 @@ export const load: PageServerLoad = async ({ cookies, params }) => {
         id: parseInt(slug)
     }, { populate: ["orderItems.*"] })
 
-    if (!order) error(404);
+    if (!order) error(404, "Nie ma takiego zamówenia.");
 
     const productsSorted = order.orderItems.map((oi) => {
         return {

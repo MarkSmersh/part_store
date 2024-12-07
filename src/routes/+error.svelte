@@ -7,7 +7,7 @@
 <main>
 	<div class="error">
 		<div class="text">
-            <h1>Masz DUŻY problem</h1>
+            <h1>⚠️ Wystąpil problem</h1>
 			<h2>Kod błedu: {$page.status}</h2>
             <p>{$page.error?.message}</p>
 		</div>

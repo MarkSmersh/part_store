@@ -2,7 +2,7 @@
 <script lang="ts">
 	import type { Snippet } from "svelte";
 
-    type ButtonStyle = "primary" | "secondary"
+    type ButtonStyle = "primary" | "danger"
 
     interface ButtonProps {
         onClick: () => void,
@@ -35,7 +35,7 @@
 
     button:hover {
         scale: 105%;
-        backdrop-filter: blur(100px) brightness(40%);
+        backdrop-filter: blur(10px);
     }
 
     button:active {
@@ -44,14 +44,24 @@
     }
     
     .primary {
-        color: var(--primary-text);
-        border: 1px solid var(--primary-text);
+        color: var(--secondary);
+        border: 1px solid var(--secondary);
         background: rgba(0, 0, 0, 0);
     }
 
-    .secondary {
-        color: var(--secondary-text);
-        border: 1px solid var(--secondary-text);
+    .primary:hover {
+        background: var(--secondary);
+        color: var(--primary);
+    }
+
+    .danger {
+        color: red;
+        border: 1px solid red;
         background: rgba(0, 0, 0, 0);
+    }
+
+    .danger:hover {
+        background: rgba(255, 0, 0, .2);
+        color: var(--primary-text);
     }
 </style>

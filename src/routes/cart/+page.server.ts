@@ -21,7 +21,11 @@ export const load: PageServerLoad = async ({ cookies }) => {
         return new Response("Nie ma takiego użytkownika.", { status: 404 });
     }
 
+    let total = 0;
+
     const cartItemsSorted = user.cart.itemCarts.map((ic) => {
+        total += ic.product.price * ic.quantity;
+
         return {
             id: ic.id,
             product: {
@@ -31,11 +35,12 @@ export const load: PageServerLoad = async ({ cookies }) => {
                 image: ic.product.image,
                 price: ic.product.price
             },
-            quantity: ic.quantity
+            quantity: ic.quantity,
         }
     })
 
     return {
-        cartItems: cartItemsSorted
+        cartItems: cartItemsSorted,
+        total: total
     };
 }

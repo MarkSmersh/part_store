@@ -12,7 +12,7 @@
 	}
 
 	let string = $state('');
-	let isShow = $state(true);
+	let isShow = $state(false);
 	let products: Product[] = $state([]);
 
 	async function search() {
