@@ -86,7 +86,7 @@
 		width: 100vw;
 		display: flex;
 		flex-direction: column;
-		z-index: 1;
+		z-index: 69;
 	}
 
 	.search {

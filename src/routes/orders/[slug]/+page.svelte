@@ -1,74 +1,72 @@
 <script lang="ts">
-	import type { PageData } from "./$types";
+	import { goto } from '$app/navigation';
+	import Accordion from '../../ui/Accordion.svelte';
+	import Card from '../../ui/Card.svelte';
+	import type { PageData } from './$types';
 
-    const { data }: { data: PageData } = $props();
+	const { data }: { data: PageData } = $props();
 </script>
 
 <main>
-    <div class="order">
-        <h2>ID: {data.id}</h2>
-    
-        <div class="products">
-            {#each data.products as p}
-                <div class="product">
-                    <a href="/product/{p.product.id}">
-                        <h3>{p.product.name}</h3>
-                    </a>
-                    <img src="{p.product.image}" alt="{p.product.name}" />
-                    <h4>{p.pricePerOne} zł za sztukę</h4>
-                    <h4>Ilość: {p.quantity}</h4>
-                </div>
-            {/each}
-        </div>
-    
-        <div class="address">
-            <h4>Adresa:</h4>
-            <p>Imię: {data.address.firstName}</p>
-            <p>Nazwisko: {data.address.secondName}</p>
-            <p>Numer telefonu komórkowego: {data.address.phone}</p>
-            <p>Ulica i nr: {data.address.street}</p>
-        </div>
-    
-        <h2>Suma ogólna: {data.total} zł</h2>
-        
-        {#if data.comment}
-            <h2>Komentarz:</h2>
-            <p>{data.comment}</p>
-        {/if}
-    
-        <h2>Stworzono o: {data.createdAt.toLocaleString()}</h2>
-    </div>
+	<div class="order">
+		<h2>Identyfikator zamówenia: #{data.id}</h2>
+
+		<Accordion title="Produkty">
+            <div class="products">
+                {#each data.products as p}
+                    <Card
+                        title={p.product.name}
+                        description={p.product.description}
+                        img={p.product.image}
+                        price={p.pricePerOne}
+                        quantity={p.quantity}
+                        onClick={() => goto(`/product/${p.product.id}`)}
+                    />
+                {/each}
+            </div>
+        </Accordion>
+
+		<Accordion title={'Dane adresowe'}>
+			<div class="address">
+				<p>Imię: {data.address.firstName}</p>
+				<p>Nazwisko: {data.address.secondName}</p>
+				<p>Numer telefonu komórkowego: {data.address.phone}</p>
+				<p>Ulica i nr: {data.address.street}</p>
+			</div>
+		</Accordion>
+
+		{#if data.comment}
+			<Accordion title={"Komentarz do zamówenia"}>
+                <p>"{data.comment}"</p>
+            </Accordion>
+		{/if}
+
+        <h2>Suma ogólna: {data.total}.00 zł</h2>
+		<h2>Stworzono o: {data.createdAt.toLocaleString("pl-PL", {
+            year: "numeric",
+            month: "long",
+            day: "numeric",
+            hour: "2-digit",
+            minute: "2-digit",
+        })}</h2>
+	</div>
 </main>
 
 <style>
-    .order {
-        border: 1px solid grey;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        padding: 20px;
-        /* background-color: brown; */
-    }
+	.order {
+		border: 1px solid var(--secondary);
+        border-radius: 8px;
+		display: flex;
+		flex-direction: column;
+		gap: 20px; 
+		padding: 20px;
+		background: linear-gradient(225deg, var(--accent) 0%, rgba(0,0,0,0) 100%);
+	}
 
-    .products {
-        display: flex;
-        gap: 20px;
-        /* background-color: greenyellow; */
-    }
-
-    .product {
-        border: 1px solid gray;
-        padding: 20px;
-        /* background-color: blueviolet; */
-    }
-
-    .address {
-        border: 1px solid grey;
-        padding: 20px;
-        /* background-color: magenta; */
-    }
-
-    img {
-        height: 100px;
-    }
+	.products {
+		display: flex;
+		gap: 20px;
+        flex: 1;
+		/* background-color: greenyellow; */
+	}
 </style>

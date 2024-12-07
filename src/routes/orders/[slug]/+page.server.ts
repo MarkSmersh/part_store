@@ -26,7 +26,8 @@ export const load: PageServerLoad = async ({ cookies, params }) => {
             product: {
                 id: oi.product.id,
                 name: oi.product.name,
-                image: oi.product.image
+                image: oi.product.image,
+                description: oi.product.description
             },
             pricePerOne: oi.pricePerOne,
             quantity: oi.quantity

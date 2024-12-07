@@ -10,7 +10,7 @@ export const load: PageServerLoad = async ({ cookies }) => {
 
     const user = await em.findOne(User, {
         username: username,
-    }, { populate: ['orders.address'] })
+    }, { populate: ['orders.address', 'orders.orderItems.product.image'] })
 
     if (!user) error(400, "Nie znalieżono użytkownika.");
 
@@ -23,8 +23,9 @@ export const load: PageServerLoad = async ({ cookies }) => {
                 street: o.address.street,
                 phone: o.address.phone
             },
+            productImages: o.orderItems.map((oi) => oi.product.image),
             createdAt: o.createdAt,
-            total: o.total
+            total: o.total,
         }
     }).reverse()
 

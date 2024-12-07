@@ -1,25 +1,52 @@
 <script lang="ts">
-	import type { PageData } from './$types';
+	import { goto } from '$app/navigation';
+	import Button from '../ui/Button.svelte';
+import type { PageData } from './$types';
+	import Array from './Array.svelte';
 	const { data }: { data: PageData } = $props();
 </script>
 
 <main>
 	{#if data.orders.length != 0}
-		<h1>Orders:</h1>
-
 		<div class="orders">
 			{#each data.orders as o}
-				<div class="order">
-					<a href="/orders/{o.id}"> <h3>ID: {o.id}</h3></a>
-					<div class="address">
-						<h4>Adresa:</h4>
-						<p>Imię: {o.address.firstName}</p>
-						<p>Nazwisko: {o.address.secondName}</p>
-						<p>Numer telefonu komórkowego: {o.address.phone}</p>
-						<p>Ulica i nr: {o.address.street}</p>
+				<div class="order-wrapper">
+					<div class="order">
+						<div class="address-wrapper">
+							Adresa:
+							<div class="adress">
+								<p><b>Imię:</b> {o.address.firstName}</p>
+								<p><b>Nazwisko:</b> {o.address.secondName}</p>
+								<p><b>Numer telefonu:</b> {o.address.phone}</p>
+								<p><b>Ulica i nr:</b> {o.address.street}</p>
+							</div>
+						</div>
+						<div class="products">
+							<b>Produkty:</b>
+							<Array images={o.productImages} />
+						</div>
+						<div class="date">
+							Stworzno o:
+							<p>
+								{o.createdAt.toLocaleString('pl-PL', {
+									year: 'numeric',
+									month: 'long',
+									day: 'numeric',
+									hour: '2-digit',
+									minute: '2-digit'
+								})}
+							</p>
+						</div>
+						<div class="price">
+							Cena ogólna:
+							<p>
+								{o.total}.00 zł
+							</p>
+						</div>
 					</div>
-					<h4>{o.createdAt.toLocaleString()}</h4>
-					<h3>{o.total} zł</h3>
+					<Button onClick={() => goto(`/orders/${o.id}`)}>
+						Szczególy zamówenia
+					</Button>
 				</div>
 			{/each}
 		</div>
@@ -32,19 +59,50 @@
 	.orders {
 		display: flex;
 		flex-direction: column;
-		gap: 20px;
+		gap: 16px;
+	}
+
+	.order-wrapper {
+		border: 1px solid var(--secondary);
+		border-radius: 8px;
+		padding: 20px;
+		background: linear-gradient(225deg, var(--accent) 0%, rgba(0, 0, 0, 0) 100%);
+		display: flex;
+		flex-direction: column;
+		gap: 32px;
 	}
 
 	.order {
-		border: 1px solid gray;
-		padding: 20px;
 		display: flex;
-		justify-content: space-between;
 		align-items: center;
+		height: 120px;		
+		gap: 32px;
 	}
 
-	.address {
-		border: 1px solid grey;
-		padding: 10px;
+	.products {
+		display: flex;
+		flex-direction: column;
+		gap: 8px;
+		align-items: flex-start;
+		height: 100%;
+		flex: 1;
+	}
+
+	.date,
+	.price,
+	.address-wrapper {
+		display: flex;
+		font-weight: 600;
+		flex-direction: column;
+		height: 100%;
+		gap: 20%;
+	}
+
+	.date {
+		width: 15%;
+	}
+
+	p {
+		font-weight: 500;
 	}
 </style>

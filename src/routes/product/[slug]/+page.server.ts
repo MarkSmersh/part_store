@@ -19,5 +19,5 @@ export const load: PageServerLoad = async ({ params }) => {
 		price: p.price
 	}
 
-	error(404, 'Not znalieżono takiej strony.');
+	error(404, 'Not znalieżono takiego produktu.');
 };

@@ -52,7 +52,7 @@
 </script>
 
 <main>
-	<h2>Uzupełniceie dane do założenia zamówenia: </h2>
+	<h2>Uzupełnij dane, aby założyć zamówienie: </h2>
 	<form onsubmit={(e) => creatOrder(e)}>
 		Imię: 
 		<input
@@ -135,11 +135,13 @@
 	}
 
 	input {
-		border: 1px solid grey;
+		border: 1px solid var(--secondary);
+		background-color: var(--secondary-transparent);
 		transition: 0.1s;
 		padding: 8px;
 		border-radius: 8px;
 		width: 100%;
+		color: var(--primary-text);
 	}
 
 	input[type='range'] {
@@ -159,5 +161,7 @@
 		resize: horizontal;
 		border-radius: 8px;
 		padding: 8px;
+		background-color: var(--secondary-transparent);
+		color: var(--primary-text);
 	}
 </style>
