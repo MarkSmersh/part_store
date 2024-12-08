@@ -140,13 +140,12 @@
 		transition: 0.1s;
 		padding: 8px;
 		border-radius: 8px;
-		width: 100%;
+		width: calc(100% - 16px);
 		color: var(--primary-text);
 	}
 
 	input[type='range'] {
 		appearance: none;
-		width: 100%;
 	}
 
 	form {
@@ -157,7 +156,7 @@
 	}
 
 	textarea {
-		width: 100%;
+		width: calc(100% - 16px);
 		resize: horizontal;
 		border-radius: 8px;
 		padding: 8px;

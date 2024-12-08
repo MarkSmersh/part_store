@@ -28,7 +28,6 @@
 
 	.image-wrapper {
 		border: 1px solid var(--secondary);
-		height: 100%;
 		border-radius: 100%;
 		padding: 8px;
 		height: calc(100% - 32px);
@@ -42,10 +41,6 @@
        scale: 110%;
        z-index: 1;
     }
-
-	.image-wrapper:first-child {
-		transform: none;
-	}
 
 	.image {
 		height: 100%;

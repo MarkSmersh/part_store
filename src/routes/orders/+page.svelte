@@ -66,6 +66,12 @@
 	.no-orders {
 		display: flex;
 		gap: 200px;
+
+		@media screen and (max-width: 1200px) {
+			flex-direction: column;
+			gap: 32px;
+			text-align: center;
+		}
 	}
 
 	.text {
@@ -97,6 +103,12 @@
 		align-items: center;
 		height: 120px;
 		gap: 32px;
+
+		@media screen and (max-width: 1200px) {
+			flex-direction: column;
+			height: fit-content;
+			align-items: self-start;
+		}
 	}
 
 	.products {
@@ -106,6 +118,11 @@
 		align-items: flex-start;
 		height: 100%;
 		flex: 1;
+
+		@media screen and (max-width: 1200px) {
+			height: 100px;
+			flex: 0 0 0;
+		}
 	}
 
 	.date,
@@ -120,6 +137,10 @@
 
 	.date {
 		width: 15%;
+
+		@media screen and (max-width: 1200px) {
+			width: 100%;
+		}
 	}
 
 	p {

@@ -55,11 +55,21 @@
 	.cart-items {
 		display: flex;
 		gap: 16px;
+
+		@media screen and (max-width: 1200px) {
+			flex-wrap: wrap;
+		}
 	}
 
 	.no-cart {
 		display: flex;
 		gap: 200px;
+
+		@media screen and (max-width: 1200px) {
+			flex-direction: column;
+			gap: 32px;
+			text-align: center;
+		}
 	}
 
 	.text {

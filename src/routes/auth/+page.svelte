@@ -103,8 +103,7 @@
 		width: 100%;
 		height: 300px;
 		justify-content: center;
-		align-items: center;
-		
+		align-items: center;		
 
 		p {
 			font-size: 18px;
@@ -128,6 +127,11 @@
 		width: 40%;
 		padding: 8px 32px;
 		gap: 16px;
+
+		@media screen and (max-width: 1200px) {
+			width: calc(100% - 16px);
+			padding: 8px 8px;
+		}
 	}
 
 	.form {
@@ -141,6 +145,10 @@
 		border-radius: 8px;
 		padding: 32px;
 		gap: 32px;
+
+		@media screen and (max-width: 1200px) {
+			width: calc(100% - 64px);
+		}
 
 		label {
 			display: flex;

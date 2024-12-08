@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
+	import { isSearch } from '$lib/state';
 	import { blur, fly } from 'svelte/transition';
-	import Button from './ui/Button.svelte';
 
 	interface Product {
 		id: number;
@@ -12,7 +12,7 @@
 	}
 
 	let string = $state('');
-	let isShow = $state(false);
+	let isActive = $state(false);
 	let products: Product[] = $state([]);
 
 	async function search() {
@@ -23,14 +23,13 @@
 		}
 	}
 
-	$inspect(products);
+	isSearch.subscribe((v) => isActive = v);
 </script>
 
-<Button onClick={() => (isShow = true)} style="primary">Wyszukiwanie</Button>
-{#if isShow}
+{#if isActive}
 	<!-- svelte-ignore a11y_click_events_have_key_events, a11y_no_static_element_interactions (because of nth) -->
 	<div transition:blur class="search-wrapper">
-		<div class="close" onclick={() => (isShow = false)}>❌</div>
+		<div class="close" onclick={() => isSearch.set(false)}>❌</div>
 		<div class="search">
 			<input
 				transition:fly={{ delay: 50, y: -200 }}
@@ -45,7 +44,7 @@
 						<div
 							onclick={() => {
 								goto(`/product/${p.id}`);
-								isShow = false;
+								isSearch.set(false);
 							}}
 							class="product"
 							transition:blur={{ duration: 200 }}
@@ -94,6 +93,10 @@
 		display: flex;
 		flex-direction: column;
 		gap: 16px;
+
+		@media screen and (max-width: 1200px) {
+			margin: 100px 10px;
+		}
 	}
 
 	.input {
@@ -125,6 +128,11 @@
 		cursor: pointer;
 		transition: 0.2s;
 
+		@media screen and (max-width: 1200px) {
+			display: grid;
+			height: fit-content;
+		}
+
 		img {
 			object-fit: contain;
 			width: 100px;
@@ -134,6 +142,11 @@
 			background: var(--primary-transparent);
 			border: 1px solid var(--primary-text);
 			object-fit: cover;
+
+			@media screen and (max-width: 1200px) {
+				width: 100%;
+				height: 120px;
+			}
 		}
 
 		.text {
@@ -169,14 +182,25 @@
 			align-items: center;
 			border: 1px solid var(--primary-text);
 			background: var(--primary-transparent);
-			background: radial-gradient(circle, rgba(255,0,0,1) 0%, var(--primary-transparent) 100%);
+			background: radial-gradient(circle, rgba(255, 0, 0, 1) 0%, var(--primary-transparent) 100%);
 
+			@media screen and (max-width: 1200px) {
+				padding: 8px 8px;
+				height: calc(100% - 16px);
+				justify-content: center;
+			}
 
 			h3 {
 				transform: rotate(-45deg);
 				color: var(--primary-text);
 				border: 2px solid var(--primary-text);
-				padding: 5px;
+				width: 100%;
+				text-align: center;
+
+				@media screen and (max-width: 1200px) {
+					transform: rotate(0);
+					border: 0;
+				}
 			}
 		}
 	}

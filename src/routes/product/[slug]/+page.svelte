@@ -39,6 +39,10 @@
 	main {
 		background-color: var(--primary);
 		padding: 100px 100px;
+
+		@media screen and (max-width: 1200px) {
+			padding: 20px 20px;
+		}
 	}
 
 	.product {
@@ -47,11 +51,20 @@
 		gap: 100px;
 		align-items: center;
 
+		@media screen and (max-width: 1200px) {
+			flex-direction: column-reverse;
+			gap: 32px;
+		}
+
 		.data {
 			display: flex;
 			flex-direction: column;
 			width: 150%;
 			gap: 32px;
+
+			@media screen and (max-width: 1200px) {
+				width: 100%;
+			}
 
 			.text {
 				display: flex;

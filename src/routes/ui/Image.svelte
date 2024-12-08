@@ -62,7 +62,7 @@
 <style>
 	.image-wrapper {
 		display: flex;
-		width: 100%;
+		width: calc(100% - 16px);
 		padding: 8px;
 		border: 1px solid var(--primary-text);
 		border-radius: 8px;

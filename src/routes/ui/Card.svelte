@@ -5,7 +5,7 @@
 	interface CardProps {
 		img: string;
 		title: string;
-		description: string;
+		description?: string;
 		quantity: number;
 		price: number;
 		onClick: () => void;
@@ -41,7 +41,16 @@
 
 	let { title, description, img, quantity, onClick, onRemove, price }: CardProps = $props();
 
-	let cutDesc = $derived(description.slice(0, 100) + '...');
+	let cutDesc: string = $state('');
+
+	$effect(() => {
+		if (description) {
+			cutDesc = description?.slice(0, 100);
+		} else {
+			cutDesc = '';
+		}
+	});
+
 	let isHover = $state(false);
 	let card: HTMLDivElement = $state() as HTMLDivElement;
 
@@ -87,6 +96,11 @@
 		/* width: 300px; */
 		flex: 1 0;
 		max-width: 25%;
+
+		@media screen and (max-width: 1200px) {
+			max-width: 100%;
+			width: 100%;
+		}
 	}
 
 	.card {
@@ -99,7 +113,7 @@
 		border-radius: 8px;
 		background: rgb(0, 3, 94);
 		background: linear-gradient(225deg, var(--accent) 0%, rgba(0, 0, 0, 0) 100%);
-		box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
 	}
 
 	.quantity {

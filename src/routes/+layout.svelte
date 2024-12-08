@@ -4,12 +4,16 @@
 	import Footer from './Footer.svelte';
 	import Header from './Header.svelte';
 	import Notify from './Notify.svelte';
+	import Menu from './Menu.svelte';
+	import Search from './Search.svelte';
 
 	let { children, data }: { children: Snippet; data: PageData } = $props();
 </script>
 
 <Header username={data.username} />
 <Notify />
+<Menu username={data.username} />
+<Search />
 <!-- <main> -->
 {@render children()}
 <!-- </main> -->
@@ -35,6 +39,8 @@
 		--secondary-text: #000000;
 
 		--accent: hsl(240, 100%, 20%);
+
+		--mobile-screen: 1200px;		
 	}
 
 	:global(main) {
@@ -42,6 +48,10 @@
 		min-height: 100vh;
 		background-color: var(--primary);
 		color: var(--primary-text);
+
+		@media only screen and (max-width: 1200px) {
+			padding: 10px 10px;
+		}
 	}
 
 	:global(::-webkit-scrollbar) {

@@ -78,6 +78,10 @@
 		border-radius: 8px;
 		color: var(--primary-text);
 		backdrop-filter: blur(10px) brightness(40%);
+
+		@media only screen and (max-width: 1200px) {
+			flex-direction: column;
+		}
 	}
 
 	.text {

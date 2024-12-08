@@ -1,10 +1,10 @@
 <script lang="ts">
 	import { goto, invalidateAll } from '$app/navigation';
 	import { request } from '$lib';
-	import Search from './Search.svelte';
 	import Button from './ui/Button.svelte';
 	let { username } = $props();
 	import logo from '$lib/assets/sklep-komputerowy-high-resolution-logo-grayscale-transparent.png';
+	import { isMenu, isSearch } from '$lib/state';
 </script>
 
 <header>
@@ -12,30 +12,43 @@
 		<img class="logo" alt="Sklep komputerowy" src={logo} />
 	</a>
 	<div>
-		{#if username}
-			<Button onClick={() => goto('/cart')} style="primary">Koszyk</Button>
-			<Button onClick={() => goto('/orders')} style="primary">Zamówenia</Button>
-			<Button
-				after={username}
-				onClick={async () => {
-					await request('/api/user/logout');
-					invalidateAll();
-				}}
-				style="primary"
-			>Wylogować
+		<div class="nav">
+			{#if username}
+				<Button onClick={() => goto('/cart')} style="primary">Koszyk</Button>
+				<Button onClick={() => goto('/orders')} style="primary">Zamówenia</Button>
+				<Button
+					after={username}
+					onClick={async () => {
+						await request('/api/user/logout');
+						invalidateAll();
+					}}
+					style="primary"
+					>Wylogować
+				</Button>
+			{:else}
+				<Button onClick={() => goto('/auth')} style="primary">Autoryzacja</Button>
+			{/if}
+			<Button onClick={() => isSearch.set(true)}>
+				Wyszukiwanie
 			</Button>
-		{:else}
-			<Button onClick={() => goto('/auth')} style="primary">Autoryzacja</Button>
-		{/if}
-		<Search />
+		</div>
+		<div class="menu">
+			<Button onClick={() => isMenu.set(true)}>
+				Menu
+			</Button>
+		</div>
 	</div>
 </header>
 
 <style>
+	.menu {
+		display: none;
+	}
+
 	.logo-wrapper {
 		width: 20%;
 		display: flex;
-		transition: .2s;
+		transition: 0.2s;
 	}
 
 	.logo-wrapper:hover {
@@ -49,7 +62,7 @@
 
 	header {
 		/* background-color: var(--primary); */
-		
+
 		background: var(--primary);
 		background: linear-gradient(90deg, var(--primary) 0%, var(--accent) 70%, var(--primary) 100%);
 		display: flex;
@@ -71,5 +84,19 @@
 		text-decoration: solid;
 		font-size: 24px;
 		justify-self: flex-end;
+	}
+
+	@media only screen and (max-width: 1200px) {
+		.nav {
+			display: none;
+		}
+
+		.menu {
+			display: flex;
+		}
+
+		.logo-wrapper {
+			width: 50%;
+		}
 	}
 </style>

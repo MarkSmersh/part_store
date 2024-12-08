@@ -16,7 +16,6 @@
                 {#each data.products as p}
                     <Card
                         title={p.product.name}
-                        description={p.product.description}
                         img={p.product.image}
                         price={p.pricePerOne}
                         quantity={p.quantity}
@@ -67,6 +66,10 @@
 		display: flex;
 		gap: 20px;
         flex: 1;
+
+		@media screen and (max-width: 1200px) {
+			display: grid;
+		}
 		/* background-color: greenyellow; */
 	}
 </style>

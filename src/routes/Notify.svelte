@@ -47,6 +47,12 @@
 		flex-direction: column;
 		gap: 10px;
 		z-index: 68;
+
+		@media screen and (max-width: 1200px) {
+			width: calc(100% - 40px);
+			bottom: auto;
+			top: 0;
+		}
 	}
 
 	.notification {
