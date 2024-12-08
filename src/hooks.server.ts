@@ -11,6 +11,7 @@ export const handle: Handle = async ({ event, resolve }) => {
         !( 
             event.url.pathname.split('/').includes('user')
             || event.url.pathname.split('/').includes('search')
+			|| event.url.pathname.split('/').includes('product')
         )
     ) {
 		const accessToken = event.cookies.get('access-token');
