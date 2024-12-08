@@ -3,6 +3,13 @@ import { jwtDecode } from "$lib/server/jwt";
 import { Address, Order, OrderItem, User } from "$lib/server/models";
 import type { RequestHandler } from "./$types";
 
+function isOk(data: string | null) {
+    if (!data) return false;
+    if (data === "") return false;
+    if (data.replaceAll(" ", "") === "") return false;
+    return true;
+}
+
 export const POST: RequestHandler = async ({ cookies, request }) => {
     const data: Body = await request.json();
 
@@ -12,15 +19,17 @@ export const POST: RequestHandler = async ({ cookies, request }) => {
         return new Response("Nie ma access tokenu.", { status: 404 });
     }
 
+    console.log(data);
+
     if (
         !data
-        || !data.firstName
-        || !data.secondName
-        || !data.postal
-        || !data.street
-        || !data.phone
+        || !isOk(data.firstName)
+        || !isOk(data.secondName)
+        || !isOk(data.postal)
+        || !isOk(data.street)
+        || !isOk(data.phone)
     ) {
-        return new Response("Nie ma potrzebowanych atrybutów.", { status: 400 });
+        return new Response("Nie ma potrzebowanych atrybutów albo są nieprawidlowo zapisane.", { status: 400 });
     }
 
     const {
@@ -40,6 +49,10 @@ export const POST: RequestHandler = async ({ cookies, request }) => {
         return new Response("Nie ma takiego użytkownika.", { status: 404 });
     }
 
+    if (user.cart.itemCarts.length <= 0) {
+        return new Response("Koszyk jest pusty.", { status: 400 });
+    }
+
     const orderItems = user.cart.itemCarts.map((ic) => em.create(OrderItem, {
         product: ic.product,
         quantity: ic.quantity,
@@ -48,11 +61,11 @@ export const POST: RequestHandler = async ({ cookies, request }) => {
 
     const address = em.create(Address, {
         user: user.id,
-        firstName: firstName,
-        secondName: secondName,
-        street: street,
-        postal: postal,
-        phone: phone
+        firstName: firstName as string,
+        secondName: secondName as string,
+        street: street as string,
+        postal: postal as string,
+        phone: phone as string
     })
 
     let total = 0;

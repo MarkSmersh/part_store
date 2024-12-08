@@ -15,7 +15,7 @@
 <!-- svelte-ignore a11y_no_static_element_interactions -->
 <div class="accordion">
     <div class="head" onclick={() => isActive = !isActive}>
-        <h3 class="title">{title}</h3>
+        <h3 class="title">📋 {title}</h3>
         <h3 class="sign" class:active={isActive}>{">"}</h3>
     </div>
     {#if isActive}

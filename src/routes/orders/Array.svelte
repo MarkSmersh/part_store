@@ -35,7 +35,13 @@
 		position: static;
         background: var(--primary-transparent);
         backdrop-filter: blur(10px);
+        transition: .2s;
 	}
+
+    .image-wrapper:hover {
+       scale: 110%;
+       z-index: 1;
+    }
 
 	.image-wrapper:first-child {
 		transform: none;

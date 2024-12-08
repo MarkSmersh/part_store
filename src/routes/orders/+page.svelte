@@ -1,8 +1,11 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
 	import Button from '../ui/Button.svelte';
-import type { PageData } from './$types';
+	import Image from '../ui/Image.svelte';
+	import type { PageData } from './$types';
 	import Array from './Array.svelte';
+	import box from '$lib/assets/box.webp';
+
 	const { data }: { data: PageData } = $props();
 </script>
 
@@ -44,18 +47,35 @@ import type { PageData } from './$types';
 							</p>
 						</div>
 					</div>
-					<Button onClick={() => goto(`/orders/${o.id}`)}>
-						Szczególy zamówenia
-					</Button>
+					<Button onClick={() => goto(`/orders/${o.id}`)}>Szczególy zamówenia</Button>
 				</div>
 			{/each}
 		</div>
 	{:else}
-		Aby zobaczyć zamówenia najpierw muszą być dodane
+		<div class="no-orders">
+			<div class="text">
+				<h1>📦 Na teraz nie masz zamówień</h1>
+				<p>Najpierw musisz założyc chociażby jedną zamówienie</p>
+			</div>
+			<Image src={box} alt={'Bazowane takie zamówienie'} height={400} />
+		</div>
 	{/if}
 </main>
 
 <style>
+	.no-orders {
+		display: flex;
+		gap: 200px;
+	}
+
+	.text {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		gap: 16px;
+		width: 100%;
+	}
+
 	.orders {
 		display: flex;
 		flex-direction: column;
@@ -75,7 +95,7 @@ import type { PageData } from './$types';
 	.order {
 		display: flex;
 		align-items: center;
-		height: 120px;		
+		height: 120px;
 		gap: 32px;
 	}
 

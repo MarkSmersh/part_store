@@ -4,6 +4,8 @@
 	import { request } from '$lib';
 	import Button from '../ui/Button.svelte';
 	import Card from '../ui/Card.svelte';
+	import Image from '../ui/Image.svelte';
+	import cart from "$lib/assets/cart.jpg"
 
 	let { data }: { data: PageData } = $props();
 
@@ -29,17 +31,21 @@
 					/>
 				{/each}
 			</div>
-			<h2>Cena ogólna: { data.total }.00 zł</h2>
+			<h2>Cena ogólna: {data.total}.00 zł</h2>
 			<Button onClick={() => goto('/cart/order')}>Założyć zamówenie</Button>
 		</div>
 	{:else}
-		Koszyka niema
+		<div class="no-cart">
+			<div class="text">
+				<h1>🛒 Koszyk jest pusty</h1>
+				<p>Wyszukaj produkty i pojawią się tutaj po ich dodaniu</p>
+			</div>
+			<Image src={cart} alt={"Koszyk bazowany"} height={400} />
+		</div>
 	{/if}
 </main>
 
 <style>
-	main
-
 	.cart {
 		display: flex;
 		flex-direction: column;
@@ -49,5 +55,18 @@
 	.cart-items {
 		display: flex;
 		gap: 16px;
+	}
+
+	.no-cart {
+		display: flex;
+		gap: 200px;
+	}
+
+	.text {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		gap: 16px;
+		width: 100%;
 	}
 </style>

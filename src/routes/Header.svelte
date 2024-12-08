@@ -16,17 +16,16 @@
 			<Button onClick={() => goto('/cart')} style="primary">Koszyk</Button>
 			<Button onClick={() => goto('/orders')} style="primary">Zamówenia</Button>
 			<Button
+				after={username}
 				onClick={async () => {
 					await request('/api/user/logout');
 					invalidateAll();
 				}}
 				style="primary"
-			>
-				{username} | Wylogowanie
+			>Wylogować
 			</Button>
 		{:else}
-			<Button onClick={() => goto('/login')} style="primary">Logowanie</Button>
-			<Button onClick={() => goto('/signup')} style="primary">Rejestracja</Button>
+			<Button onClick={() => goto('/auth')} style="primary">Autoryzacja</Button>
 		{/if}
 		<Search />
 	</div>
@@ -57,8 +56,8 @@
 		justify-content: space-between;
 		padding: 24px;
 		width: calc(100% - 48px);
-		/* position: fixed; */
-		top: 0;
+		top: 20;
+		z-index: 68;
 	}
 
 	div {

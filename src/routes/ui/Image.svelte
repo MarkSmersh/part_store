@@ -52,7 +52,7 @@
 	{#if isHover}
 		<div transition:fly class="description">
 			<p>
-				{alt}
+				🖼️ {alt}
 			</p>
 		</div>
 	{/if}

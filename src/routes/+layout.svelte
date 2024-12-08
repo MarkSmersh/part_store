@@ -5,13 +5,13 @@
 	import Header from './Header.svelte';
 	import Notify from './Notify.svelte';
 
-	let { children, data }: { children: Snippet, data: PageData } = $props();
+	let { children, data }: { children: Snippet; data: PageData } = $props();
 </script>
 
 <Header username={data.username} />
-<Notify  />
+<Notify />
 <!-- <main> -->
-	{@render children()}
+{@render children()}
 <!-- </main> -->
 <Footer />
 
@@ -22,16 +22,16 @@
 		margin: 0;
 		padding: 0;
 		border: 0;
-		font-family: "Lato", sans-serif;
+		font-family: 'Lato', sans-serif;
 	}
 
 	:root {
 		--primary: #222222;
-		--primary-transparent: rgb(51, 51, 51, .2);
+		--primary-transparent: rgb(51, 51, 51, 0.2);
 		--primary-text: #ffffff;
 
 		--secondary: #f3f3f3;
-		--secondary-transparent: rgb(243, 243, 243, .5);
+		--secondary-transparent: rgb(243, 243, 243, 0.5);
 		--secondary-text: #000000;
 
 		--accent: hsl(240, 100%, 20%);
@@ -42,5 +42,21 @@
 		min-height: 100vh;
 		background-color: var(--primary);
 		color: var(--primary-text);
+	}
+
+	:global(::-webkit-scrollbar) {
+		width: 8px;
+	}
+
+	:global(::-webkit-scrollbar-track) {
+		background: linear-gradient(225deg, var(--accent) 0%, var(--primary) 100%)
+	}
+
+	:global(::-webkit-scrollbar-thumb) {
+		border-radius: 8px;
+	}
+
+	:global(::-webkit-scrollbar-thumb:hover) {
+		background: var(--secondary-transparent)
 	}
 </style>
