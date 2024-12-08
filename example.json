@@ -1,0 +1,62 @@
+[
+    {
+        "name": "AMD Ryzen 5 5600",
+        "description": "Przeznaczony do domowych i gamingowych komputerów stacjonarnych procesor AMD Ryzen 5 5600 obsłuży wymagające gry oraz zapewni obsługę zadań wielowątkowych, takich jak np. renderowanie 3D i wideo. 6 rdzeni, 12 wątków, częstotliwość taktowania do 4,4 GHz oraz 35 MB pamięci cache sprawiają, że ten CPU zapewnia najwyższą wydajność. Ryzen 5 5600 wyposażono także w chłodzenie Wraith Stealth.",
+        "price": "399",
+        "image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2022/4/pr_2022_4_4_13_1_27_284_00.jpg"
+    },
+    {
+        "name": "Intel Core i5-12400F",
+        "description": "Korzystaj z procesorów Intel stworzonych dla gamingu nowej generacji, takich jak wyposażony w 6 rdzeni i 12 wątków Intel Core i5-12400F. Zapewnia on rewolucyjną wydajność dzięki wysokiemu taktowaniu do nawet 4,4 GHz. Pewnie zwyciężaj w kolejnych rozgrywkach i doświadcz imersji w nowe wirtualne światy. Wszystko to dzięki rewolucyjnej architekturze procesora skupiającej się na tym co, najważniejsze – gamingu.",
+        "price": "509",
+        "image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2021/12/pr_2021_12_23_9_31_19_942_00.jpg"
+    },
+    {
+        "name": "AMD Ryzen 7 5700X3D",
+        "description": "Jednostkę AMD Ryzen 7 5700X3D wyposażono w 8 rdzeni i 16 wątków, gotowych do pracy przy maksymalnym obciążeniu w grach i specjalistycznych aplikacjach. Pamięć cache tego procesora liczy łącznie 100 MB, a bazowe taktowanie rdzeni otwiera częstotliwość 3 GHz, mogąca sięgać aż do 4,1 GHz w trybie Boost. Moc jednostki może wzrosnąć dzięki odblokowanej możliwości podkręcania. Czas na ogromną moc wspartą przez nowatorską architekturę Zen 3 oraz pamięć cache 3D V-Cache.",
+        "price": "999",
+        "image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2024/1/pr_2024_1_29_10_22_9_459_00.jpg"
+    },
+    {
+        "name": "Intel Core i5-12600K",
+        "description": "Zintegrowany układ graficzny. Poznaj procesory Intel Core dwunastej generacji do komputerów stacjonarnych, stworzone do gamingu nowej generacji. Bezkompromisowe granie i wielozadaniowość umożliwia hybrydowa i bardziej wydajna architektura odblokowanego procesora Intel Core i5-12600K, korzystająca z dwóch rodzajów rdzeni: 6 wysoko wydajnych (Performance Core) i 4 energooszczędnych (Efficient Core).",
+        "price": "799",
+        "image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2021/10/pr_2021_10_26_7_31_43_884_00.jpg"
+    },
+    {
+        "name": "AMD Ryzen 5 5600X",
+        "description": "Jednostka AMD Ryzen 5 5600X posiada 6 rdzeni i 12 wątków, gotowych do pracy przy maksymalnym obciążeniu w grach i specjalistycznych aplikacjach. Pamięć cache tego procesora liczy łącznie 35 MB, a bazowe taktowanie rdzeni otwiera częstotliwość 3,70 GHz, mogąca sięgać aż do 4,60 GHz w trybie Turbo. Moc jednostki może jednak wzrosnąć dzięki odblokowanej możliwości podkręcania. Czas na ogromną moc wspartą przez nowatorską architekturę Zen 3.",
+        "price": "459",
+        "image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2020/10/pr_2020_10_9_12_59_29_839_00.jpg"
+    },
+    {
+        "name": "Intel Core i5-13600K",
+        "description": "Od wieloosobowych konfrontacji po epickie przygody — bądź bliżej akcji niż kiedykolwiek wcześniej dzięki innowacyjnej architekturze procesora Intel Core i5-13600K. Zapewnia on nawet 5,1 GHz maksymalnego taktowania i 14 rdzeni: 6 Performance-cores oraz 8 Efficient-cores. Przy tym oferuje 20 wątków: 12 dla Performance-cores oraz 8 dla Efficient-cores. Ten odblokowany procesor Intel Core i5 trzynastej generacji do komputerów stacjonarnych jest też przygotowany do możliwości podkręcania.",
+        "price": "1149",
+        "image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2022/9/pr_2022_9_27_12_10_57_851_00.jpg"
+    },
+    {
+        "name": "AMD Ryzen 7 5700X",
+        "description": "Jednostkę AMD Ryzen 7 5700X wyposażono w 8 rdzeni i 16 wątków, gotowych do pracy przy maksymalnym obciążeniu w grach i specjalistycznych aplikacjach. Pamięć cache tego procesora liczy łącznie 36 MB, a bazowe taktowanie rdzeni otwiera częstotliwość 3,4 GHz, mogąca sięgać aż do 4,6 GHz w trybie Boost. Moc jednostki może wzrosnąć dzięki odblokowanej możliwości podkręcania. Czas na ogromną moc wspartą przez nowatorską architekturę Zen 3.",
+        "price": "649",
+        "image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2022/4/pr_2022_4_4_13_22_49_19_01.jpg"
+    },
+    {
+        "name": "Intel Core i7-12700KF",
+        "description": "Poznaj procesory Intel Core dwunastej generacji do komputerów stacjonarnych, stworzone do gamingu nowej generacji. Bezkompromisowe granie i wielozadaniowość umożliwia hybrydowa i bardziej wydajna architektura odblokowanego procesora Intel Core i7-12700KF, korzystająca z dwóch rodzajów rdzeni: 8 wysoko wydajnych (Performance Core) i 4 energooszczędnych (Efficient Core).",
+        "price": "1399",
+        "image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2021/10/pr_2021_10_26_7_40_0_88_00.jpg"
+    },
+    {
+        "name": "Intel Core i9-12900K",
+        "description": "Poznaj procesory Intel Core dwunastej generacji do komputerów stacjonarnych, stworzone do gamingu nowej generacji. Bezkompromisowe granie i wielozadaniowość umożliwia hybrydowa i bardziej wydajna architektura odblokowanego procesora Intel Core i9-12900K, korzystająca z dwóch rodzajów rdzeni: 8 wysoko wydajnych (Performance Core) i 8 energooszczędnych (Efficient Core).",
+        "price": "1479",
+        "image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2021/10/pr_2021_10_26_7_49_18_782_00.jpg"
+    },
+    {
+        "name": "AMD Ryzen 9 7950X",
+        "description": "Zaprojektowany z myślą o graczach i twórcach treści, procesor AMD Ryzen 9 7950X w architekturze 'Zen 4' zapewni Ci poziom wydajności, który sprosta wszystkim postawionym przed nim zadaniom. Skup się na tym co ważne i odnieś zwycięstwo na wirtualnym polu bitwy lub przygotuj projekt, który zachwyci wszystkich. Dzięki 16 rdzeniom, 32 wątkom, zegarom przyspieszającym do 5,7 GHz oraz 80 MB pamięci podręcznej, AMD Ryzen 9 7950X zapewni Ci wydajność zmieniającą perspektywę.",
+        "price": "2199",
+        "image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2023/1/pr_2023_1_25_12_54_39_334_03.jpg"
+    }
+]

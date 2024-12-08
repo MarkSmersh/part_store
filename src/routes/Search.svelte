@@ -89,7 +89,7 @@
 	}
 
 	.search {
-		margin: 100px;
+		margin: 20px 100px;
 		display: flex;
 		flex-direction: column;
 		gap: 16px;
