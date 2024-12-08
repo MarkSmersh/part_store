@@ -1,5 +1,6 @@
 import { redirect, type Handle, type HandleFetch } from '@sveltejs/kit';
 import { jwtVerify, accessFromSession } from '$lib/server/jwt';
+import { orm } from '$lib/server';
 
 export const handleFetch: HandleFetch = async ({ request, fetch }) => {	
 	return fetch(request);
@@ -47,7 +48,7 @@ export const handle: Handle = async ({ event, resolve }) => {
 	// DATABASE CURSED TECHNIQUE...
 	// ...DISMANTLE
 
-	// await orm.schema.refreshDatabase();
+	await orm.schema.refreshDatabase();
 
 	// console.log('DATABASE INIT COMPLETE');
 })();

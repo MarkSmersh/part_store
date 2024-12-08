@@ -17,7 +17,6 @@
 			currentTarget: EventTarget & HTMLDivElement;
 		}
 	) {
-		console.log(e);
 		const maxAngleX = 25;
 		const maxAngleY = 20;
 

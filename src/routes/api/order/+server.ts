@@ -19,8 +19,6 @@ export const POST: RequestHandler = async ({ cookies, request }) => {
         return new Response("Nie ma access tokenu.", { status: 404 });
     }
 
-    console.log(data);
-
     if (
         !data
         || !isOk(data.firstName)

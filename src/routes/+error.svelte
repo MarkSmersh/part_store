@@ -21,6 +21,12 @@
         justify-content: center;
         align-items: center;
         gap: 200px;
+
+		@media only screen and (max-width: 1200px) {
+			flex-direction: column;
+			gap: 32px;
+			text-align: center;
+		}
 	}
 
     .text {
