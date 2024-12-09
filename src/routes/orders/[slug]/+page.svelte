@@ -36,7 +36,7 @@
 
 		{#if data.comment}
 			<Accordion title={'Komentarz do zamówenia'}>
-				<p>"{data.comment}"</p>
+				<div class="comment">{data.comment}</div>
 			</Accordion>
 		{/if}
 
@@ -74,5 +74,9 @@
 			grid: auto / 1fr;
 		}
 		/* background-color: greenyellow; */
+	}
+
+	.comment {
+		overflow-wrap: anywhere;
 	}
 </style>
