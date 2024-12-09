@@ -1,83 +1,83 @@
-import { em, Product, User } from "$lib/server";
-import { jwtDecode } from "$lib/server/jwt";
-import { ItemCart } from "$lib/server/models";
-import { Collection } from "@mikro-orm/core";
-import type { RequestHandler } from "@sveltejs/kit";
+import { em, Product, User } from '$lib/server';
+import { jwtDecode } from '$lib/server/jwt';
+import { ItemCart } from '$lib/server/models';
+import { Collection } from '@mikro-orm/core';
+import type { RequestHandler } from '@sveltejs/kit';
 
 export const PATCH: RequestHandler = async ({ params, cookies }) => {
-    const productId = params.slug;
+	const productId = params.slug;
 
-    if (!productId) {
-        return new Response("Nie ma potrzebowanego slagu.", { status: 400 });
-    }
-    
-    const username  = jwtDecode(cookies.get("access-token"))?.username;
+	if (!productId) {
+		return new Response('Nie ma potrzebowanego slagu.', { status: 400 });
+	}
 
-    const product = await em.findOne(Product, parseInt(productId));
+	const username = jwtDecode(cookies.get('access-token'))?.username;
 
-    if (!product) {
-        return new Response("Nie ma takiego produktu.", { status: 404 });
-    }
+	const product = await em.findOne(Product, parseInt(productId));
 
-    const user = await em.findOne(User, { username: username })
+	if (!product) {
+		return new Response('Nie ma takiego produktu.', { status: 404 });
+	}
 
-    if (!user) {
-        return new Response("Nie znalieżono użytkownika.", { status: 404 });
-    }
+	const user = await em.findOne(User, { username: username });
 
-    const fetchItemCarts = await em.findAll(ItemCart, { 
-        where: {
-            cart: user.cart
-        }
-    })
+	if (!user) {
+		return new Response('Nie znalieżono użytkownika.', { status: 404 });
+	}
 
-    user.cart.itemCarts = new Collection<ItemCart>(user.cart, fetchItemCarts);
+	const fetchItemCarts = await em.findAll(ItemCart, {
+		where: {
+			cart: user.cart
+		}
+	});
 
-    const cartItem = user.cart.itemCarts.find((c) => c.product.id === product.id);
+	user.cart.itemCarts = new Collection<ItemCart>(user.cart, fetchItemCarts);
 
-    if (!cartItem) {
-        const newItemCart = em.create(ItemCart, {
-            cart: user.cart,
-            product: product,
-            quantity: 1
-        })
+	const cartItem = user.cart.itemCarts.find((c) => c.product.id === product.id);
 
-        user.cart.itemCarts.add(newItemCart);
-        await em.persistAndFlush([user.cart, newItemCart]);
-    } else {
-        cartItem.quantity = cartItem.quantity + 1;
-        await em.persistAndFlush([cartItem]);
-    }
+	if (!cartItem) {
+		const newItemCart = em.create(ItemCart, {
+			cart: user.cart,
+			product: product,
+			quantity: 1
+		});
 
-    return new Response("Produkt jest dodany do koszyka.", { status: 201 });
-}
+		user.cart.itemCarts.add(newItemCart);
+		await em.persistAndFlush([user.cart, newItemCart]);
+	} else {
+		cartItem.quantity = cartItem.quantity + 1;
+		await em.persistAndFlush([cartItem]);
+	}
+
+	return new Response('Produkt jest dodany do koszyka.', { status: 201 });
+};
 
 export const DELETE: RequestHandler = async ({ cookies, params }) => {
-    const productId = params.slug;
+	const productId = params.slug;
 
-    if (!productId) {
-        return new Response("Nie ma potrzebowanego slagu.", { status: 400 });
-    }
+	if (!productId) {
+		return new Response('Nie ma potrzebowanego slagu.', { status: 400 });
+	}
 
-    const username = jwtDecode(cookies.get("access-token"))?.username;
+	const username = jwtDecode(cookies.get('access-token'))?.username;
 
-    const user = await em.findOne(User, { username: username })
+	const user = await em.findOne(User, { username: username });
 
-    if (!user) {
-        return new Response("Nie znalieżono użytkownika.", { status: 404 });
-    }
+	if (!user) {
+		return new Response('Nie znalieżono użytkownika.', { status: 404 });
+	}
 
-    const fetchItemCarts = await em.findAll(ItemCart, { 
-        where: {
-            cart: user.cart
-        }
-    })
+	const fetchItemCarts = await em.findAll(ItemCart, {
+		where: {
+			cart: user.cart
+		}
+	});
 
-    user.cart.itemCarts = new Collection<ItemCart>(user.cart, fetchItemCarts);
+	user.cart.itemCarts = new Collection<ItemCart>(user.cart, fetchItemCarts);
 
-    user.cart.itemCarts.remove((ic) => ic.product.id === parseInt(productId));
+	user.cart.itemCarts.remove((ic) => ic.product.id === parseInt(productId));
 
-    await em.persistAndFlush(user);
+	await em.persistAndFlush(user);
 
-    return new Response("Produkt jest usunięty.");
-}
+	return new Response('Produkt jest usunięty.');
+};

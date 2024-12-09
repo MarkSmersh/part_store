@@ -8,7 +8,7 @@
 	function click(callback?: () => void | Promise<void>) {
 		if (callback) {
 			callback();
-		};
+		}
 		isMenu.set(false);
 	}
 
@@ -19,7 +19,7 @@
 	let { username }: MenuProps = $props();
 	let isActive = $state(false);
 
-	isMenu.subscribe((v) => isActive = v);
+	isMenu.subscribe((v) => (isActive = v));
 </script>
 
 {#if isActive}
@@ -27,7 +27,7 @@
 		<div class="close">
 			<Button onClick={() => isMenu.set(false)}>❌</Button>
 		</div>
-		<h2>Menu</h2>	
+		<h2>Menu</h2>
 		<!-- svelte-ignore a11y_no_static_element_interactions -->
 		<div class="actions">
 			{#if username}
@@ -36,10 +36,11 @@
 				<Button
 					fill
 					after={username}
-					onClick={() => click(async () => {
-						await request('/api/user/logout');
-						invalidateAll();
-					})}
+					onClick={() =>
+						click(async () => {
+							await request('/api/user/logout');
+							invalidateAll();
+						})}
 					style="primary"
 					>Wylogować
 				</Button>

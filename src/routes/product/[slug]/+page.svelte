@@ -23,7 +23,7 @@
 				</Accordion>
 
 				<Accordion title={'Dane dodatkowe'}>
-					<p>ID produktu: {data.id} </p>
+					<p>ID produktu: {data.id}</p>
 				</Accordion>
 			</div>
 			<div class="price">

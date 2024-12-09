@@ -13,14 +13,14 @@
 
 	function onMouseMove(e: DivMouseEvent) {
 		isHover = true;
-		curX = -(e.offsetX);
-        // console.log(e.currentTarget.clientWidth)
-        // console.log(e.currentTarget.clientHeight)
-        // console.log(e.currentTarget.clientWidth / e.currentTarget.clientHeight)
-        // let magic = e.currentTarget.clientWidth / e.currentTarget.clientHeight;
-        // let diff =  e.currentTarget.clientHeight - e.currentTarget.clientWidth
+		curX = -e.offsetX;
+		// console.log(e.currentTarget.clientWidth)
+		// console.log(e.currentTarget.clientHeight)
+		// console.log(e.currentTarget.clientWidth / e.currentTarget.clientHeight)
+		// let magic = e.currentTarget.clientWidth / e.currentTarget.clientHeight;
+		// let diff =  e.currentTarget.clientHeight - e.currentTarget.clientWidth
 		// curY = -(e.offsetY * 4);
-        // console.log(`MOUSE X, Y ${curX}, ${curY}`)
+		// console.log(`MOUSE X, Y ${curX}, ${curY}`)
 	}
 
 	function onMouseLeave(e: DivMouseEvent) {
@@ -34,29 +34,28 @@
 	let isHover = $state(false);
 	let curX = $state(0);
 	// let curY = $state(0);
-
 </script>
 
 <!-- svelte-ignore a11y_no_static_element_interactions -->
 <div class="image-wrapper">
 	<div
-	onmousemove={(e) => onMouseMove(e)}
-	onmouseleave={(e) => onMouseLeave(e)}
-	class="image"
-	style:background-image={`url("${src}")`}
-	style:height={`${height}px`}
-	class:zoomed={isHover}
-	style:background-position={isHover ? `${curX}px center` : "center"}
->
-	<!-- <img class="image" {alt} {src} /> -->
-	{#if isHover}
-		<div transition:fly class="description">
-			<p>
-				🖼️ {alt}
-			</p>
-		</div>
-	{/if}
-</div>
+		onmousemove={(e) => onMouseMove(e)}
+		onmouseleave={(e) => onMouseLeave(e)}
+		class="image"
+		style:background-image={`url("${src}")`}
+		style:height={`${height}px`}
+		class:zoomed={isHover}
+		style:background-position={isHover ? `${curX}px center` : 'center'}
+	>
+		<!-- <img class="image" {alt} {src} /> -->
+		{#if isHover}
+			<div transition:fly class="description">
+				<p>
+					🖼️ {alt}
+				</p>
+			</div>
+		{/if}
+	</div>
 </div>
 
 <style>
@@ -81,7 +80,6 @@
 		background-size: cover;
 	}
 
-
 	.description {
 		display: flex;
 		justify-content: center;
@@ -97,6 +95,6 @@
 
 	.zoomed {
 		background-size: 200%;
-        background-repeat: no-repeat;
+		background-repeat: no-repeat;
 	}
 </style>

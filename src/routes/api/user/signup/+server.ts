@@ -27,7 +27,7 @@ export const GET: RequestHandler = async ({ url, cookies }) => {
 	const sessionToken = jwtSessionToken(username);
 	const accessToken = jwtAccessToken(username);
 	const hashedPassword = await passwordHash(password);
-	
+
 	const cart = new Cart();
 
 	const user = em.create(User, {
@@ -35,10 +35,10 @@ export const GET: RequestHandler = async ({ url, cookies }) => {
 		password: hashedPassword,
 		sessionToken: sessionToken,
 		cart: cart
-	})
+	});
 
 	cart.user = user;
-	
+
 	await em.persistAndFlush([user, cart]);
 
 	cookies.set('access-token', accessToken, { path: '/' });

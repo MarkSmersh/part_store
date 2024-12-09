@@ -1,18 +1,18 @@
-import { jwtDecode } from "$lib/server/jwt";
-import type { LayoutServerLoad } from "./$types";
+import { jwtDecode } from '$lib/server/jwt';
+import type { LayoutServerLoad } from './$types';
 
 // TODO: Better to check is session token expired here
 
 export const load: LayoutServerLoad = ({ cookies }) => {
-    const accessToken = cookies.get("access-token");
+	const accessToken = cookies.get('access-token');
 
-    if (!accessToken) return;
+	if (!accessToken) return;
 
-    const data = jwtDecode(accessToken);
+	const data = jwtDecode(accessToken);
 
-    if (!data) return;
+	if (!data) return;
 
-    return {
-        username: data.username
-    }
-}
+	return {
+		username: data.username
+	};
+};

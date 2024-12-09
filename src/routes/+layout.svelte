@@ -40,7 +40,7 @@
 
 		--accent: hsl(240, 100%, 20%);
 
-		--mobile-screen: 1200px;		
+		--mobile-screen: 1200px;
 	}
 
 	:global(main) {
@@ -59,7 +59,7 @@
 	}
 
 	:global(::-webkit-scrollbar-track) {
-		background: linear-gradient(225deg, var(--accent) 0%, var(--primary) 100%)
+		background: linear-gradient(225deg, var(--accent) 0%, var(--primary) 100%);
 	}
 
 	:global(::-webkit-scrollbar-thumb) {
@@ -67,6 +67,6 @@
 	}
 
 	:global(::-webkit-scrollbar-thumb:hover) {
-		background: var(--secondary-transparent)
+		background: var(--secondary-transparent);
 	}
 </style>

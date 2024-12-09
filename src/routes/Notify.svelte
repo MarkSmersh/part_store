@@ -25,7 +25,7 @@
 						{n.status >= 200 && n.status < 300 ? '✅' : '⚠️'}
 					</p>
 					<div class="text">
-                        <!-- For debugging -->
+						<!-- For debugging -->
 						<!-- <h3 class={n.status >= 200 && n.status < 300 ? 'success' : 'error'}>
 							{n.statusText} - {n.status}
 						</h3> -->
@@ -65,23 +65,23 @@
 		color: var(--primary-text);
 		user-select: none;
 		border-radius: 8px;
-        gap: 8px;
-        align-items: center;
+		gap: 8px;
+		align-items: center;
 	}
 
-    .text {
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-        align-items: center;
-    }
+	.text {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		align-items: center;
+	}
 
-    .icon {
-        font-size: 24px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+	.icon {
+		font-size: 24px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 
 	/* .success {
 		color: green;

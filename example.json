@@ -1,362 +1,362 @@
 [
-    {
-        "name": "AMD Ryzen 5 5600",
-        "description": "Przeznaczony do domowych i gamingowych komputerów stacjonarnych procesor AMD Ryzen 5 5600 obsłuży wymagające gry oraz zapewni obsługę zadań wielowątkowych, takich jak np. renderowanie 3D i wideo. 6 rdzeni, 12 wątków, częstotliwość taktowania do 4,4 GHz oraz 35 MB pamięci cache sprawiają, że ten CPU zapewnia najwyższą wydajność. Ryzen 5 5600 wyposażono także w chłodzenie Wraith Stealth.",
-        "price": "399",
-        "image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2022/4/pr_2022_4_4_13_1_27_284_00.jpg"
-    },
-    {
-        "name": "Intel Core i5-12400F",
-        "description": "Korzystaj z procesorów Intel stworzonych dla gamingu nowej generacji, takich jak wyposażony w 6 rdzeni i 12 wątków Intel Core i5-12400F. Zapewnia on rewolucyjną wydajność dzięki wysokiemu taktowaniu do nawet 4,4 GHz. Pewnie zwyciężaj w kolejnych rozgrywkach i doświadcz imersji w nowe wirtualne światy. Wszystko to dzięki rewolucyjnej architekturze procesora skupiającej się na tym co, najważniejsze – gamingu.",
-        "price": "509",
-        "image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2021/12/pr_2021_12_23_9_31_19_942_00.jpg"
-    },
-    {
-        "name": "AMD Ryzen 7 5700X3D",
-        "description": "Jednostkę AMD Ryzen 7 5700X3D wyposażono w 8 rdzeni i 16 wątków, gotowych do pracy przy maksymalnym obciążeniu w grach i specjalistycznych aplikacjach. Pamięć cache tego procesora liczy łącznie 100 MB, a bazowe taktowanie rdzeni otwiera częstotliwość 3 GHz, mogąca sięgać aż do 4,1 GHz w trybie Boost. Moc jednostki może wzrosnąć dzięki odblokowanej możliwości podkręcania. Czas na ogromną moc wspartą przez nowatorską architekturę Zen 3 oraz pamięć cache 3D V-Cache.",
-        "price": "999",
-        "image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2024/1/pr_2024_1_29_10_22_9_459_00.jpg"
-    },
-    {
-        "name": "Intel Core i5-12600K",
-        "description": "Zintegrowany układ graficzny. Poznaj procesory Intel Core dwunastej generacji do komputerów stacjonarnych, stworzone do gamingu nowej generacji. Bezkompromisowe granie i wielozadaniowość umożliwia hybrydowa i bardziej wydajna architektura odblokowanego procesora Intel Core i5-12600K, korzystająca z dwóch rodzajów rdzeni: 6 wysoko wydajnych (Performance Core) i 4 energooszczędnych (Efficient Core).",
-        "price": "799",
-        "image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2021/10/pr_2021_10_26_7_31_43_884_00.jpg"
-    },
-    {
-        "name": "AMD Ryzen 5 5600X",
-        "description": "Jednostka AMD Ryzen 5 5600X posiada 6 rdzeni i 12 wątków, gotowych do pracy przy maksymalnym obciążeniu w grach i specjalistycznych aplikacjach. Pamięć cache tego procesora liczy łącznie 35 MB, a bazowe taktowanie rdzeni otwiera częstotliwość 3,70 GHz, mogąca sięgać aż do 4,60 GHz w trybie Turbo. Moc jednostki może jednak wzrosnąć dzięki odblokowanej możliwości podkręcania. Czas na ogromną moc wspartą przez nowatorską architekturę Zen 3.",
-        "price": "459",
-        "image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2020/10/pr_2020_10_9_12_59_29_839_00.jpg"
-    },
-    {
-        "name": "Intel Core i5-13600K",
-        "description": "Od wieloosobowych konfrontacji po epickie przygody — bądź bliżej akcji niż kiedykolwiek wcześniej dzięki innowacyjnej architekturze procesora Intel Core i5-13600K. Zapewnia on nawet 5,1 GHz maksymalnego taktowania i 14 rdzeni: 6 Performance-cores oraz 8 Efficient-cores. Przy tym oferuje 20 wątków: 12 dla Performance-cores oraz 8 dla Efficient-cores. Ten odblokowany procesor Intel Core i5 trzynastej generacji do komputerów stacjonarnych jest też przygotowany do możliwości podkręcania.",
-        "price": "1149",
-        "image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2022/9/pr_2022_9_27_12_10_57_851_00.jpg"
-    },
-    {
-        "name": "AMD Ryzen 7 5700X",
-        "description": "Jednostkę AMD Ryzen 7 5700X wyposażono w 8 rdzeni i 16 wątków, gotowych do pracy przy maksymalnym obciążeniu w grach i specjalistycznych aplikacjach. Pamięć cache tego procesora liczy łącznie 36 MB, a bazowe taktowanie rdzeni otwiera częstotliwość 3,4 GHz, mogąca sięgać aż do 4,6 GHz w trybie Boost. Moc jednostki może wzrosnąć dzięki odblokowanej możliwości podkręcania. Czas na ogromną moc wspartą przez nowatorską architekturę Zen 3.",
-        "price": "649",
-        "image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2022/4/pr_2022_4_4_13_22_49_19_01.jpg"
-    },
-    {
-        "name": "Intel Core i7-12700KF",
-        "description": "Poznaj procesory Intel Core dwunastej generacji do komputerów stacjonarnych, stworzone do gamingu nowej generacji. Bezkompromisowe granie i wielozadaniowość umożliwia hybrydowa i bardziej wydajna architektura odblokowanego procesora Intel Core i7-12700KF, korzystająca z dwóch rodzajów rdzeni: 8 wysoko wydajnych (Performance Core) i 4 energooszczędnych (Efficient Core).",
-        "price": "1399",
-        "image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2021/10/pr_2021_10_26_7_40_0_88_00.jpg"
-    },
-    {
-        "name": "Intel Core i9-12900K",
-        "description": "Poznaj procesory Intel Core dwunastej generacji do komputerów stacjonarnych, stworzone do gamingu nowej generacji. Bezkompromisowe granie i wielozadaniowość umożliwia hybrydowa i bardziej wydajna architektura odblokowanego procesora Intel Core i9-12900K, korzystająca z dwóch rodzajów rdzeni: 8 wysoko wydajnych (Performance Core) i 8 energooszczędnych (Efficient Core).",
-        "price": "1479",
-        "image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2021/10/pr_2021_10_26_7_49_18_782_00.jpg"
-    },
-    {
-        "name": "AMD Ryzen 9 7950X",
-        "description": "Zaprojektowany z myślą o graczach i twórcach treści, procesor AMD Ryzen 9 7950X w architekturze 'Zen 4' zapewni Ci poziom wydajności, który sprosta wszystkim postawionym przed nim zadaniom. Skup się na tym co ważne i odnieś zwycięstwo na wirtualnym polu bitwy lub przygotuj projekt, który zachwyci wszystkich. Dzięki 16 rdzeniom, 32 wątkom, zegarom przyspieszającym do 5,7 GHz oraz 80 MB pamięci podręcznej, AMD Ryzen 9 7950X zapewni Ci wydajność zmieniającą perspektywę.",
-        "price": "2199",
-        "image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2023/1/pr_2023_1_25_12_54_39_334_03.jpg"
-    },
-    {
-        "name": "MSI B550-A PRO",
-        "description": "Płyty główne MSI z serii PRO pozwalają użytkownikom pracować wydajniej i produktywniej, oferując bogatą funkcjonalność i stabilność. MSI B550-A PRO umożliwi Ci wykorzystanie w swojej firmie procesorów AMD Ryzen 3. generacji oraz nowszych, wspieranych przez moduły RAM DDR4 o taktowaniu nawet 4800 MHz (OC). Ponadto, możesz wykorzystać układy graficzne AMD Vega wbudowane w procesory Ryzen lub połączyć dwie karty graficzne w konfiguracji AMD CrossFire.",
-        "price": "459",
-        "image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2020/6/pr_2020_6_9_17_24_15_146_00.jpg"
-    },
-    {
-        "name": "MSI X670E GAMING PLUS WIFI",
-        "description": "Stwórz platformę do intensywnego gamingu z procesorami AMD Ryzen oraz płytą główną MSI X670E GAMING PLUS WIFI. To wydajna konstrukcja z socketem AM5, która wspiera CPU generacji Zen 4/5, jak również pamięci RAM DDR5. Podłączaj wydajne moduły i korzystaj z technologii AMD EXPO, by podkręcać taktowania pamięci do nawet 7800 MHz. \n\nX670E GAMING PLUS WIFI oferuje też znacznie więcej. Wsparcie dla PCIe 5.0 pozwoli Ci skorzystać z najszybszych dysków NVMe oraz kart graficznych. Rozbudowana sekcja zasilania z wydajnym chłodzeniem sprosta wymogom podkręcanych procesorów. A dzięki dwóm szybkim opcjom łączności z siecią już nic Cię nie ogranicza. Podłącz kabel LAN lub korzystaj z Wi-Fi, by pobierać, streamować i grać bez ograniczeń.",
-        "price": "1149",
-        "image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2024/4/pr_2024_4_26_14_13_44_434_04.jpg"
-    },
-    {
-        "name": "MSI MPG B550 GAMING PLUS",
-        "description": "Zwyciężaj ze stylem dzięki wyjątkowym możliwościom. MSI MPG B550 GAMING PLUS to płyta główna pozwalająca Ci okiełznać moc nowych procesorów AMD Ryzen 3. generacji. Oferuje ona wysoką wydajność, m.in. dzięki wsparciu dla obsługi pamięci RAM o taktowaniu nawet 4400 MHz (OC) czy nowemu złączu Lightning M.2 Gen4 do 64 Gb/s. A przy tym możesz stworzyć konfigurację dwóch kart graficznych AMD CrossFire.",
-        "price": "529",
-        "image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2020/6/pr_2020_6_12_9_3_57_498_00.jpg"
-    },
-    {
-        "name": "MSI MAG Z790 TOMAHAWK WIFI",
-        "description": "Dzięki płycie głównej MSI MAG Z790 TOMAHAWK WIFI wykorzystasz możliwości procesorów Intel Core 12. i 13. generacji oraz pamięci RAM DDR5 o taktowaniu nawet 7200 MHz (OC). Mocna sekcja zasilania dba o właściwe temperatury pracy, a wydajne chłodzenie gwarantuje stabilność podczas pracy. Możesz przy tym korzystać z łączności PCIe 5.0, szybkich portów USB oraz podłączać dyski SSD NVMe. Minimalistyczny design płyty odnajdzie się w każdej konfiguracji, a wbudowane złącza JRGB i JARGB pozwolą podłączać liczne akcesoria LED.",
-        "price": "1079",
-        "image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2022/9/pr_2022_9_28_11_59_35_481_04.jpg"
-    },
-    {
-        "name": "MSI Z790 GAMING PLUS WIFI",
-        "description": "Płytę główną MSI Z790 GAMING PLUS WIFI zaprojektowano z myślą o graczach, oferując im mnóstwo opcji łączności oraz personalizacji. Obsługa procesorów Intel Core 14., 13. i 12. generacji, wspomaganych przez pamięci RAM DDR5 o taktowaniu do 7200 MHz (OC), pozwoli stworzyć wydajną konfigurację, która sprosta najnowszym tytułom. Płyta wspiera też najnowsze standardy, jak PCIe 5.0, który pozwoli podłączyć najszybsze karty graficzne. Podłączysz też do niej wiele dysków M.2, a liczne porty USB, takie jak USB 3.2 Gen2x2, umożliwią podłączanie wielu wydajnych akcesoriów. Industrialny design płyty MSI Z790 GAMING PLUS WIFI odnajdzie się w każdej konfiguracji, a wbudowane złącza ARGB i RGB umożliwia skorzystanie z akcesoriów LED, które rozświetlą wnętrze obudowy.",
-        "price": "969",
-        "image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2023/11/pr_2023_11_21_8_59_54_558_00.jpg"
-    },
-    {
-        "name": "Gigabyte B760 GAMING X DDR4",
-        "description": "Zbuduj gamingową platformę z płytą główną Gigabyte B760 GAMING X DDR4 oraz procesorami Intel Core 13./12. generacji. Ta konstrukcja ATX oferuje bogate możliwości rozbudowy i wysoką wydajność. Mocna sekcja zasilania, wsparcie dla szybkich standardów łączności oraz rozbudowane chłodzenie zapewnią Twojej konfiguracji wysokie osiągi. Z pomocą zintegrowanych złączy dla pasków LED RGB i ARGB możesz zmienić minimalistyczny design płyty głównej. Pozwolą Ci one stworzyć unikalne podświetlenie obudowy i sterować nim w systemie RGB Fusion.",
-        "price": "619",
-        "image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2023/1/pr_2023_1_10_10_54_35_353_05.jpg"
-    },
-    {
-        "name": "Gigabyte B550 AORUS ELITE V2",
-        "description": "Korzystaj z wydajności procesorów AMD Ryzen 3 generacji oraz wbudowanych w nie układów graficznych Vega, z płytą główną Gigabyte B550 AORUS Elite V2. Wspiera ona przy tym pamięci RAM DDR4 o taktowaniu nawet 4733 MHz (OC), a także szybkie dyski SSD M.2. Jest ona również przystosowana do wsparcia dla standardu PCI-E 4.0. A dzięki stylowemu designowi oraz podświetleniu RGB Fusion 2.0, możesz nadać swojej konfiguracji prawdziwie gamingowego wyglądu.",
-        "price": "559",
-        "image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2020/11/pr_2020_11_18_11_59_59_666_04.jpg"
-    },
-    {
-        "name": "ASUS TUF GAMING B760-PLUS WIFI",
-        "description": "Łłączy w sobie możliwości procesorów Intel z niezawodnością i wsparciem dla nowoczesnych technologii. Komponenty klasy wojskowej, usprawnione chłodzenie i charakterystyczna estetyka pozwolą Ci stworzyć PC, który zachwyci możliwościami. \n\nDzięki obsłudze najszybszych standardów, płyta ASUS TUF GAMING B760-PLUS WIFI pozwoli Ci korzystać z najlepszych komponentów na rynku. Wzmacniany slot PCIe 5.0 x16 pracuje z szybkością do 128 Gb/s, dzięki czemu podłączysz do niego najlepsze karty graficzne. Trzy sloty M.2 na dyski SSD NVMe pracują w standardzie PCIe 4.0 x4 (do 64 Gb/s). Możesz więc sięgnąć po najszybsze pamięci dostępne na rynku.",
-        "price": "719",
-        "image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2024/5/pr_2024_5_13_8_59_36_369_04.jpg"
-    },
-    {
-        "name": "ASRock B760 Pro RS",
-        "description": "Zmaksymalizuj osiągi procesorów Intel Core 13. i 12. generacji ze stylową płytą główną ASRock B760 Pro RS w formacie ATX. Obsługuje ona też nowoczesne pamięci RAM DDR5, podkręcane do nawet 7200 MHz. Korzystaj też ze wsparcie dla PCIe 4.0, by podłączać najszybsze komponenty oraz połączenia sieciowego Dragon LAN o przepustowości nawet 2,5 Gb/s. Dzięki temu możesz zbudować wydajną konfigurację nastawioną zarówno na gry, jak i zaawansowaną pracę.\n\nOprócz wbudowanego podświetlenia RGB, płyta B760 Pro RS ma również zintegrowane złącza RGB i ARGB. Umożliwiają one podłączenie kompatybilnych akcesoriów i urządzeń, takich jak paski LED. Synchronizuj je dzięki Polychrome RGB Sync, aby stworzyć swój własny, unikalny styl podświetlenia.",
-        "price": "599",
-        "image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2023/1/pr_2023_1_16_9_10_8_247_04.jpg"
-    },
-    {
-        "name": "ASUS PRIME B650-PLUS",
-        "description": "Płyty główne z serii PRIME zostały szczegółowo zaprojektowane by wyzwolić pełen potencjał procesorów AMD Ryzen z serii 7000. Dzięki solidnej konstrukcji zasilania, kompleksowym rozwiązaniom chłodzącym oraz inteligentnym opcjom dostrajania, ASUS PRIME B650-PLUS zapewnia użytkownikom i entuzjastom szereg rozwiązań ułatwiających budowę komputera, optymalizację wydajności oraz personalizację opcji w dedykowanym oprogramowaniu.\n\nASUS PRIME B650-PLUS zapewnia wiele opcji dla pamięci masowej, pozwalające podłączać szybkie dyski SSD NVMe. Jedno złącze PCIe 4.0 x4 M.2 oferuje przepustowość do 64 Gb/s, podczas gdy drugi slot PCIe 5.0 x4 M.2 pracuje na interfejsie oferującym prędkość sięgającą 128 Gb/s. Wśród zewnętrznych portów znajdziesz m.in. USB 3.2 Gen2 oferujący szybkość do 10 Gb/s, a na płycie głównej umieszczono też wyprowadzenie dla złącza Thunderbolt (USB4) o maksymalnej przepustowości nawet 40 Gb/s.",
-        "price": "639",
-        "image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2022/10/pr_2022_10_10_17_49_9_126_05.jpg"
-    },
-    {
-        "name": "Gainward GeForce RTX 4070Ti Super Panther OC 16GB GDDR6X",
-        "description": "Dynamiczna i szybka niczym drapieżnik, a zarazem cicha i niewidoczna – taka jest fabrycznie podkręcona karta graficzna Gainward GeForce RTX 4070 Ti Super Panther OC 16 GB GDDR6X. Architektura NVIDIA Ada Lovelace oferuje wsparcie dla kolejnych wersji kultowych technologii graficznych oraz nowy poziom wydajności. Trzecia generacja DLSS oraz Ray Tracingu pozwolą Ci grać przy jeszcze wyższych FPS-ach i w jeszcze lepszej grafice. Karta Gainward GeForce RTX 4070 Ti Super Panther OC wykorzystuje trzy wentylatory do chłodzenia pracującego GPU. W połączeniu z masywnym radiatorem gwarantują one sprawne odprowadzanie energii cieplnej.",
-        "price": "3899",
-        "image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2024/1/pr_2024_1_10_11_23_16_640_05.jpg"
-    },
-    {
-        "name": "Inno3D GeForce RTX 4070 Super Twin X2 12GB GDDR6X",
-        "description": "Sięgnij po możliwości architektury NVIDIA Ada Lovelace z kartą graficzną Inno3D GeForce RTX 4070 Twin X2 12 GB GDDR6X. Dzięki niej skorzystasz z rozwiązań, takich jak: Ray Tracing czy DLSS 3. W efekcie czeka na Ciebie zupełnie nowy poziom fotorealizmu oraz zwiększona liczba FPS. O najlepsze chłodzenie karty Inno3D GeForce RTX 4070 Twin X2 dba bliźniaczy układ wentylatorów. Specjalnie ukształtowane łopatki generują mocny strumień powietrza, a wysokiej klasy łożysko pozwala na cichą i niezawodną pracę. Natomiast minimalistyczny design karty doskonale odnajdzie się w każdej obudowie.",
-        "price": "2799",
-        "image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2024/1/pr_2024_1_9_11_35_50_639_02.jpg"
-    },
-    {
-        "name": "MSI GeForce RTX 3060 VENTUS 2X OC 12GB GDDR6",
-        "description": "Minimalistyczna karta MSI GeForce RTX 3060 VENTUS 2X OC oferuje wszystkie niezbędne rozwiązania, by zapewnić Ci wysoką wydajność. GPU oparte o architekturę NVIDIA Ampere oraz 12GB pamięci GDDR6 pozwalają cieszyć się płynną rozgrywką oraz nowatorskimi technologiami, takimi jak Ray Tracing czy DLSS. Wydajny układ chłodzenia z dwoma wentylatorami zadba o optymalne temperatury pracy, a stylowy design sprawdzi się w każdej obudowie.",
-        "price": "1349",
-        "image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2021/2/pr_2021_2_12_15_20_7_335_04.jpg"
-    },
-    {
-        "name": "Gainward GeForce RTX 4060 Ti Panther 16GB GDDR6",
-        "description": "Odrzucając wszystkie efekciarskie dodatki, karta Gainward GeForce RTX 4060 Ti Panther 16 GB GDDR6 w swoim czarnym wykończeniu prezentuje się niemal niezauważalnie, jak przyczajona pantera. Minimalistyczny design skomponuje się z każdą obudową, a architektura NVIDIA Ada Lovelace zadba o najwyższe osiągi. Doświadcz możliwości Ray Tracingu i DLSS 3, które zapewnią fotorealistyczną rozgrywkę przy wysokich FPS. Trzy wentylatory pracują cicho i wydajnie, by utrzymać temperatury karty Gainward GeForce RTX 4060 Ti Panther na optymalnym poziomie.",
-        "price": "2099",
-        "image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2023/10/pr_2023_10_31_10_57_52_627_00.jpg"
-    },
-    {
-        "name": "MSI GeForce RTX 4070 SUPER GAMING X SLIM 12GB GDDR6X",
-        "description": "Wybierz smukłą kartę graficzną MSI GeForce RTX 4070 SUPER GAMING X SLIM 12 GB GDDR6X, by zyskać większą wydajność i styl. To konstrukcja oparta o architekturę NVIDIA Ada Lovelace, która zapewni Ci najwyższe osiągi. Korzystaj z możliwości technologii Ray Tracing czy skalowania DLSS, dzięki którym zyskasz fotorealistyczne efekty graficzne oraz wyższe FPS. MSI GeForce RTX 4070 SUPER GAMING X SLIM wykorzystuje trzy wentylatory TORX FAN 5.0. Miedziana niklowana podstawa sprawnie odprowadza energię cieplną z GPU i pamięci, oddając ją do radiatora przez cztery ciepłowody. Natomiast dzięki oprogramowaniu MSI Center zyskasz dostęp do licznych opcji personalizacji i monitorowania pracy karty.",
-        "price": "3099",
-        "image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2024/1/pr_2024_1_8_12_45_4_378_00.jpg"
-    },
-    {
-        "name": "Zotac GeForce RTX 4060 Twin Edge OC White Edition 8GB GDDR6",
-        "description": "Kartę graficzną Zotac GeForce RTX 4060 Twin Edge OC White Edition 8 GB GDDR6 stworzono specjalnie z myślą o montażu w niewielkich obudowach komputerowych. Dzięki temu możesz korzystać z możliwości architektury NVIDIA Ada Lovelace również w konfiguracjach stworzonych do kompaktowego gamingu w Full HD. Do zasilania wystarczy jedno złącze PCI-E (6+2), a przy tym czekają na Ciebie również możliwości Ray Tracingu czy DLSS. Oprogramowanie FireStorm pozwoli Ci z kolei kontrolować parametry pracy karty, obroty wentylatory a także podświetlane elementy Spectra RGB. Udoskonalony pod każdym względem IceStorm 2.0 to zaawansowany system chłodzenia stworzony, aby zadbać o najwyższą stabilność karty Zotac GeForce RTX 4060 Twin Edge OC White Edition.",
-        "price": "1499",
-        "image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2023/6/pr_2023_6_28_10_48_1_183_00.jpg"
-    },
-    {
-        "name": "Gigabyte Radeon RX 7600 XT Gaming OC 16 GB GDDR6",
-        "description": "Przygotuj się na gry jutra dzięki nowatorskim technologiom karty graficznej Gigabyte Radeon RX 7600 XT Gaming OC 16 GB GDDR6. Ciesz się wyjątkową wydajnością oraz technologiami zapewnianymi przez architekturę AMD RDNA 3. Ray tracing oraz skalowanie FSR/RSR wygenerują więcej FPS przy bardziej fotorealistycznych efektach graficznych. Mocne chłodzenie WINDFORCE dba o zachowaniu optymalnych temperatur podczas pracy. Zintegrowane podświetlenie RGB Fusion rozświetli minimalistyczny design karty.",
-        "price": "1549",
-        "image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2024/3/pr_2024_3_4_12_16_39_722_00.jpg"
-    },
-    {
-        "name": "Sapphire Radeon RX 7800 XT PULSE 16GB GDDR6",
-        "description": "Dzięki karcie graficznej Sapphire Radeon RX 7800 XT PULSE 16 GB GDDR6 możesz cieszyć się płynną rozgrywką w 1440p oraz najwyższą stabilnością pracy. Dzięki oparciu jej o architekturę AMD RDNA 3, karta oferuje wsparcie dla wielu nowoczesnych technologii. Ray Tracing, skalowanie FidelityFX oraz RSR, AMD Radiance Display Engine czy kodowanie AV1 – graj i pracuj jeszcze efektywniej. Minimalistyczna konstrukcja karty z dwoma wydajnymi wentylatorami zmieści się również w bardziej kompaktowych obudowach, a oprogramowanie TriXX pozwoli Ci łatwo zarządzać ustawieniami karty graficznej.",
-        "price": "2399",
-        "image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2023/9/pr_2023_9_5_13_56_43_175_00.jpg"
-    },
-    {
-        "name": "Sapphire Radeon RX 7800 XT NITRO+ 16GB GDDR6",
-        "description": "Poczuj największą radość z gamingu, korzystając z wydajnej i niezawodnej karty Sapphire Radeon RX 7800 XT NITRO+ 16 GB GDDR6. To unikalna konstrukcja w architekturze AMD RDNA 3, dzięki której możesz cieszyć się płynną rozgrywką w rozdzielczości 1440p. Oprócz tego oferuje obsługę technologii takich jak Ray Tracing, FSR/RSR AMD Radiance Display czy kodowania AV1. Jest więc gotowa zarówno do gamingu, jak i bardziej profesjonalnych zastosowań. Wydajne chłodzenie dba o optymalne temperatury, a wbudowane podświetlenie ARGB pozwoli spersonalizować kartę w oprogramowaniu TriXX.",
-        "price": "2559",
-        "image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2023/9/pr_2023_9_5_14_11_7_621_00.jpg"
-    },
-    {
-        "name": "ASRock Radeon RX 6500 XT Phantom Gaming D OC 4GB GDDR6",
-        "description": "Zapewnij sobie wsparcie w gamingowych bojach dzięki rozwiązaniom architektury AMD RDNA 2. Oparte o nią GPU karty ASRock Radeon RX 6500 XT Phantom Gaming D OC 4GB GDDR6 pozwoli Ci doświadczyć płynnej i doskonale prezentującej się rozgrywki dzięki technologiom takim jak FidelityFX czy Ray Tracing. Stylowy i prostolinijny design karty ASRock Radeon RX 6500 XT Phantom Gaming D OC jest zoptymalizowany dla zapewnienia doskonałych doświadczeń z gamingu.",
-        "price": "759",
-        "image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2022/1/pr_2022_1_19_15_26_3_437_04.jpg"
-    },
-    {
-        "name": "Kingston FURY 32GB (2x16GB) 3200MHz CL16 Beast Black",
-        "description": "Zmodernizuj swój system dzięki stylowej i niezwykle wydajnej pamięci RAM DDR4 Kingston FURY Beast Black. Dwa moduły o łącznej pojemności 32 GB (2x16 GB) oferują taktowanie 3200 MHz oraz opóźnienia na poziomie CL16. Ponadto moduły Kingston FURY Beast Black wspierają obsługę profili XMP.\n\nModuły pamięci Kingston FURY Beast Black wyposażone są w czarne radiatory, które doskonale odprowadzają ciepło. Całość dopełnia stylowa, czarna obudowa, która nadaje całej pamięci agresywny wygląd. Ponadto ograniczona, dożywotnia gwarancja zapewni Ci spokój ducha przy najbardziej spektakularnych rozgrywkach.",
-        "price": "295",
-        "image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2021/7/pr_2021_7_7_14_16_12_451_02.jpg"
-    },
-    {
-        "name": "Lexar 32GB (2x16GB) 6000MHz CL30 Ares RGB",
-        "description": "Przygotuj się na niesamowite doznania w grach dzięki pamięci DDR5 Lexar ARES RGB. Ta wyjątkowa pamięć to wymarzony wybór dla zaawansowanych graczy i entuzjastów komputerów, którzy pragną osiągnąć najwyższą wydajność systemu. Wbudowany aluminiowy radiator nie tylko sprawia, że komputer prezentuje się stylowo, ale także utrzymuje odpowiednią temperaturę. Pozwala to zachować stabilność oraz niezawodność systemu podczas intensywnych sesji gamingowych.\n\nModuły Lexar ARES RGB DDR5 zostały zaprojektowane z myślą o zwiększonej stabilności i niezawodności. Dzięki technologii on-die ECC pamięć automatycznie wykrywa i koryguje błędy danych w czasie rzeczywistym. Zapewnia to spokojne korzystanie z komputera nawet podczas najbardziej wymagających zadań. Dodatkowo on-board Power Management IC (PMIC) zapewnia stabilne i bezpieczne dostarczanie energii, co pozwala na nieprzerwaną rozgrywkę.",
-        "price": "539",
-        "image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2023/8/pr_2023_8_3_13_7_52_603_00.jpg"
-    },
-    {
-        "name": "Patriot 32GB (2x16GB) 6000MT/s CL30 Venom",
-        "description": "Moduły pamięci RAM Patriot Viper Venom to nowa generacja kultowych modułów. DDR5 jest szybsze i wydajniejsze od DDR4, a dodatkowo zgodne z najnowszymi platformami Intel oraz AMD, dzięki czemu Twój system będzie działał doskonale. Moduły Viper Venom zostały zaprojektowane z wykorzystaniem przełomowej technologii, aby wyznaczyć nowe standardy wyjątkowej wydajności. Co więcej, doskonała konstrukcja nada Twojej konfiguracji agresywny wygląd, dzięki czemu podkreślisz charakter gracza.\n\nSpecyfikacja DDR5 w modułach pamięci Patriot Viper Venom pozwala na niesamowite osiągi. W porównaniu z pamięciami DDR4, moduły pamięci Viper Venom zapewniają dwukrotnie większą przepustowość, co pozwala na szybkie działanie systemu i ładowanie aplikacji. Dodatkowo moduły mają niższe zużycie energii oraz wbudowaną technologię zarządzania temperaturą, dzięki czemu trwałość akcesorium jest znacznie wyższa.",
-        "price": "425",
-        "image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2022/5/pr_2022_5_10_13_4_4_266_01.jpg"
-    },
-    {
-        "name": "Kingston FURY 64GB (2x32GB) 3600MHz CL18 Beast Black",
-        "description": "Zmodernizuj swój system dzięki stylowej i niezwykle wydajnej pamięci RAM DDR4 Kingston FURY Beast Black. Dwa moduły o łącznej pojemności 64 GB (2x32 GB) oferują taktowanie 3600 MHz oraz opóźnienia na poziomie CL18. Ponadto moduły Kingston FURY Beast Black wspierają obsługę profili XMP.\n\nModuły pamięci Kingston FURY Beast Black wyposażone są w czarne radiatory, które doskonale odprowadzają ciepło. Całość dopełnia stylowa, czarna obudowa, która nadaje całej pamięci agresywny wygląd. Ponadto ograniczona, dożywotnia gwarancja zapewni Ci spokój ducha przy najbardziej spektakularnych rozgrywkach.",
-        "price": "589",
-        "image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2021/7/pr_2021_7_7_14_16_12_451_02.jpg"
-    },
-    {
-        "name": "Kingston FURY 32GB (1x32GB) 3600MHz CL18 Beast Black",
-        "description": "Zmodernizuj swój system dzięki stylowej i niezwykle wydajnej pamięci RAM DDR4 Kingston FURY Beast Black. Pojedynczy moduł o pojemności 32 GB oferuje taktowanie 3600 MHz oraz opóźnienia na poziomie CL18. Ponadto moduły Kingston FURY Beast Black wspierają obsługę profili XMP.\n\nModuł pamięci Kingston FURY Beast Black wyposażony jest w czarny radiator, który doskonale odprowadza ciepło. Całość dopełnia stylowa, czarna obudowa, która nadaje całej pamięci agresywny wygląd. Ponadto ograniczona, dożywotnia gwarancja zapewni Ci spokój ducha przy najbardziej spektakularnych rozgrywkach.",
-        "price": "299",
-        "image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2021/7/pr_2021_7_7_14_9_33_982_00.jpg"
-    },
-    {
-        "name": "GOODRAM 16GB (1x16GB) 3200MHz CL22",
-        "description": "Pamięci RAM DDR4 SODIMM GOODRAM są idealnym rozwiązaniem do modernizacji notebooków oraz niewielkich komputerów przenośnych. Sprzęt, który od lat dobrze służy swoim posiadaczom, dzięki rozszerzeniu o nowe pamięci SO-DIMM marki GOODRAM zyska zupełnie nowe możliwości.",
-        "price": "128",
-        "image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2020/7/pr_2020_7_22_12_41_0_922_00.jpg"
-    },
-    {
-        "name": "Crucial 32GB (1x32GB) 3200MHz",
-        "description": "W obecnie szybko rozwijającym się świecie technologii, cały czas powstają nowsze i bardziej wydajne komponenty. Dlatego firma Crucial ciągle udoskonala swoje produkty, aby zapewnić wysoką wydajność za niewielką cenę. Pamięć DDR4 Crucial o taktowaniu 3200 MHz znacznie poprawi prace Twojego laptopa, pozwalając systemowi przetwarzać więcej danych w jednym momencie. Uruchamiaj aplikacje szybciej i bez żadnych lagów.",
-        "price": "269",
-        "image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2023/7/pr_2023_7_12_8_14_37_370_00.jpg"
-    },
-    {
-        "name": "Kingston FURY 32GB (2x16GB) 3600MHz CL16 Renegade Black",
-        "description": "Pamięć RAM Kingston Fury Renegade to synonim niezrównanej wydajności. Zaprojektowana dla najbardziej wymagających użytkowników, oferuje prędkość DDR4-3600 i niskie opóźnienia na poziomie CL16. Dzięki temu nawet najbardziej zasobożerne gry i aplikacje działają płynnie i stabilnie, zapewniając użytkownikom przewagę w każdej sytuacji.",
-        "price": "339",
-        "image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2023/11/pr_2023_11_7_13_37_4_859_00.jpg"
-    },
-    {
-        "name": "Kingston FURY 16GB (2x8GB) 3733MHz CL19 Beast RGB",
-        "description": "Kingston Beast RGB to pamięć RAM typu DDR4 o imponującej pojemności, co zapewnia płynną i szybką pracę komputera. Dzięki taktowaniu 3733 MHz moduł ten znakomicie radzi sobie nawet z najbardziej wymagającymi zadaniami. Dodatkowo, opóźnienia na poziomie CL19 gwarantują optymalną szybkość odpowiedzi, co jest kluczowe dla graczy i profesjonalistów. Moduł pamięci nie obsługuje ECC, co oznacza prostotę i niezawodność działania w typowych zastosowaniach komputerowych.\n\nKingston Beast RGB wyposażono w efektowne podświetlenie, które dodaje stylu każdej konfiguracji komputerowej. Kolor czarny modułu idealnie komponuje się z każdym wnętrzem obudowy, a podświetlenie RGB pozwala na personalizację wyglądu. Radiator, będący elementem chłodzenia, efektywnie odprowadza ciepło, zapewniając stabilność pracy nawet podczas intensywnego użytkowania. Moduł wspiera profile OC Intel XMP, co umożliwia łatwe i bezpieczne podkręcanie dla uzyskania jeszcze lepszej wydajności. To idealne rozwiązanie dla tych, którzy oczekują nie tylko wydajności, ale także eleganckiego designu i niezawodności.",
-        "price": "229",
-        "image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2023/12/pr_2023_12_1_12_20_35_660_00.jpg"
-    },
-    {
-        "name": "Corsair 16GB (2x8GB) 3600MHz CL18 Vengeance",
-        "description": "Moduł Vengeance LPX jest zbudowany z ośmiu warstw PCB i wysoko ekranowanych układów pamięci. Skuteczny rozpraszacz ciepła zapewnia skuteczne chłodzenie, aby poprawić potencjał Twojego komputera. Wykonana z czystego aluminium szybciej odprowadza ciepło, zapewniając prawidłowo pracę.\n\nPrzekonaj się, ile FPS uzyskasz w grach dzięki różnym taktowaniom pamięci RAM na platformach Intel / AMD (rozdzielczość Full HD, ustawienia detali Ultra). Sprawdziliśmy również, jak pamięci sprawdzają się profesjonalnych zastosowaniach, takich jak kompresja plików, rendering wideo i 3D.\n\nPodczas instalacji pamięć zostanie automatycznie wykryta i dostosuję maksymalną wydajność odpowiednio do możliwości komputera. Zapewnia prawidłowe działanie nawet podczas dużych obciążeń.\n\nNiewielka konstrukcja sprawia, że jest idealnym rozwiązaniem dla mniejszych obudów komputerów w przypadku których wewnętrzna przestrzeń jest na wagę złota.",
-        "price": "179",
-        "image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2017/7/pr_2017_7_21_9_16_53_701.jpg"
-    },
-    {
-        "name": "Kingston 1TB M.2 PCIe Gen4 NVMe KC3000",
-        "description": "Dysk SSD Kingston KC3000 zapewnia wyższą wydajność, dzięki najnowszemu kontrolerowi Gen 4x4 NVMe i pamięci 3D TLC NAND.\n\nDzięki niemu zmodernizujesz pamięć masową i zwiększysz niezawodność systemu, aby sprostać wymagającym obciążeniom i uzyskać lepszą wydajność aplikacji do renderowania 3D i tworzenia treści 4K+.",
-        "price": "354",
-        "image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2021/10/pr_2021_10_22_9_51_18_607_00.jpg"
-    },
-    {
-        "name": "Lexar 1TB M.2 PCIe NVMe NM620",
-        "description": "Zaprojektowany, aby znacznie usprawnić działanie Twojego komputera, dysk SSD Lexar NM620 o pojemności 1 TB sprawi, że uruchamianie systemu i aplikacji będzie błyskawiczne. Interfejs M.2 PCIe Gen3x4 NVMe 1.4 oraz wbudowana kość pamięci 3D NAND gwarantują bardzo szybkie prędkości odczytu i zapisu na poziomie odpowiednio 3300 MB/s i 3000 MB/s. W rezultacie wydajność pracy jest większa i pozbawiona spowolnień.\n\nCo więcej, dysk nie posiada żadnych ruchomych części, dzięki czemu jego praca jest bardziej cicha i stabilna oraz mniej podatna na awarie. Dysk jest również odporny na wstrząsy i wibracje.",
-        "price": "259",
-        "image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2022/7/pr_2022_7_11_7_55_50_654_02.jpg"
-    },
-    {
-        "name": "WD 1TB M.2 PCIe Gen4 NVMe Black SN770",
-        "description": "Wejdź na wyższy poziom rozgrywki z dyskiem SSD WD Black SN770 o pojemności 1 TB. Został on zaprojektowany specjalnie do gier i jest wyposażony w interfejs PCIe Gen4, który zapewnia maksymalną prędkość odczytu sekwencyjnego na poziomie 5150 MB/s. Dysk oferuje bardzo dużo miejsca do zapisywania najnowszych gier i późniejszych aktualizacji oraz pakietów rozszerzeń.",
-        "price": "299",
-        "image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2022/3/pr_2022_3_28_13_47_9_339_02.jpg"
-    },
-    {
-        "name": "Kingston 2TB M.2 PCIe Gen4 NVMe KC3000",
-        "description": "Dysk SSD Kingston KC3000 zapewnia wyższą wydajność, dzięki najnowszemu kontrolerowi Gen 4x4 NVMe i pamięci 3D TLC NAND.\n\nDzięki niemu zmodernizujesz pamięć masową i zwiększysz niezawodność systemu, aby sprostać wymagającym obciążeniom i uzyskać lepszą wydajność aplikacji do renderowania 3D i tworzenia treści 4K+.",
-        "price": "599",
-        "image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2021/10/pr_2021_10_22_10_9_42_174_01.jpg"
-    },
-    {
-        "name": "Samsung 1TB M.2 PCIe Gen4 NVMe 990 PRO",
-        "description": "Dysk SSD M.2 Samsung 990 PRO o pojemności 1 TB jest najbardziej zaawansowanym modelem w swojej klasie. Pozwoli Ci cieszyć się maksymalnymi możliwościami oferowanymi przez PCIe 4.0.\n\nWbudowany system zarządzania temperaturą zapewnia niezwykle niskie zużycie energii, zachowując jednocześnie niespotykany poziom szybkości i wydajności. W ten sposób będziesz mieć pełną kontrolę nad grą.",
-        "price": "459",
-        "image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2022/10/pr_2022_10_20_6_28_39_791_00.jpg"
-    },
-    {
-        "name": "WD 2TB 2,5\" SATA SSD Red SA500",
-        "description": "Zwiększ wydajność i skróć czas reakcji swojego systemu NAS z dyskiem SSD SATA WD Red SA500 o pojemności 2 TB w obudowie 2,5'' / 7 mm. Systemy NAS działają bez przerwy, dlatego niezawodny dysk to kwestia najwyższej wagi.\n\nW przeciwieństwie do standardowych dysków SSD dyski WD Red NAS SATA SSD zostały zaprojektowane specjalnie z myślą o pracy ciągłej 24 godziny na dobę, 7 dni w tygodniu i przetestowane w takim środowisku.",
-        "price": "719",
-        "image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2024/8/pr_2024_8_14_13_56_4_36_00.jpg"
-    },
-    {
-        "name": "Samsung 4TB 2,5\" SATA SSD 870 EVO",
-        "description": "Poznaj Samsung 870 EVO o pojemności 4 TB - wydajny i niezawodny dysk SSD z serii EVO, której jakość doceniło wielu klientów na całym świecie.\n\nCechami, które wyróżniają model 870 EVO są błyskawiczny transfer danych, zwiększona niezawodność, najnowszy kontroler V-NAND i MKX 6, szeroki zakres kompatybilności oraz wsparcie oprogramowania Samsung Magician. Dysk ten spełni potrzeby każdego, od twórców treści, specjalistów IT, po osoby codziennie korzystające z komputera.",
-        "price": "1919",
-        "image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2021/1/pr_2021_1_25_12_40_53_262_00.jpg"
-    },
-    {
-        "name": "Lexar 2TB 2,5\n SATA SSD NS100",
-        "description": "Popraw osiągi i ogólne działanie swojego komputera dzięki dyskowi SSD 2,5'' Lexar NS100 o pojemności 2 TB. Zastosowany w dysku interfejs SATA III gwarantuje wysoką wydajność działania. Po zamontowaniu dysku NS100 w swoim komputerze, będziesz mógł cieszyć się krótszymi czasami uruchomienia systemu, szybciej uruchamiającymi się aplikacjami oraz prędkością odczytu sięgająca 550 MB/s.\n\nCo więcej, dysk Lexar NS100 jest odporny na wstrząsy i wibracje, a dzięki temu że nie posiada ruchomych części, jego praca jest bardziej cicha i mniej podatna na usterki w porównaniu do tradycyjnych dysków twardych.",
-        "price": "519",
-        "image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2020/9/pr_2020_9_21_9_26_2_138_02.jpg"
-    },
-    {
-        "name": "Seagate BARRACUDA 2TB 7200obr. 256MB",
-        "description": "Uniwersalny dysk Seagate Barracuda to gwarancja sprawnego dostępu do Twoich plików. Wykorzystaj jego przestrzeń do przechowywania danych niezbędnych do pracy i zyskaj wygodne narzędzie, które wspomoże w wykonywaniu codziennych obowiązków. Dysk ten posłuży Ci także do przechowywania zbioru zdjęć z wakacji, filmów, ulubionej muzyki oraz gier.\n\nInnowacyjne dyski twarde BarraCuda o sprawdzonej niezawodności są dostępne w wielu opcjach pojemności i w różnej cenie, co pozwala dopasować je do każdego budżetu. To niezrównane dziedzictwo rozwiązań do komputerów stacjonarnych.",
-        "price": "269",
-        "image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2019/9/pr_2019_9_10_9_41_46_776_03.jpg"
-    },
-    {
-        "name": "WD RED PLUS 4TB 5400obr. 256MB",
-        "description": "WD Red Plus to dysk HDD o pojemności 4 TB, który oferuje moc pozwalającą na radzenie sobie ze środowiskami NAS w małych i średnich przedsiębiorstwach oraz zwiększonymi obciążeniami. To idealny wybór do archiwizowania i udostępniania, a także do przebudowy układów RAID w systemach wykorzystujących ZFS i inne systemy plików. Stworzony i sprawdzony z myślą o systemach NAS z 8 kieszeniami dysk zapewnia elastyczność, wszechstronność i pewność podczas przechowywania i udostępniania cennych danych domowych i firmowych.",
-        "price": "499",
-        "image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2024/8/pr_2024_8_12_11_18_13_967_00.jpg"
-    },
-    {
-        "name": "MSI A850GL 850W 80 Plus Gold ATX 3.1",
-        "description": "Seria MAG A850GL PCIE5 to zasilacze zgodne z standardem ATX 3.0, które cechują się wysoką sprawnością energetyczną potwierdzoną certyfikatem 80 PLUS Gold. Urządzenia te pozwalają na bezproblemową obsługę kart graficznych PCIe 5.0 (do 600 W), a do ich budowy wykorzystano hydrodynamiczne łożyska FDB (Fluid Dynamic Bearing) charakteryzujące się cichą i stabilna pracą.\n\nKompaktowa obudowa formatu ATX o długości 140 mm i szerokości 150 mm zapewnia łatwy i wygodny montaż zasilacza w większości komputerów. Dzięki temu użytkownik ma do dyspozycji dużo więcej miejsca na odpowiednie ułożenie przewodów, co w istotny sposób może przyczynić się do poprawy przepływu powietrza w systemie.",
-        "price": "509",
-        "image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2023/11/pr_2023_11_27_9_11_22_911_00.jpg"
-    },
-    {
-        "name": "MSI MAG 550W 80 Plus Bronze",
-        "description": "Zapewnij bezpieczną pracę swoich komponentów z zasilaczem do komputera MSI MAG 550W. Zapewnia niezwykle wydajną pracę na podstawowym poziomi, dzięki czemu Twój system nie zawiedzie Cię podczas długich rozgrywek.\n\nKonstrukcja DC-DC z pojedynczą szyną 12 V oraz cichym wentylatorem stanowi najlepszy wybór dla początkujących graczy i entuzjastów PC.\n\nWysoką sprawność energetyczną zasilacza MSI MAG 550W potwierdza certyfikat 80 PLUS Bronze. Oznacza to, że w trakcie pracy więcej energii jest wykorzystane do zasilania komponentów, a mniej rozpraszane w postaci ciepła. Dzięki temu zasilacz osiąga niższe temperatury pracy, a jego chłodzenie może pracować ciszej. Jednocześnie Ty zaoszczędzasz na rachunkach za prąd.",
-        "price": "239",
-        "image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2021/10/pr_2021_10_15_10_18_39_897_00.jpg"
-    },
-    {
-        "name": "ENDORFY Supremo FM5 1000W 80 Plus Gold",
-        "description": "ENDORFY Supremo FM5 1000W to wydajny zasilacz, którego fantastyczne działanie potwierdza certyfikat 80 Plus Gold. Zawdzięcza to japońskim kondensatorom elektrolitycznym i aluminiowo-polimerowym. Zasilacz został zaprojektowany tak, żeby utrzymywał stabilne napięcie osobno na każdej linii. Dzięki temu Twój komputer działa wzorowo nawet z najbardziej wymagającymi komponentami. Ma 12-centymetrowy wentylator Fluctus 120 PWM, który dba o niską temperaturę pracy zasilacza. Urządzenie jest niewielkie, dzięki czemu zmieści się do wielu obudów.",
-        "price": "699",
-        "image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2022/10/pr_2022_10_8_12_54_47_951_00.jpg"
-    },
-    {
-        "name": "be quiet! System Power 10 450W 80 Plus Bronze",
-        "description": "System Power 10 450 W to zasilacz wybierany przez konfiguratorów PC, dla których istotna jest niezawodność, cisza oraz cena produktu. Funkcje takie jak wentylator z termokontrolą i wyjątkowo niski pobór mocy w trybie czuwania (poniżej 0,15 W) podkreślają jakość, jaką oferuje be quiet! System Power 10 450 W nawet w podstawowej serii zasilaczy.",
-        "price": "229",
-        "image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2022/10/pr_2022_10_18_15_0_53_425_02.jpg"
-    },
-    {
-        "name": "Gigabyte UD750GM PG5 750W 80 Plus Gold ATX 3.0",
-        "description": "Zasilaj swoje podzespoły z dużą mocą z zasilaczem Gigabyte UD750GM PG5. To modularne akcesorium, które doskonale zadba o dostarczenie mocy Twojemu komputerowi. Wysoką wydajność potwierdza certyfikat 80 Plus Gold. Cichy i wydajny wentylator zapewnia odpowiednią pracę zasilacza. Wbudowane zabezpieczenia natomiast dbają o bezpieczeństwo podłączonych podzespołów oraz zasilacza.\n\nZasilacz Gigabyte UD750GM PG5 ma w pełni modularne okablowanie, zapewniające Ci większą swobodę w kwestii budowy swojej konfiguracji. Korzystaj tylko z tych przewodów, których w danej chili potrzebujesz, by zapewnić lepszy przepływ powietrza w swojej obudowie oraz zadbać o estetykę wnętrza. Gdy zajdzie potrzeba dalszej rozbudowy, po prostu skorzystaj z kabli znajdujących się w zestawie.",
-        "price": "359",
-        "image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2024/7/pr_2024_7_10_11_32_19_358_04.jpg"
-    },
-    {
-        "name": "Obudowa do komputera be quiet! Pure Base 500 Window White",
-        "description": "Ciesz się z możliwości wyboru, jaką gwarantuje obudowa be quiet! Pure Base 500. Akcesorium jest wyposażone w wymienny panel górny, dzięki czemu umożliwi Ci dopasowanie jej do swoich potrzeb. Wnętrze obudowy przygotowane jest na montaż wydajnych komponentów, a boczny panel ze szkła hartowanego pozwoli ukazać Twoją konfigurację, niezależnie od tego czy jest to komputer gracza, czy podstawowy system.\n\nSprawdź, jak be quiet! Pure Base 500 Window wygląda w rzeczywistości. Chwyć zdjęcie poniżej i przeciągnij je w lewo lub prawo aby obrócić produkt lub skorzystaj z przycisków nawigacyjnych.",
-        "price": "369",
-        "image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2019/9/pr_2019_9_9_12_57_15_886_02.jpg"
-    },
-    {
-        "name": " Obudowa do komputera be quiet! Pure Base 500DX Black",
-        "description": "Zachwycająca swoim oryginalnym wyglądem obudowa Pure Base 500DX pozwala na montaż wielu komponentów. Dodatkowo została zoptymalizowana pod kątem zapewnienia dobrego przepływu powietrza, aby Twój system działał sprawnie. Wbudowane podświetlenie podkreśli agresywny charakter konfiguracji, a przezroczysty panel boczny umożliwi Ci pokazanie wnętrza obudowy.\n\nSprawdź, jak be quiet! Pure Base 500DX Black wygląda w rzeczywistości. Chwyć zdjęcie poniżej i przeciągnij je w lewo lub prawo, aby obrócić produkt lub skorzystaj z przycisków nawigacyjnych.",
-        "price": "439",
-        "image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2020/4/pr_2020_4_23_11_50_6_672_00.jpg"
-    },
-    {
-        "name": "Obudowa do komputera ENDORFY Ventum 200 Air",
-        "description": "ENDORFY Ventum 200 Air to obudowa w czerni do zadań specjalnych. Ma ona okno ze szkła hartowanego, które zaprezentuje pojemne wnętrze. Za sprawą sprawnego systemu wentylacyjnego i dołączonych wentylatorów utrzymuje niskie temperatury. Dodatkowo chroni podzespoły przed brudem i kurzem.\n\nObudowa ENDORFY Ventum 200 Air ma front z drobno perforowanej blachy, co wpuszcza do środka świeże powietrze i zatrzymuje kurz. Obudowa pozwala na zachowanie niskich temperatur nawet, podczas kilkugodzinnej, emocjonującej rozgrywki. Ma preinstalowane 4 wentylatory Stratus 120 PWM, które opracowane są we współpracy z Synergy Cooling. Dodatkowo obudowa zmieści łącznie 7 wentylatorów.",
-        "price": "289",
-        "image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2022/11/pr_2022_11_17_13_11_43_84_02.jpg"
-    },
-    {
-        "name": "Obudowa do komputera Lian Li Lancool III RGB White",
-        "description": "iała konstrukcja obudowy Lian Li Lancool III RGB została wyposażona przez producenta w pojemne wnętrze, dzięki czemu zbudujesz w niej potężny system. Obudowa oferuje również wydajne chłodzenie wnętrza za sprawą panelu przedniego z siatki, licznych otworów wentylacyjnych oraz preinstalowanych wentylatorów. Producent zadbał również o wspaniały wygląd obudowy, ponieważ wentylatory, które zainstalował, mają podświetlenie, a panel boczny jest przezroczysty. O czystość pozwolą Ci zadbać filtr antykurzowy, który znajdziesz na spodzie obudowy.\n\nNie musisz martwić się o możliwości chłodzenia z obudową Lian Li Lancool III RGB. Przedni panel z siatki maksymalnie przepuszcza powietrze, a liczne otwory wentylacyjne pozwalają na usuwanie ciepłego powietrza z wnętrza. Fabrycznie zainstalowane 4 wentylatory 140 mm gwarantują nie tylko doskonałe chłodzenia, ale również świetny wygląd konstrukcji.\n\nObudowa oferuje również elastyczne opcje rozbudowy chodzenia. Zainstalujesz w niej łącznie do 10 wentylatorów, chłodnicę procesora 185 mm oraz niestandardowe systemy chłodzenia cieczą.",
-        "price": "889",
-        "image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2022/8/pr_2022_8_1_13_15_53_442_03.jpg"
-    },
-    {
-        "name": "Obudowa do komputera NZXT H9 Flow White",
-        "description": "Doskonała konstrukcja obudowy NZXT H9 Flow będzie się wspaniale prezentować zarówno na stanowisku gracza, jak i biurowym. Ma ona dwa panele ze szkła, dzięki czemu wnętrze jest dokładnie widoczne. Na górze oraz drugim boku znajdują się panele z licznymi otworami wentylacyjnymi, dzięki czemu możliwe jest swobodne chłodzenie.\n\nMartwisz się o wysokie temperatury podczas pracy systemu? NZXT H9 Flow ma boczny panel oraz górny z licznymi otworami wentylacyjnymi. Dzięki temu powietrze może swobodnie przepływać i chłodzić wnętrze. Dodatkowo producent zainstalował w niej kilka wentylatorów. Pozwala to na dobre chłodzenie i sprawne działanie konstrukcji. Obudowa wspiera również instalację dodatkowych wentylatorów i radiatorów do nawet 360 mm.",
-        "price": "749",
-        "image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2023/3/pr_2023_3_28_9_37_58_559_02.jpg"
-    }
+	{
+		"name": "AMD Ryzen 5 5600",
+		"description": "Przeznaczony do domowych i gamingowych komputerów stacjonarnych procesor AMD Ryzen 5 5600 obsłuży wymagające gry oraz zapewni obsługę zadań wielowątkowych, takich jak np. renderowanie 3D i wideo. 6 rdzeni, 12 wątków, częstotliwość taktowania do 4,4 GHz oraz 35 MB pamięci cache sprawiają, że ten CPU zapewnia najwyższą wydajność. Ryzen 5 5600 wyposażono także w chłodzenie Wraith Stealth.",
+		"price": "399",
+		"image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2022/4/pr_2022_4_4_13_1_27_284_00.jpg"
+	},
+	{
+		"name": "Intel Core i5-12400F",
+		"description": "Korzystaj z procesorów Intel stworzonych dla gamingu nowej generacji, takich jak wyposażony w 6 rdzeni i 12 wątków Intel Core i5-12400F. Zapewnia on rewolucyjną wydajność dzięki wysokiemu taktowaniu do nawet 4,4 GHz. Pewnie zwyciężaj w kolejnych rozgrywkach i doświadcz imersji w nowe wirtualne światy. Wszystko to dzięki rewolucyjnej architekturze procesora skupiającej się na tym co, najważniejsze – gamingu.",
+		"price": "509",
+		"image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2021/12/pr_2021_12_23_9_31_19_942_00.jpg"
+	},
+	{
+		"name": "AMD Ryzen 7 5700X3D",
+		"description": "Jednostkę AMD Ryzen 7 5700X3D wyposażono w 8 rdzeni i 16 wątków, gotowych do pracy przy maksymalnym obciążeniu w grach i specjalistycznych aplikacjach. Pamięć cache tego procesora liczy łącznie 100 MB, a bazowe taktowanie rdzeni otwiera częstotliwość 3 GHz, mogąca sięgać aż do 4,1 GHz w trybie Boost. Moc jednostki może wzrosnąć dzięki odblokowanej możliwości podkręcania. Czas na ogromną moc wspartą przez nowatorską architekturę Zen 3 oraz pamięć cache 3D V-Cache.",
+		"price": "999",
+		"image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2024/1/pr_2024_1_29_10_22_9_459_00.jpg"
+	},
+	{
+		"name": "Intel Core i5-12600K",
+		"description": "Zintegrowany układ graficzny. Poznaj procesory Intel Core dwunastej generacji do komputerów stacjonarnych, stworzone do gamingu nowej generacji. Bezkompromisowe granie i wielozadaniowość umożliwia hybrydowa i bardziej wydajna architektura odblokowanego procesora Intel Core i5-12600K, korzystająca z dwóch rodzajów rdzeni: 6 wysoko wydajnych (Performance Core) i 4 energooszczędnych (Efficient Core).",
+		"price": "799",
+		"image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2021/10/pr_2021_10_26_7_31_43_884_00.jpg"
+	},
+	{
+		"name": "AMD Ryzen 5 5600X",
+		"description": "Jednostka AMD Ryzen 5 5600X posiada 6 rdzeni i 12 wątków, gotowych do pracy przy maksymalnym obciążeniu w grach i specjalistycznych aplikacjach. Pamięć cache tego procesora liczy łącznie 35 MB, a bazowe taktowanie rdzeni otwiera częstotliwość 3,70 GHz, mogąca sięgać aż do 4,60 GHz w trybie Turbo. Moc jednostki może jednak wzrosnąć dzięki odblokowanej możliwości podkręcania. Czas na ogromną moc wspartą przez nowatorską architekturę Zen 3.",
+		"price": "459",
+		"image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2020/10/pr_2020_10_9_12_59_29_839_00.jpg"
+	},
+	{
+		"name": "Intel Core i5-13600K",
+		"description": "Od wieloosobowych konfrontacji po epickie przygody — bądź bliżej akcji niż kiedykolwiek wcześniej dzięki innowacyjnej architekturze procesora Intel Core i5-13600K. Zapewnia on nawet 5,1 GHz maksymalnego taktowania i 14 rdzeni: 6 Performance-cores oraz 8 Efficient-cores. Przy tym oferuje 20 wątków: 12 dla Performance-cores oraz 8 dla Efficient-cores. Ten odblokowany procesor Intel Core i5 trzynastej generacji do komputerów stacjonarnych jest też przygotowany do możliwości podkręcania.",
+		"price": "1149",
+		"image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2022/9/pr_2022_9_27_12_10_57_851_00.jpg"
+	},
+	{
+		"name": "AMD Ryzen 7 5700X",
+		"description": "Jednostkę AMD Ryzen 7 5700X wyposażono w 8 rdzeni i 16 wątków, gotowych do pracy przy maksymalnym obciążeniu w grach i specjalistycznych aplikacjach. Pamięć cache tego procesora liczy łącznie 36 MB, a bazowe taktowanie rdzeni otwiera częstotliwość 3,4 GHz, mogąca sięgać aż do 4,6 GHz w trybie Boost. Moc jednostki może wzrosnąć dzięki odblokowanej możliwości podkręcania. Czas na ogromną moc wspartą przez nowatorską architekturę Zen 3.",
+		"price": "649",
+		"image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2022/4/pr_2022_4_4_13_22_49_19_01.jpg"
+	},
+	{
+		"name": "Intel Core i7-12700KF",
+		"description": "Poznaj procesory Intel Core dwunastej generacji do komputerów stacjonarnych, stworzone do gamingu nowej generacji. Bezkompromisowe granie i wielozadaniowość umożliwia hybrydowa i bardziej wydajna architektura odblokowanego procesora Intel Core i7-12700KF, korzystająca z dwóch rodzajów rdzeni: 8 wysoko wydajnych (Performance Core) i 4 energooszczędnych (Efficient Core).",
+		"price": "1399",
+		"image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2021/10/pr_2021_10_26_7_40_0_88_00.jpg"
+	},
+	{
+		"name": "Intel Core i9-12900K",
+		"description": "Poznaj procesory Intel Core dwunastej generacji do komputerów stacjonarnych, stworzone do gamingu nowej generacji. Bezkompromisowe granie i wielozadaniowość umożliwia hybrydowa i bardziej wydajna architektura odblokowanego procesora Intel Core i9-12900K, korzystająca z dwóch rodzajów rdzeni: 8 wysoko wydajnych (Performance Core) i 8 energooszczędnych (Efficient Core).",
+		"price": "1479",
+		"image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2021/10/pr_2021_10_26_7_49_18_782_00.jpg"
+	},
+	{
+		"name": "AMD Ryzen 9 7950X",
+		"description": "Zaprojektowany z myślą o graczach i twórcach treści, procesor AMD Ryzen 9 7950X w architekturze 'Zen 4' zapewni Ci poziom wydajności, który sprosta wszystkim postawionym przed nim zadaniom. Skup się na tym co ważne i odnieś zwycięstwo na wirtualnym polu bitwy lub przygotuj projekt, który zachwyci wszystkich. Dzięki 16 rdzeniom, 32 wątkom, zegarom przyspieszającym do 5,7 GHz oraz 80 MB pamięci podręcznej, AMD Ryzen 9 7950X zapewni Ci wydajność zmieniającą perspektywę.",
+		"price": "2199",
+		"image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2023/1/pr_2023_1_25_12_54_39_334_03.jpg"
+	},
+	{
+		"name": "MSI B550-A PRO",
+		"description": "Płyty główne MSI z serii PRO pozwalają użytkownikom pracować wydajniej i produktywniej, oferując bogatą funkcjonalność i stabilność. MSI B550-A PRO umożliwi Ci wykorzystanie w swojej firmie procesorów AMD Ryzen 3. generacji oraz nowszych, wspieranych przez moduły RAM DDR4 o taktowaniu nawet 4800 MHz (OC). Ponadto, możesz wykorzystać układy graficzne AMD Vega wbudowane w procesory Ryzen lub połączyć dwie karty graficzne w konfiguracji AMD CrossFire.",
+		"price": "459",
+		"image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2020/6/pr_2020_6_9_17_24_15_146_00.jpg"
+	},
+	{
+		"name": "MSI X670E GAMING PLUS WIFI",
+		"description": "Stwórz platformę do intensywnego gamingu z procesorami AMD Ryzen oraz płytą główną MSI X670E GAMING PLUS WIFI. To wydajna konstrukcja z socketem AM5, która wspiera CPU generacji Zen 4/5, jak również pamięci RAM DDR5. Podłączaj wydajne moduły i korzystaj z technologii AMD EXPO, by podkręcać taktowania pamięci do nawet 7800 MHz. \n\nX670E GAMING PLUS WIFI oferuje też znacznie więcej. Wsparcie dla PCIe 5.0 pozwoli Ci skorzystać z najszybszych dysków NVMe oraz kart graficznych. Rozbudowana sekcja zasilania z wydajnym chłodzeniem sprosta wymogom podkręcanych procesorów. A dzięki dwóm szybkim opcjom łączności z siecią już nic Cię nie ogranicza. Podłącz kabel LAN lub korzystaj z Wi-Fi, by pobierać, streamować i grać bez ograniczeń.",
+		"price": "1149",
+		"image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2024/4/pr_2024_4_26_14_13_44_434_04.jpg"
+	},
+	{
+		"name": "MSI MPG B550 GAMING PLUS",
+		"description": "Zwyciężaj ze stylem dzięki wyjątkowym możliwościom. MSI MPG B550 GAMING PLUS to płyta główna pozwalająca Ci okiełznać moc nowych procesorów AMD Ryzen 3. generacji. Oferuje ona wysoką wydajność, m.in. dzięki wsparciu dla obsługi pamięci RAM o taktowaniu nawet 4400 MHz (OC) czy nowemu złączu Lightning M.2 Gen4 do 64 Gb/s. A przy tym możesz stworzyć konfigurację dwóch kart graficznych AMD CrossFire.",
+		"price": "529",
+		"image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2020/6/pr_2020_6_12_9_3_57_498_00.jpg"
+	},
+	{
+		"name": "MSI MAG Z790 TOMAHAWK WIFI",
+		"description": "Dzięki płycie głównej MSI MAG Z790 TOMAHAWK WIFI wykorzystasz możliwości procesorów Intel Core 12. i 13. generacji oraz pamięci RAM DDR5 o taktowaniu nawet 7200 MHz (OC). Mocna sekcja zasilania dba o właściwe temperatury pracy, a wydajne chłodzenie gwarantuje stabilność podczas pracy. Możesz przy tym korzystać z łączności PCIe 5.0, szybkich portów USB oraz podłączać dyski SSD NVMe. Minimalistyczny design płyty odnajdzie się w każdej konfiguracji, a wbudowane złącza JRGB i JARGB pozwolą podłączać liczne akcesoria LED.",
+		"price": "1079",
+		"image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2022/9/pr_2022_9_28_11_59_35_481_04.jpg"
+	},
+	{
+		"name": "MSI Z790 GAMING PLUS WIFI",
+		"description": "Płytę główną MSI Z790 GAMING PLUS WIFI zaprojektowano z myślą o graczach, oferując im mnóstwo opcji łączności oraz personalizacji. Obsługa procesorów Intel Core 14., 13. i 12. generacji, wspomaganych przez pamięci RAM DDR5 o taktowaniu do 7200 MHz (OC), pozwoli stworzyć wydajną konfigurację, która sprosta najnowszym tytułom. Płyta wspiera też najnowsze standardy, jak PCIe 5.0, który pozwoli podłączyć najszybsze karty graficzne. Podłączysz też do niej wiele dysków M.2, a liczne porty USB, takie jak USB 3.2 Gen2x2, umożliwią podłączanie wielu wydajnych akcesoriów. Industrialny design płyty MSI Z790 GAMING PLUS WIFI odnajdzie się w każdej konfiguracji, a wbudowane złącza ARGB i RGB umożliwia skorzystanie z akcesoriów LED, które rozświetlą wnętrze obudowy.",
+		"price": "969",
+		"image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2023/11/pr_2023_11_21_8_59_54_558_00.jpg"
+	},
+	{
+		"name": "Gigabyte B760 GAMING X DDR4",
+		"description": "Zbuduj gamingową platformę z płytą główną Gigabyte B760 GAMING X DDR4 oraz procesorami Intel Core 13./12. generacji. Ta konstrukcja ATX oferuje bogate możliwości rozbudowy i wysoką wydajność. Mocna sekcja zasilania, wsparcie dla szybkich standardów łączności oraz rozbudowane chłodzenie zapewnią Twojej konfiguracji wysokie osiągi. Z pomocą zintegrowanych złączy dla pasków LED RGB i ARGB możesz zmienić minimalistyczny design płyty głównej. Pozwolą Ci one stworzyć unikalne podświetlenie obudowy i sterować nim w systemie RGB Fusion.",
+		"price": "619",
+		"image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2023/1/pr_2023_1_10_10_54_35_353_05.jpg"
+	},
+	{
+		"name": "Gigabyte B550 AORUS ELITE V2",
+		"description": "Korzystaj z wydajności procesorów AMD Ryzen 3 generacji oraz wbudowanych w nie układów graficznych Vega, z płytą główną Gigabyte B550 AORUS Elite V2. Wspiera ona przy tym pamięci RAM DDR4 o taktowaniu nawet 4733 MHz (OC), a także szybkie dyski SSD M.2. Jest ona również przystosowana do wsparcia dla standardu PCI-E 4.0. A dzięki stylowemu designowi oraz podświetleniu RGB Fusion 2.0, możesz nadać swojej konfiguracji prawdziwie gamingowego wyglądu.",
+		"price": "559",
+		"image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2020/11/pr_2020_11_18_11_59_59_666_04.jpg"
+	},
+	{
+		"name": "ASUS TUF GAMING B760-PLUS WIFI",
+		"description": "Łłączy w sobie możliwości procesorów Intel z niezawodnością i wsparciem dla nowoczesnych technologii. Komponenty klasy wojskowej, usprawnione chłodzenie i charakterystyczna estetyka pozwolą Ci stworzyć PC, który zachwyci możliwościami. \n\nDzięki obsłudze najszybszych standardów, płyta ASUS TUF GAMING B760-PLUS WIFI pozwoli Ci korzystać z najlepszych komponentów na rynku. Wzmacniany slot PCIe 5.0 x16 pracuje z szybkością do 128 Gb/s, dzięki czemu podłączysz do niego najlepsze karty graficzne. Trzy sloty M.2 na dyski SSD NVMe pracują w standardzie PCIe 4.0 x4 (do 64 Gb/s). Możesz więc sięgnąć po najszybsze pamięci dostępne na rynku.",
+		"price": "719",
+		"image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2024/5/pr_2024_5_13_8_59_36_369_04.jpg"
+	},
+	{
+		"name": "ASRock B760 Pro RS",
+		"description": "Zmaksymalizuj osiągi procesorów Intel Core 13. i 12. generacji ze stylową płytą główną ASRock B760 Pro RS w formacie ATX. Obsługuje ona też nowoczesne pamięci RAM DDR5, podkręcane do nawet 7200 MHz. Korzystaj też ze wsparcie dla PCIe 4.0, by podłączać najszybsze komponenty oraz połączenia sieciowego Dragon LAN o przepustowości nawet 2,5 Gb/s. Dzięki temu możesz zbudować wydajną konfigurację nastawioną zarówno na gry, jak i zaawansowaną pracę.\n\nOprócz wbudowanego podświetlenia RGB, płyta B760 Pro RS ma również zintegrowane złącza RGB i ARGB. Umożliwiają one podłączenie kompatybilnych akcesoriów i urządzeń, takich jak paski LED. Synchronizuj je dzięki Polychrome RGB Sync, aby stworzyć swój własny, unikalny styl podświetlenia.",
+		"price": "599",
+		"image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2023/1/pr_2023_1_16_9_10_8_247_04.jpg"
+	},
+	{
+		"name": "ASUS PRIME B650-PLUS",
+		"description": "Płyty główne z serii PRIME zostały szczegółowo zaprojektowane by wyzwolić pełen potencjał procesorów AMD Ryzen z serii 7000. Dzięki solidnej konstrukcji zasilania, kompleksowym rozwiązaniom chłodzącym oraz inteligentnym opcjom dostrajania, ASUS PRIME B650-PLUS zapewnia użytkownikom i entuzjastom szereg rozwiązań ułatwiających budowę komputera, optymalizację wydajności oraz personalizację opcji w dedykowanym oprogramowaniu.\n\nASUS PRIME B650-PLUS zapewnia wiele opcji dla pamięci masowej, pozwalające podłączać szybkie dyski SSD NVMe. Jedno złącze PCIe 4.0 x4 M.2 oferuje przepustowość do 64 Gb/s, podczas gdy drugi slot PCIe 5.0 x4 M.2 pracuje na interfejsie oferującym prędkość sięgającą 128 Gb/s. Wśród zewnętrznych portów znajdziesz m.in. USB 3.2 Gen2 oferujący szybkość do 10 Gb/s, a na płycie głównej umieszczono też wyprowadzenie dla złącza Thunderbolt (USB4) o maksymalnej przepustowości nawet 40 Gb/s.",
+		"price": "639",
+		"image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2022/10/pr_2022_10_10_17_49_9_126_05.jpg"
+	},
+	{
+		"name": "Gainward GeForce RTX 4070Ti Super Panther OC 16GB GDDR6X",
+		"description": "Dynamiczna i szybka niczym drapieżnik, a zarazem cicha i niewidoczna – taka jest fabrycznie podkręcona karta graficzna Gainward GeForce RTX 4070 Ti Super Panther OC 16 GB GDDR6X. Architektura NVIDIA Ada Lovelace oferuje wsparcie dla kolejnych wersji kultowych technologii graficznych oraz nowy poziom wydajności. Trzecia generacja DLSS oraz Ray Tracingu pozwolą Ci grać przy jeszcze wyższych FPS-ach i w jeszcze lepszej grafice. Karta Gainward GeForce RTX 4070 Ti Super Panther OC wykorzystuje trzy wentylatory do chłodzenia pracującego GPU. W połączeniu z masywnym radiatorem gwarantują one sprawne odprowadzanie energii cieplnej.",
+		"price": "3899",
+		"image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2024/1/pr_2024_1_10_11_23_16_640_05.jpg"
+	},
+	{
+		"name": "Inno3D GeForce RTX 4070 Super Twin X2 12GB GDDR6X",
+		"description": "Sięgnij po możliwości architektury NVIDIA Ada Lovelace z kartą graficzną Inno3D GeForce RTX 4070 Twin X2 12 GB GDDR6X. Dzięki niej skorzystasz z rozwiązań, takich jak: Ray Tracing czy DLSS 3. W efekcie czeka na Ciebie zupełnie nowy poziom fotorealizmu oraz zwiększona liczba FPS. O najlepsze chłodzenie karty Inno3D GeForce RTX 4070 Twin X2 dba bliźniaczy układ wentylatorów. Specjalnie ukształtowane łopatki generują mocny strumień powietrza, a wysokiej klasy łożysko pozwala na cichą i niezawodną pracę. Natomiast minimalistyczny design karty doskonale odnajdzie się w każdej obudowie.",
+		"price": "2799",
+		"image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2024/1/pr_2024_1_9_11_35_50_639_02.jpg"
+	},
+	{
+		"name": "MSI GeForce RTX 3060 VENTUS 2X OC 12GB GDDR6",
+		"description": "Minimalistyczna karta MSI GeForce RTX 3060 VENTUS 2X OC oferuje wszystkie niezbędne rozwiązania, by zapewnić Ci wysoką wydajność. GPU oparte o architekturę NVIDIA Ampere oraz 12GB pamięci GDDR6 pozwalają cieszyć się płynną rozgrywką oraz nowatorskimi technologiami, takimi jak Ray Tracing czy DLSS. Wydajny układ chłodzenia z dwoma wentylatorami zadba o optymalne temperatury pracy, a stylowy design sprawdzi się w każdej obudowie.",
+		"price": "1349",
+		"image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2021/2/pr_2021_2_12_15_20_7_335_04.jpg"
+	},
+	{
+		"name": "Gainward GeForce RTX 4060 Ti Panther 16GB GDDR6",
+		"description": "Odrzucając wszystkie efekciarskie dodatki, karta Gainward GeForce RTX 4060 Ti Panther 16 GB GDDR6 w swoim czarnym wykończeniu prezentuje się niemal niezauważalnie, jak przyczajona pantera. Minimalistyczny design skomponuje się z każdą obudową, a architektura NVIDIA Ada Lovelace zadba o najwyższe osiągi. Doświadcz możliwości Ray Tracingu i DLSS 3, które zapewnią fotorealistyczną rozgrywkę przy wysokich FPS. Trzy wentylatory pracują cicho i wydajnie, by utrzymać temperatury karty Gainward GeForce RTX 4060 Ti Panther na optymalnym poziomie.",
+		"price": "2099",
+		"image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2023/10/pr_2023_10_31_10_57_52_627_00.jpg"
+	},
+	{
+		"name": "MSI GeForce RTX 4070 SUPER GAMING X SLIM 12GB GDDR6X",
+		"description": "Wybierz smukłą kartę graficzną MSI GeForce RTX 4070 SUPER GAMING X SLIM 12 GB GDDR6X, by zyskać większą wydajność i styl. To konstrukcja oparta o architekturę NVIDIA Ada Lovelace, która zapewni Ci najwyższe osiągi. Korzystaj z możliwości technologii Ray Tracing czy skalowania DLSS, dzięki którym zyskasz fotorealistyczne efekty graficzne oraz wyższe FPS. MSI GeForce RTX 4070 SUPER GAMING X SLIM wykorzystuje trzy wentylatory TORX FAN 5.0. Miedziana niklowana podstawa sprawnie odprowadza energię cieplną z GPU i pamięci, oddając ją do radiatora przez cztery ciepłowody. Natomiast dzięki oprogramowaniu MSI Center zyskasz dostęp do licznych opcji personalizacji i monitorowania pracy karty.",
+		"price": "3099",
+		"image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2024/1/pr_2024_1_8_12_45_4_378_00.jpg"
+	},
+	{
+		"name": "Zotac GeForce RTX 4060 Twin Edge OC White Edition 8GB GDDR6",
+		"description": "Kartę graficzną Zotac GeForce RTX 4060 Twin Edge OC White Edition 8 GB GDDR6 stworzono specjalnie z myślą o montażu w niewielkich obudowach komputerowych. Dzięki temu możesz korzystać z możliwości architektury NVIDIA Ada Lovelace również w konfiguracjach stworzonych do kompaktowego gamingu w Full HD. Do zasilania wystarczy jedno złącze PCI-E (6+2), a przy tym czekają na Ciebie również możliwości Ray Tracingu czy DLSS. Oprogramowanie FireStorm pozwoli Ci z kolei kontrolować parametry pracy karty, obroty wentylatory a także podświetlane elementy Spectra RGB. Udoskonalony pod każdym względem IceStorm 2.0 to zaawansowany system chłodzenia stworzony, aby zadbać o najwyższą stabilność karty Zotac GeForce RTX 4060 Twin Edge OC White Edition.",
+		"price": "1499",
+		"image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2023/6/pr_2023_6_28_10_48_1_183_00.jpg"
+	},
+	{
+		"name": "Gigabyte Radeon RX 7600 XT Gaming OC 16 GB GDDR6",
+		"description": "Przygotuj się na gry jutra dzięki nowatorskim technologiom karty graficznej Gigabyte Radeon RX 7600 XT Gaming OC 16 GB GDDR6. Ciesz się wyjątkową wydajnością oraz technologiami zapewnianymi przez architekturę AMD RDNA 3. Ray tracing oraz skalowanie FSR/RSR wygenerują więcej FPS przy bardziej fotorealistycznych efektach graficznych. Mocne chłodzenie WINDFORCE dba o zachowaniu optymalnych temperatur podczas pracy. Zintegrowane podświetlenie RGB Fusion rozświetli minimalistyczny design karty.",
+		"price": "1549",
+		"image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2024/3/pr_2024_3_4_12_16_39_722_00.jpg"
+	},
+	{
+		"name": "Sapphire Radeon RX 7800 XT PULSE 16GB GDDR6",
+		"description": "Dzięki karcie graficznej Sapphire Radeon RX 7800 XT PULSE 16 GB GDDR6 możesz cieszyć się płynną rozgrywką w 1440p oraz najwyższą stabilnością pracy. Dzięki oparciu jej o architekturę AMD RDNA 3, karta oferuje wsparcie dla wielu nowoczesnych technologii. Ray Tracing, skalowanie FidelityFX oraz RSR, AMD Radiance Display Engine czy kodowanie AV1 – graj i pracuj jeszcze efektywniej. Minimalistyczna konstrukcja karty z dwoma wydajnymi wentylatorami zmieści się również w bardziej kompaktowych obudowach, a oprogramowanie TriXX pozwoli Ci łatwo zarządzać ustawieniami karty graficznej.",
+		"price": "2399",
+		"image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2023/9/pr_2023_9_5_13_56_43_175_00.jpg"
+	},
+	{
+		"name": "Sapphire Radeon RX 7800 XT NITRO+ 16GB GDDR6",
+		"description": "Poczuj największą radość z gamingu, korzystając z wydajnej i niezawodnej karty Sapphire Radeon RX 7800 XT NITRO+ 16 GB GDDR6. To unikalna konstrukcja w architekturze AMD RDNA 3, dzięki której możesz cieszyć się płynną rozgrywką w rozdzielczości 1440p. Oprócz tego oferuje obsługę technologii takich jak Ray Tracing, FSR/RSR AMD Radiance Display czy kodowania AV1. Jest więc gotowa zarówno do gamingu, jak i bardziej profesjonalnych zastosowań. Wydajne chłodzenie dba o optymalne temperatury, a wbudowane podświetlenie ARGB pozwoli spersonalizować kartę w oprogramowaniu TriXX.",
+		"price": "2559",
+		"image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2023/9/pr_2023_9_5_14_11_7_621_00.jpg"
+	},
+	{
+		"name": "ASRock Radeon RX 6500 XT Phantom Gaming D OC 4GB GDDR6",
+		"description": "Zapewnij sobie wsparcie w gamingowych bojach dzięki rozwiązaniom architektury AMD RDNA 2. Oparte o nią GPU karty ASRock Radeon RX 6500 XT Phantom Gaming D OC 4GB GDDR6 pozwoli Ci doświadczyć płynnej i doskonale prezentującej się rozgrywki dzięki technologiom takim jak FidelityFX czy Ray Tracing. Stylowy i prostolinijny design karty ASRock Radeon RX 6500 XT Phantom Gaming D OC jest zoptymalizowany dla zapewnienia doskonałych doświadczeń z gamingu.",
+		"price": "759",
+		"image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2022/1/pr_2022_1_19_15_26_3_437_04.jpg"
+	},
+	{
+		"name": "Kingston FURY 32GB (2x16GB) 3200MHz CL16 Beast Black",
+		"description": "Zmodernizuj swój system dzięki stylowej i niezwykle wydajnej pamięci RAM DDR4 Kingston FURY Beast Black. Dwa moduły o łącznej pojemności 32 GB (2x16 GB) oferują taktowanie 3200 MHz oraz opóźnienia na poziomie CL16. Ponadto moduły Kingston FURY Beast Black wspierają obsługę profili XMP.\n\nModuły pamięci Kingston FURY Beast Black wyposażone są w czarne radiatory, które doskonale odprowadzają ciepło. Całość dopełnia stylowa, czarna obudowa, która nadaje całej pamięci agresywny wygląd. Ponadto ograniczona, dożywotnia gwarancja zapewni Ci spokój ducha przy najbardziej spektakularnych rozgrywkach.",
+		"price": "295",
+		"image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2021/7/pr_2021_7_7_14_16_12_451_02.jpg"
+	},
+	{
+		"name": "Lexar 32GB (2x16GB) 6000MHz CL30 Ares RGB",
+		"description": "Przygotuj się na niesamowite doznania w grach dzięki pamięci DDR5 Lexar ARES RGB. Ta wyjątkowa pamięć to wymarzony wybór dla zaawansowanych graczy i entuzjastów komputerów, którzy pragną osiągnąć najwyższą wydajność systemu. Wbudowany aluminiowy radiator nie tylko sprawia, że komputer prezentuje się stylowo, ale także utrzymuje odpowiednią temperaturę. Pozwala to zachować stabilność oraz niezawodność systemu podczas intensywnych sesji gamingowych.\n\nModuły Lexar ARES RGB DDR5 zostały zaprojektowane z myślą o zwiększonej stabilności i niezawodności. Dzięki technologii on-die ECC pamięć automatycznie wykrywa i koryguje błędy danych w czasie rzeczywistym. Zapewnia to spokojne korzystanie z komputera nawet podczas najbardziej wymagających zadań. Dodatkowo on-board Power Management IC (PMIC) zapewnia stabilne i bezpieczne dostarczanie energii, co pozwala na nieprzerwaną rozgrywkę.",
+		"price": "539",
+		"image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2023/8/pr_2023_8_3_13_7_52_603_00.jpg"
+	},
+	{
+		"name": "Patriot 32GB (2x16GB) 6000MT/s CL30 Venom",
+		"description": "Moduły pamięci RAM Patriot Viper Venom to nowa generacja kultowych modułów. DDR5 jest szybsze i wydajniejsze od DDR4, a dodatkowo zgodne z najnowszymi platformami Intel oraz AMD, dzięki czemu Twój system będzie działał doskonale. Moduły Viper Venom zostały zaprojektowane z wykorzystaniem przełomowej technologii, aby wyznaczyć nowe standardy wyjątkowej wydajności. Co więcej, doskonała konstrukcja nada Twojej konfiguracji agresywny wygląd, dzięki czemu podkreślisz charakter gracza.\n\nSpecyfikacja DDR5 w modułach pamięci Patriot Viper Venom pozwala na niesamowite osiągi. W porównaniu z pamięciami DDR4, moduły pamięci Viper Venom zapewniają dwukrotnie większą przepustowość, co pozwala na szybkie działanie systemu i ładowanie aplikacji. Dodatkowo moduły mają niższe zużycie energii oraz wbudowaną technologię zarządzania temperaturą, dzięki czemu trwałość akcesorium jest znacznie wyższa.",
+		"price": "425",
+		"image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2022/5/pr_2022_5_10_13_4_4_266_01.jpg"
+	},
+	{
+		"name": "Kingston FURY 64GB (2x32GB) 3600MHz CL18 Beast Black",
+		"description": "Zmodernizuj swój system dzięki stylowej i niezwykle wydajnej pamięci RAM DDR4 Kingston FURY Beast Black. Dwa moduły o łącznej pojemności 64 GB (2x32 GB) oferują taktowanie 3600 MHz oraz opóźnienia na poziomie CL18. Ponadto moduły Kingston FURY Beast Black wspierają obsługę profili XMP.\n\nModuły pamięci Kingston FURY Beast Black wyposażone są w czarne radiatory, które doskonale odprowadzają ciepło. Całość dopełnia stylowa, czarna obudowa, która nadaje całej pamięci agresywny wygląd. Ponadto ograniczona, dożywotnia gwarancja zapewni Ci spokój ducha przy najbardziej spektakularnych rozgrywkach.",
+		"price": "589",
+		"image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2021/7/pr_2021_7_7_14_16_12_451_02.jpg"
+	},
+	{
+		"name": "Kingston FURY 32GB (1x32GB) 3600MHz CL18 Beast Black",
+		"description": "Zmodernizuj swój system dzięki stylowej i niezwykle wydajnej pamięci RAM DDR4 Kingston FURY Beast Black. Pojedynczy moduł o pojemności 32 GB oferuje taktowanie 3600 MHz oraz opóźnienia na poziomie CL18. Ponadto moduły Kingston FURY Beast Black wspierają obsługę profili XMP.\n\nModuł pamięci Kingston FURY Beast Black wyposażony jest w czarny radiator, który doskonale odprowadza ciepło. Całość dopełnia stylowa, czarna obudowa, która nadaje całej pamięci agresywny wygląd. Ponadto ograniczona, dożywotnia gwarancja zapewni Ci spokój ducha przy najbardziej spektakularnych rozgrywkach.",
+		"price": "299",
+		"image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2021/7/pr_2021_7_7_14_9_33_982_00.jpg"
+	},
+	{
+		"name": "GOODRAM 16GB (1x16GB) 3200MHz CL22",
+		"description": "Pamięci RAM DDR4 SODIMM GOODRAM są idealnym rozwiązaniem do modernizacji notebooków oraz niewielkich komputerów przenośnych. Sprzęt, który od lat dobrze służy swoim posiadaczom, dzięki rozszerzeniu o nowe pamięci SO-DIMM marki GOODRAM zyska zupełnie nowe możliwości.",
+		"price": "128",
+		"image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2020/7/pr_2020_7_22_12_41_0_922_00.jpg"
+	},
+	{
+		"name": "Crucial 32GB (1x32GB) 3200MHz",
+		"description": "W obecnie szybko rozwijającym się świecie technologii, cały czas powstają nowsze i bardziej wydajne komponenty. Dlatego firma Crucial ciągle udoskonala swoje produkty, aby zapewnić wysoką wydajność za niewielką cenę. Pamięć DDR4 Crucial o taktowaniu 3200 MHz znacznie poprawi prace Twojego laptopa, pozwalając systemowi przetwarzać więcej danych w jednym momencie. Uruchamiaj aplikacje szybciej i bez żadnych lagów.",
+		"price": "269",
+		"image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2023/7/pr_2023_7_12_8_14_37_370_00.jpg"
+	},
+	{
+		"name": "Kingston FURY 32GB (2x16GB) 3600MHz CL16 Renegade Black",
+		"description": "Pamięć RAM Kingston Fury Renegade to synonim niezrównanej wydajności. Zaprojektowana dla najbardziej wymagających użytkowników, oferuje prędkość DDR4-3600 i niskie opóźnienia na poziomie CL16. Dzięki temu nawet najbardziej zasobożerne gry i aplikacje działają płynnie i stabilnie, zapewniając użytkownikom przewagę w każdej sytuacji.",
+		"price": "339",
+		"image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2023/11/pr_2023_11_7_13_37_4_859_00.jpg"
+	},
+	{
+		"name": "Kingston FURY 16GB (2x8GB) 3733MHz CL19 Beast RGB",
+		"description": "Kingston Beast RGB to pamięć RAM typu DDR4 o imponującej pojemności, co zapewnia płynną i szybką pracę komputera. Dzięki taktowaniu 3733 MHz moduł ten znakomicie radzi sobie nawet z najbardziej wymagającymi zadaniami. Dodatkowo, opóźnienia na poziomie CL19 gwarantują optymalną szybkość odpowiedzi, co jest kluczowe dla graczy i profesjonalistów. Moduł pamięci nie obsługuje ECC, co oznacza prostotę i niezawodność działania w typowych zastosowaniach komputerowych.\n\nKingston Beast RGB wyposażono w efektowne podświetlenie, które dodaje stylu każdej konfiguracji komputerowej. Kolor czarny modułu idealnie komponuje się z każdym wnętrzem obudowy, a podświetlenie RGB pozwala na personalizację wyglądu. Radiator, będący elementem chłodzenia, efektywnie odprowadza ciepło, zapewniając stabilność pracy nawet podczas intensywnego użytkowania. Moduł wspiera profile OC Intel XMP, co umożliwia łatwe i bezpieczne podkręcanie dla uzyskania jeszcze lepszej wydajności. To idealne rozwiązanie dla tych, którzy oczekują nie tylko wydajności, ale także eleganckiego designu i niezawodności.",
+		"price": "229",
+		"image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2023/12/pr_2023_12_1_12_20_35_660_00.jpg"
+	},
+	{
+		"name": "Corsair 16GB (2x8GB) 3600MHz CL18 Vengeance",
+		"description": "Moduł Vengeance LPX jest zbudowany z ośmiu warstw PCB i wysoko ekranowanych układów pamięci. Skuteczny rozpraszacz ciepła zapewnia skuteczne chłodzenie, aby poprawić potencjał Twojego komputera. Wykonana z czystego aluminium szybciej odprowadza ciepło, zapewniając prawidłowo pracę.\n\nPrzekonaj się, ile FPS uzyskasz w grach dzięki różnym taktowaniom pamięci RAM na platformach Intel / AMD (rozdzielczość Full HD, ustawienia detali Ultra). Sprawdziliśmy również, jak pamięci sprawdzają się profesjonalnych zastosowaniach, takich jak kompresja plików, rendering wideo i 3D.\n\nPodczas instalacji pamięć zostanie automatycznie wykryta i dostosuję maksymalną wydajność odpowiednio do możliwości komputera. Zapewnia prawidłowe działanie nawet podczas dużych obciążeń.\n\nNiewielka konstrukcja sprawia, że jest idealnym rozwiązaniem dla mniejszych obudów komputerów w przypadku których wewnętrzna przestrzeń jest na wagę złota.",
+		"price": "179",
+		"image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2017/7/pr_2017_7_21_9_16_53_701.jpg"
+	},
+	{
+		"name": "Kingston 1TB M.2 PCIe Gen4 NVMe KC3000",
+		"description": "Dysk SSD Kingston KC3000 zapewnia wyższą wydajność, dzięki najnowszemu kontrolerowi Gen 4x4 NVMe i pamięci 3D TLC NAND.\n\nDzięki niemu zmodernizujesz pamięć masową i zwiększysz niezawodność systemu, aby sprostać wymagającym obciążeniom i uzyskać lepszą wydajność aplikacji do renderowania 3D i tworzenia treści 4K+.",
+		"price": "354",
+		"image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2021/10/pr_2021_10_22_9_51_18_607_00.jpg"
+	},
+	{
+		"name": "Lexar 1TB M.2 PCIe NVMe NM620",
+		"description": "Zaprojektowany, aby znacznie usprawnić działanie Twojego komputera, dysk SSD Lexar NM620 o pojemności 1 TB sprawi, że uruchamianie systemu i aplikacji będzie błyskawiczne. Interfejs M.2 PCIe Gen3x4 NVMe 1.4 oraz wbudowana kość pamięci 3D NAND gwarantują bardzo szybkie prędkości odczytu i zapisu na poziomie odpowiednio 3300 MB/s i 3000 MB/s. W rezultacie wydajność pracy jest większa i pozbawiona spowolnień.\n\nCo więcej, dysk nie posiada żadnych ruchomych części, dzięki czemu jego praca jest bardziej cicha i stabilna oraz mniej podatna na awarie. Dysk jest również odporny na wstrząsy i wibracje.",
+		"price": "259",
+		"image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2022/7/pr_2022_7_11_7_55_50_654_02.jpg"
+	},
+	{
+		"name": "WD 1TB M.2 PCIe Gen4 NVMe Black SN770",
+		"description": "Wejdź na wyższy poziom rozgrywki z dyskiem SSD WD Black SN770 o pojemności 1 TB. Został on zaprojektowany specjalnie do gier i jest wyposażony w interfejs PCIe Gen4, który zapewnia maksymalną prędkość odczytu sekwencyjnego na poziomie 5150 MB/s. Dysk oferuje bardzo dużo miejsca do zapisywania najnowszych gier i późniejszych aktualizacji oraz pakietów rozszerzeń.",
+		"price": "299",
+		"image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2022/3/pr_2022_3_28_13_47_9_339_02.jpg"
+	},
+	{
+		"name": "Kingston 2TB M.2 PCIe Gen4 NVMe KC3000",
+		"description": "Dysk SSD Kingston KC3000 zapewnia wyższą wydajność, dzięki najnowszemu kontrolerowi Gen 4x4 NVMe i pamięci 3D TLC NAND.\n\nDzięki niemu zmodernizujesz pamięć masową i zwiększysz niezawodność systemu, aby sprostać wymagającym obciążeniom i uzyskać lepszą wydajność aplikacji do renderowania 3D i tworzenia treści 4K+.",
+		"price": "599",
+		"image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2021/10/pr_2021_10_22_10_9_42_174_01.jpg"
+	},
+	{
+		"name": "Samsung 1TB M.2 PCIe Gen4 NVMe 990 PRO",
+		"description": "Dysk SSD M.2 Samsung 990 PRO o pojemności 1 TB jest najbardziej zaawansowanym modelem w swojej klasie. Pozwoli Ci cieszyć się maksymalnymi możliwościami oferowanymi przez PCIe 4.0.\n\nWbudowany system zarządzania temperaturą zapewnia niezwykle niskie zużycie energii, zachowując jednocześnie niespotykany poziom szybkości i wydajności. W ten sposób będziesz mieć pełną kontrolę nad grą.",
+		"price": "459",
+		"image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2022/10/pr_2022_10_20_6_28_39_791_00.jpg"
+	},
+	{
+		"name": "WD 2TB 2,5\" SATA SSD Red SA500",
+		"description": "Zwiększ wydajność i skróć czas reakcji swojego systemu NAS z dyskiem SSD SATA WD Red SA500 o pojemności 2 TB w obudowie 2,5'' / 7 mm. Systemy NAS działają bez przerwy, dlatego niezawodny dysk to kwestia najwyższej wagi.\n\nW przeciwieństwie do standardowych dysków SSD dyski WD Red NAS SATA SSD zostały zaprojektowane specjalnie z myślą o pracy ciągłej 24 godziny na dobę, 7 dni w tygodniu i przetestowane w takim środowisku.",
+		"price": "719",
+		"image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2024/8/pr_2024_8_14_13_56_4_36_00.jpg"
+	},
+	{
+		"name": "Samsung 4TB 2,5\" SATA SSD 870 EVO",
+		"description": "Poznaj Samsung 870 EVO o pojemności 4 TB - wydajny i niezawodny dysk SSD z serii EVO, której jakość doceniło wielu klientów na całym świecie.\n\nCechami, które wyróżniają model 870 EVO są błyskawiczny transfer danych, zwiększona niezawodność, najnowszy kontroler V-NAND i MKX 6, szeroki zakres kompatybilności oraz wsparcie oprogramowania Samsung Magician. Dysk ten spełni potrzeby każdego, od twórców treści, specjalistów IT, po osoby codziennie korzystające z komputera.",
+		"price": "1919",
+		"image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2021/1/pr_2021_1_25_12_40_53_262_00.jpg"
+	},
+	{
+		"name": "Lexar 2TB 2,5\n SATA SSD NS100",
+		"description": "Popraw osiągi i ogólne działanie swojego komputera dzięki dyskowi SSD 2,5'' Lexar NS100 o pojemności 2 TB. Zastosowany w dysku interfejs SATA III gwarantuje wysoką wydajność działania. Po zamontowaniu dysku NS100 w swoim komputerze, będziesz mógł cieszyć się krótszymi czasami uruchomienia systemu, szybciej uruchamiającymi się aplikacjami oraz prędkością odczytu sięgająca 550 MB/s.\n\nCo więcej, dysk Lexar NS100 jest odporny na wstrząsy i wibracje, a dzięki temu że nie posiada ruchomych części, jego praca jest bardziej cicha i mniej podatna na usterki w porównaniu do tradycyjnych dysków twardych.",
+		"price": "519",
+		"image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2020/9/pr_2020_9_21_9_26_2_138_02.jpg"
+	},
+	{
+		"name": "Seagate BARRACUDA 2TB 7200obr. 256MB",
+		"description": "Uniwersalny dysk Seagate Barracuda to gwarancja sprawnego dostępu do Twoich plików. Wykorzystaj jego przestrzeń do przechowywania danych niezbędnych do pracy i zyskaj wygodne narzędzie, które wspomoże w wykonywaniu codziennych obowiązków. Dysk ten posłuży Ci także do przechowywania zbioru zdjęć z wakacji, filmów, ulubionej muzyki oraz gier.\n\nInnowacyjne dyski twarde BarraCuda o sprawdzonej niezawodności są dostępne w wielu opcjach pojemności i w różnej cenie, co pozwala dopasować je do każdego budżetu. To niezrównane dziedzictwo rozwiązań do komputerów stacjonarnych.",
+		"price": "269",
+		"image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2019/9/pr_2019_9_10_9_41_46_776_03.jpg"
+	},
+	{
+		"name": "WD RED PLUS 4TB 5400obr. 256MB",
+		"description": "WD Red Plus to dysk HDD o pojemności 4 TB, który oferuje moc pozwalającą na radzenie sobie ze środowiskami NAS w małych i średnich przedsiębiorstwach oraz zwiększonymi obciążeniami. To idealny wybór do archiwizowania i udostępniania, a także do przebudowy układów RAID w systemach wykorzystujących ZFS i inne systemy plików. Stworzony i sprawdzony z myślą o systemach NAS z 8 kieszeniami dysk zapewnia elastyczność, wszechstronność i pewność podczas przechowywania i udostępniania cennych danych domowych i firmowych.",
+		"price": "499",
+		"image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2024/8/pr_2024_8_12_11_18_13_967_00.jpg"
+	},
+	{
+		"name": "MSI A850GL 850W 80 Plus Gold ATX 3.1",
+		"description": "Seria MAG A850GL PCIE5 to zasilacze zgodne z standardem ATX 3.0, które cechują się wysoką sprawnością energetyczną potwierdzoną certyfikatem 80 PLUS Gold. Urządzenia te pozwalają na bezproblemową obsługę kart graficznych PCIe 5.0 (do 600 W), a do ich budowy wykorzystano hydrodynamiczne łożyska FDB (Fluid Dynamic Bearing) charakteryzujące się cichą i stabilna pracą.\n\nKompaktowa obudowa formatu ATX o długości 140 mm i szerokości 150 mm zapewnia łatwy i wygodny montaż zasilacza w większości komputerów. Dzięki temu użytkownik ma do dyspozycji dużo więcej miejsca na odpowiednie ułożenie przewodów, co w istotny sposób może przyczynić się do poprawy przepływu powietrza w systemie.",
+		"price": "509",
+		"image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2023/11/pr_2023_11_27_9_11_22_911_00.jpg"
+	},
+	{
+		"name": "MSI MAG 550W 80 Plus Bronze",
+		"description": "Zapewnij bezpieczną pracę swoich komponentów z zasilaczem do komputera MSI MAG 550W. Zapewnia niezwykle wydajną pracę na podstawowym poziomi, dzięki czemu Twój system nie zawiedzie Cię podczas długich rozgrywek.\n\nKonstrukcja DC-DC z pojedynczą szyną 12 V oraz cichym wentylatorem stanowi najlepszy wybór dla początkujących graczy i entuzjastów PC.\n\nWysoką sprawność energetyczną zasilacza MSI MAG 550W potwierdza certyfikat 80 PLUS Bronze. Oznacza to, że w trakcie pracy więcej energii jest wykorzystane do zasilania komponentów, a mniej rozpraszane w postaci ciepła. Dzięki temu zasilacz osiąga niższe temperatury pracy, a jego chłodzenie może pracować ciszej. Jednocześnie Ty zaoszczędzasz na rachunkach za prąd.",
+		"price": "239",
+		"image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2021/10/pr_2021_10_15_10_18_39_897_00.jpg"
+	},
+	{
+		"name": "ENDORFY Supremo FM5 1000W 80 Plus Gold",
+		"description": "ENDORFY Supremo FM5 1000W to wydajny zasilacz, którego fantastyczne działanie potwierdza certyfikat 80 Plus Gold. Zawdzięcza to japońskim kondensatorom elektrolitycznym i aluminiowo-polimerowym. Zasilacz został zaprojektowany tak, żeby utrzymywał stabilne napięcie osobno na każdej linii. Dzięki temu Twój komputer działa wzorowo nawet z najbardziej wymagającymi komponentami. Ma 12-centymetrowy wentylator Fluctus 120 PWM, który dba o niską temperaturę pracy zasilacza. Urządzenie jest niewielkie, dzięki czemu zmieści się do wielu obudów.",
+		"price": "699",
+		"image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2022/10/pr_2022_10_8_12_54_47_951_00.jpg"
+	},
+	{
+		"name": "be quiet! System Power 10 450W 80 Plus Bronze",
+		"description": "System Power 10 450 W to zasilacz wybierany przez konfiguratorów PC, dla których istotna jest niezawodność, cisza oraz cena produktu. Funkcje takie jak wentylator z termokontrolą i wyjątkowo niski pobór mocy w trybie czuwania (poniżej 0,15 W) podkreślają jakość, jaką oferuje be quiet! System Power 10 450 W nawet w podstawowej serii zasilaczy.",
+		"price": "229",
+		"image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2022/10/pr_2022_10_18_15_0_53_425_02.jpg"
+	},
+	{
+		"name": "Gigabyte UD750GM PG5 750W 80 Plus Gold ATX 3.0",
+		"description": "Zasilaj swoje podzespoły z dużą mocą z zasilaczem Gigabyte UD750GM PG5. To modularne akcesorium, które doskonale zadba o dostarczenie mocy Twojemu komputerowi. Wysoką wydajność potwierdza certyfikat 80 Plus Gold. Cichy i wydajny wentylator zapewnia odpowiednią pracę zasilacza. Wbudowane zabezpieczenia natomiast dbają o bezpieczeństwo podłączonych podzespołów oraz zasilacza.\n\nZasilacz Gigabyte UD750GM PG5 ma w pełni modularne okablowanie, zapewniające Ci większą swobodę w kwestii budowy swojej konfiguracji. Korzystaj tylko z tych przewodów, których w danej chili potrzebujesz, by zapewnić lepszy przepływ powietrza w swojej obudowie oraz zadbać o estetykę wnętrza. Gdy zajdzie potrzeba dalszej rozbudowy, po prostu skorzystaj z kabli znajdujących się w zestawie.",
+		"price": "359",
+		"image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2024/7/pr_2024_7_10_11_32_19_358_04.jpg"
+	},
+	{
+		"name": "Obudowa do komputera be quiet! Pure Base 500 Window White",
+		"description": "Ciesz się z możliwości wyboru, jaką gwarantuje obudowa be quiet! Pure Base 500. Akcesorium jest wyposażone w wymienny panel górny, dzięki czemu umożliwi Ci dopasowanie jej do swoich potrzeb. Wnętrze obudowy przygotowane jest na montaż wydajnych komponentów, a boczny panel ze szkła hartowanego pozwoli ukazać Twoją konfigurację, niezależnie od tego czy jest to komputer gracza, czy podstawowy system.\n\nSprawdź, jak be quiet! Pure Base 500 Window wygląda w rzeczywistości. Chwyć zdjęcie poniżej i przeciągnij je w lewo lub prawo aby obrócić produkt lub skorzystaj z przycisków nawigacyjnych.",
+		"price": "369",
+		"image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2019/9/pr_2019_9_9_12_57_15_886_02.jpg"
+	},
+	{
+		"name": " Obudowa do komputera be quiet! Pure Base 500DX Black",
+		"description": "Zachwycająca swoim oryginalnym wyglądem obudowa Pure Base 500DX pozwala na montaż wielu komponentów. Dodatkowo została zoptymalizowana pod kątem zapewnienia dobrego przepływu powietrza, aby Twój system działał sprawnie. Wbudowane podświetlenie podkreśli agresywny charakter konfiguracji, a przezroczysty panel boczny umożliwi Ci pokazanie wnętrza obudowy.\n\nSprawdź, jak be quiet! Pure Base 500DX Black wygląda w rzeczywistości. Chwyć zdjęcie poniżej i przeciągnij je w lewo lub prawo, aby obrócić produkt lub skorzystaj z przycisków nawigacyjnych.",
+		"price": "439",
+		"image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2020/4/pr_2020_4_23_11_50_6_672_00.jpg"
+	},
+	{
+		"name": "Obudowa do komputera ENDORFY Ventum 200 Air",
+		"description": "ENDORFY Ventum 200 Air to obudowa w czerni do zadań specjalnych. Ma ona okno ze szkła hartowanego, które zaprezentuje pojemne wnętrze. Za sprawą sprawnego systemu wentylacyjnego i dołączonych wentylatorów utrzymuje niskie temperatury. Dodatkowo chroni podzespoły przed brudem i kurzem.\n\nObudowa ENDORFY Ventum 200 Air ma front z drobno perforowanej blachy, co wpuszcza do środka świeże powietrze i zatrzymuje kurz. Obudowa pozwala na zachowanie niskich temperatur nawet, podczas kilkugodzinnej, emocjonującej rozgrywki. Ma preinstalowane 4 wentylatory Stratus 120 PWM, które opracowane są we współpracy z Synergy Cooling. Dodatkowo obudowa zmieści łącznie 7 wentylatorów.",
+		"price": "289",
+		"image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2022/11/pr_2022_11_17_13_11_43_84_02.jpg"
+	},
+	{
+		"name": "Obudowa do komputera Lian Li Lancool III RGB White",
+		"description": "iała konstrukcja obudowy Lian Li Lancool III RGB została wyposażona przez producenta w pojemne wnętrze, dzięki czemu zbudujesz w niej potężny system. Obudowa oferuje również wydajne chłodzenie wnętrza za sprawą panelu przedniego z siatki, licznych otworów wentylacyjnych oraz preinstalowanych wentylatorów. Producent zadbał również o wspaniały wygląd obudowy, ponieważ wentylatory, które zainstalował, mają podświetlenie, a panel boczny jest przezroczysty. O czystość pozwolą Ci zadbać filtr antykurzowy, który znajdziesz na spodzie obudowy.\n\nNie musisz martwić się o możliwości chłodzenia z obudową Lian Li Lancool III RGB. Przedni panel z siatki maksymalnie przepuszcza powietrze, a liczne otwory wentylacyjne pozwalają na usuwanie ciepłego powietrza z wnętrza. Fabrycznie zainstalowane 4 wentylatory 140 mm gwarantują nie tylko doskonałe chłodzenia, ale również świetny wygląd konstrukcji.\n\nObudowa oferuje również elastyczne opcje rozbudowy chodzenia. Zainstalujesz w niej łącznie do 10 wentylatorów, chłodnicę procesora 185 mm oraz niestandardowe systemy chłodzenia cieczą.",
+		"price": "889",
+		"image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2022/8/pr_2022_8_1_13_15_53_442_03.jpg"
+	},
+	{
+		"name": "Obudowa do komputera NZXT H9 Flow White",
+		"description": "Doskonała konstrukcja obudowy NZXT H9 Flow będzie się wspaniale prezentować zarówno na stanowisku gracza, jak i biurowym. Ma ona dwa panele ze szkła, dzięki czemu wnętrze jest dokładnie widoczne. Na górze oraz drugim boku znajdują się panele z licznymi otworami wentylacyjnymi, dzięki czemu możliwe jest swobodne chłodzenie.\n\nMartwisz się o wysokie temperatury podczas pracy systemu? NZXT H9 Flow ma boczny panel oraz górny z licznymi otworami wentylacyjnymi. Dzięki temu powietrze może swobodnie przepływać i chłodzić wnętrze. Dodatkowo producent zainstalował w niej kilka wentylatorów. Pozwala to na dobre chłodzenie i sprawne działanie konstrukcji. Obudowa wspiera również instalację dodatkowych wentylatorów i radiatorów do nawet 360 mm.",
+		"price": "749",
+		"image": "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2023/3/pr_2023_3_28_9_37_58_559_02.jpg"
+	}
 ]

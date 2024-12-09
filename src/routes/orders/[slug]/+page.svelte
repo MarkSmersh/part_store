@@ -12,18 +12,18 @@
 		<h2>Identyfikator zamówenia: #{data.id}</h2>
 
 		<Accordion title="Produkty">
-            <div class="products">
-                {#each data.products as p}
-                    <Card
-                        title={p.product.name}
-                        img={p.product.image}
-                        price={p.pricePerOne}
-                        quantity={p.quantity}
-                        onClick={() => goto(`/product/${p.product.id}`)}
-                    />
-                {/each}
-            </div>
-        </Accordion>
+			<div class="products">
+				{#each data.products as p}
+					<Card
+						title={p.product.name}
+						img={p.product.image}
+						price={p.pricePerOne}
+						quantity={p.quantity}
+						onClick={() => goto(`/product/${p.product.id}`)}
+					/>
+				{/each}
+			</div>
+		</Accordion>
 
 		<Accordion title={'Dane adresowe'}>
 			<div class="address">
@@ -35,37 +35,39 @@
 		</Accordion>
 
 		{#if data.comment}
-			<Accordion title={"Komentarz do zamówenia"}>
-                <p>"{data.comment}"</p>
-            </Accordion>
+			<Accordion title={'Komentarz do zamówenia'}>
+				<p>"{data.comment}"</p>
+			</Accordion>
 		{/if}
 
-        <h2>Suma ogólna: {data.total}.00 zł</h2>
-		<h2>Stworzono o: {data.createdAt.toLocaleString("pl-PL", {
-            year: "numeric",
-            month: "long",
-            day: "numeric",
-            hour: "2-digit",
-            minute: "2-digit",
-        })}</h2>
+		<h2>Suma ogólna: {data.total}.00 zł</h2>
+		<h2>
+			Stworzono o: {data.createdAt.toLocaleString('pl-PL', {
+				year: 'numeric',
+				month: 'long',
+				day: 'numeric',
+				hour: '2-digit',
+				minute: '2-digit'
+			})}
+		</h2>
 	</div>
 </main>
 
 <style>
 	.order {
 		border: 1px solid var(--secondary);
-        border-radius: 8px;
+		border-radius: 8px;
 		display: flex;
 		flex-direction: column;
-		gap: 20px; 
+		gap: 20px;
 		padding: 20px;
-		background: linear-gradient(225deg, var(--accent) 0%, rgba(0,0,0,0) 100%);
+		background: linear-gradient(225deg, var(--accent) 0%, rgba(0, 0, 0, 0) 100%);
 	}
 
 	.products {
 		display: flex;
 		gap: 20px;
-        display: grid;
+		display: grid;
 		grid: auto / 1fr 1fr 1fr 1fr;
 
 		@media screen and (max-width: 1200px) {

@@ -87,7 +87,9 @@
 		</div>
 	{:else}
 		<div class="finish">
-			<p class="backdrop">Jesteś autoryzowany. Za... {timer} sekund powrócimy Cię do strony głównej</p>
+			<p class="backdrop">
+				Jesteś autoryzowany. Za... {timer} sekund powrócimy Cię do strony głównej
+			</p>
 		</div>
 	{/if}
 </main>
@@ -103,7 +105,7 @@
 		width: 100%;
 		height: 300px;
 		justify-content: center;
-		align-items: center;		
+		align-items: center;
 
 		p {
 			font-size: 18px;

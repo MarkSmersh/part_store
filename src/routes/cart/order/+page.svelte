@@ -52,9 +52,9 @@
 </script>
 
 <main>
-	<h2>Uzupełnij dane, aby założyć zamówienie: </h2>
+	<h2>Uzupełnij dane, aby założyć zamówienie:</h2>
 	<form onsubmit={(e) => creatOrder(e)}>
-		Imię: 
+		Imię:
 		<input
 			bind:value={firstName}
 			autocomplete="given-name"

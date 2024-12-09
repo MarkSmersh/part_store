@@ -44,7 +44,7 @@
 
 	$effect(() => {
 		if (description) {
-			cutDesc = description?.slice(0, 100) + "...";
+			cutDesc = description?.slice(0, 100) + '...';
 		} else {
 			cutDesc = '';
 		}

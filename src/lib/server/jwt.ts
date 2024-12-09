@@ -42,8 +42,8 @@ export async function accessFromSession(userToken: string) {
 
 export function jwtDecode(userToken: string | undefined): JWTToken | null {
 	if (!userToken) return null;
-	
-	return (jwt.decode(userToken) as JWTToken);
+
+	return jwt.decode(userToken) as JWTToken;
 }
 
 interface JWTToken {

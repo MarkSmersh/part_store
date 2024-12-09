@@ -10,7 +10,7 @@
 		isActive?: boolean;
 		style?: ButtonStyle;
 		type?: 'submit' | null;
-        fill?: boolean;
+		fill?: boolean;
 	}
 
 	let {
@@ -20,11 +20,11 @@
 		isActive,
 		style = 'primary',
 		type = null,
-        fill
+		fill
 	}: ButtonProps = $props();
 </script>
 
-<button onclick={() => onClick()} class={style} {type} class:active={isActive} class:fill={fill}>
+<button onclick={() => onClick()} class={style} {type} class:active={isActive} class:fill>
 	<div class="contents">
 		{#if after}
 			{after}
@@ -35,19 +35,19 @@
 </button>
 
 <style>
-    .contents {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 8px;
-    }
+	.contents {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 8px;
+	}
 
-    .separator {    
-        width: .9px;
-        background-color: var(--secondary);
-        height: 20px;
-    }
+	.separator {
+		width: 0.9px;
+		background-color: var(--secondary);
+		height: 20px;
+	}
 
 	button {
 		cursor: pointer;
@@ -95,7 +95,7 @@
 		color: var(--primary-text);
 	}
 
-    .fill {
-        flex: 1;
-    }
+	.fill {
+		flex: 1;
+	}
 </style>

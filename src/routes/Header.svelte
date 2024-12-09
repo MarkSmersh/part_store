@@ -28,14 +28,10 @@
 			{:else}
 				<Button onClick={() => goto('/auth')} style="primary">Autoryzacja</Button>
 			{/if}
-			<Button onClick={() => isSearch.set(true)}>
-				Wyszukiwanie
-			</Button>
+			<Button onClick={() => isSearch.set(true)}>Wyszukiwanie</Button>
 		</div>
 		<div class="menu">
-			<Button onClick={() => isMenu.set(true)}>
-				Menu
-			</Button>
+			<Button onClick={() => isMenu.set(true)}>Menu</Button>
 		</div>
 	</div>
 </header>
