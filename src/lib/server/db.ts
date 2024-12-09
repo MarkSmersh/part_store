@@ -1,14 +1,12 @@
 import { MikroORM } from '@mikro-orm/postgresql';
-import { TsMorphMetadataProvider } from '@mikro-orm/reflection';
-import { User, Cart, Product, ItemCart, Address, Order, OrderItem } from './models';
 import { DB_STRING } from '$env/static/private';
+import { Address, Cart, ItemCart, Order, OrderItem, Product, User } from "$lib/server/models/models"
 
 export const orm = await MikroORM.init({
-	entities: [User, Cart, Product, ItemCart, Address, Order, OrderItem],
-	metadataProvider: TsMorphMetadataProvider,
+	entities: [Address, Cart, ItemCart, Order, OrderItem, Product, User],
 	clientUrl: DB_STRING,
 	allowGlobalContext: true,
-	forceEntityConstructor: true
+	forceEntityConstructor: true,
 });
 
 export const em = orm.em;

@@ -1,6 +1,6 @@
 import jwt from 'jsonwebtoken';
 import { JWT_TOKEN } from '$env/static/private';
-import { User } from './models';
+import { User } from './models/models';
 import { em } from './db';
 
 export function jwtAccessToken(username: string): string {

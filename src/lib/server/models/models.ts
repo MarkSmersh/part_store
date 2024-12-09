@@ -10,16 +10,16 @@ import {
 
 @Entity()
 export class User {
-	@PrimaryKey()
+	@PrimaryKey({ type: "int" })
 	id!: number;
 
-	@Property({ unique: true })
+	@Property({ type: "string", unique: true })
 	username!: string;
 
-	@Property()
+	@Property({ type: "string" })
 	password!: string;
 
-	@Property()
+	@Property({ type: "string" })
 	sessionToken!: string;
 
 	@OneToOne(() => Cart, { inversedBy: 'user' })
@@ -31,7 +31,7 @@ export class User {
 
 @Entity()
 export class Cart {
-	@PrimaryKey()
+	@PrimaryKey({ type: "int" })
 	id!: number;
 
 	@OneToOne(() => User, { orphanRemoval: true, mappedBy: 'cart' })
@@ -43,19 +43,19 @@ export class Cart {
 
 @Entity()
 export class Product {
-	@PrimaryKey()
+	@PrimaryKey({ type: "int" })
 	id!: number;
 
-	@Property()
+	@Property({ type: "string" })
 	name!: string;
 
-	@Property({ length: 4000 })
+	@Property({ type: "string", length: 4000 })
 	description!: string;
 
-	@Property()
+	@Property({ type: "string" })
 	image!: string;
 
-	@Property()
+	@Property({ type: "int" })
 	price!: number;
 
 	@OneToMany(() => ItemCart, 'product', { orphanRemoval: true })
@@ -64,22 +64,22 @@ export class Product {
 
 @Entity()
 export class ItemCart {
-	@PrimaryKey()
+	@PrimaryKey({ type: "int" })
 	id!: number;
 
-	@ManyToOne()
+	@ManyToOne(() => Cart)
 	cart!: Cart;
 
 	@ManyToOne(() => Product)
 	product!: Product;
 
-	@Property({ default: 0 })
+	@Property({ type: "int", default: 0 })
 	quantity!: number;
 }
 
 @Entity()
 export class Order {
-	@PrimaryKey()
+	@PrimaryKey({ type: "int" })
 	id!: number;
 
 	@OneToMany(() => OrderItem, 'order')
@@ -88,10 +88,10 @@ export class Order {
 	@ManyToOne(() => Address)
 	address!: Address;
 
-	@Property()
+	@Property({ type: "string", length: 200 })
 	comment?: string;
 
-	@Property()
+	@Property({ type: "int" })
 	total!: number;
 
 	@ManyToOne(() => User)
@@ -103,7 +103,7 @@ export class Order {
 
 @Entity()
 export class OrderItem {
-	@PrimaryKey()
+	@PrimaryKey({ type: "int" })
 	id!: number;
 
 	@ManyToOne(() => Order)
@@ -112,16 +112,16 @@ export class OrderItem {
 	@ManyToOne(() => Product)
 	product!: Product;
 
-	@Property()
+	@Property({ type: "int" })
 	quantity!: number;
 
-	@Property()
+	@Property({ type: "int" })
 	pricePerOne!: number;
 }
 
 @Entity()
 export class Address {
-	@PrimaryKey()
+	@PrimaryKey({ type: "int" })
 	id!: number;
 
 	@OneToMany(() => Order, 'address')
@@ -130,18 +130,18 @@ export class Address {
 	@ManyToOne(() => User)
 	user!: User;
 
-	@Property()
+	@Property({ type: "string" })
 	firstName!: string;
 
-	@Property()
+	@Property({ type: "string" })
 	secondName!: string;
 
-	@Property()
+	@Property({ type: "string" })
 	postal!: string;
 
-	@Property()
+	@Property({ type: "string" })
 	street!: string;
 
-	@Property()
+	@Property({ type: "string" })
 	phone!: string;
 }

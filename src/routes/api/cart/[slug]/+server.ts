@@ -1,6 +1,6 @@
 import { em, Product, User } from '$lib/server';
 import { jwtDecode } from '$lib/server/jwt';
-import { ItemCart } from '$lib/server/models';
+import { ItemCart } from '$lib/server/models/models';
 import { Collection } from '@mikro-orm/core';
 import type { RequestHandler } from '@sveltejs/kit';
 

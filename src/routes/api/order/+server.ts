@@ -1,6 +1,6 @@
 import { em } from '$lib/server';
 import { jwtDecode } from '$lib/server/jwt';
-import { Address, Order, OrderItem, User } from '$lib/server/models';
+import { Address, Order, OrderItem, User } from '$lib/server/models/models';
 import type { RequestHandler } from './$types';
 
 function isOk(data: string | null) {

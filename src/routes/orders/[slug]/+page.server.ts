@@ -2,7 +2,7 @@ import { jwtDecode } from '$lib/server/jwt';
 import { error } from '@sveltejs/kit';
 import type { PageServerLoad } from './$types';
 import { em } from '$lib/server';
-import { Order } from '$lib/server/models';
+import { Order } from '$lib/server/models/models';
 
 export const load: PageServerLoad = async ({ cookies, params }) => {
 	const username = jwtDecode(cookies.get('access-token'))?.username;

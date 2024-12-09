@@ -50,5 +50,5 @@ export const handle: Handle = async ({ event, resolve }) => {
 
 	// await orm.schema.refreshDatabase();
 
-	console.log('DATABASE INIT COMPLETE');
+	// console.log('DATABASE INIT COMPLETE');
 })();
