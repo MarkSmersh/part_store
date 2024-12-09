@@ -6,6 +6,8 @@
 	let notifications: INotify[] | undefined = $state([]);
 
 	notify.subscribe((no) => (notifications = no));
+
+	$inspect(notifications);
 </script>
 
 <div class="notifications">
@@ -20,18 +22,18 @@
 				class="notification"
 				onclick={() => notify.update((no) => no.filter((v) => v.id !== n.id))}
 			>
-				{#if n.status && n.statusText}
+				{#if n.status}
 					<p class="icon">
 						{n.status >= 200 && n.status < 300 ? '✅' : '⚠️'}
 					</p>
-					<div class="text">
-						<!-- For debugging -->
-						<!-- <h3 class={n.status >= 200 && n.status < 300 ? 'success' : 'error'}>
-							{n.statusText} - {n.status}
-						</h3> -->
-						<p>{n.message}</p>
-					</div>
 				{/if}
+				<div class="text">
+					<!-- For debugging -->
+					<!-- <h3 class={n.status >= 200 && n.status < 300 ? 'success' : 'error'}>
+						{n.statusText} - {n.status}
+					</h3> -->
+					<p>{n.message}</p>
+				</div>
 			</div>
 		{/each}
 	{/if}
@@ -70,10 +72,7 @@
 	}
 
 	.text {
-		display: flex;
-		flex-direction: column;
-		height: 100%;
-		align-items: center;
+		width: fit-content;
 	}
 
 	.icon {

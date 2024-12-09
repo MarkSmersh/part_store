@@ -8,6 +8,7 @@
 	let { data }: { data: PageData } = $props();
 
 	async function addToCart() {
+		console.log("12331")
 		await request(`/api/cart/${data.id}`, 'PATCH');
 	}
 </script>

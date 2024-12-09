@@ -10,7 +10,6 @@ export function createNotify(body: Omit<INotify, 'id'>) {
 		...n,
 		{
 			id: id,
-			statusText: body.statusText,
 			message: body.message,
 			status: body.status
 		}
@@ -24,6 +23,5 @@ export function createNotify(body: Omit<INotify, 'id'>) {
 export interface INotify {
 	id: string;
 	status?: number;
-	statusText?: string;
 	message: string;
 }
