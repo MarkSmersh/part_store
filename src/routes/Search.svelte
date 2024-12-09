@@ -23,7 +23,7 @@
 		}
 	}
 
-	isSearch.subscribe((v) => isActive = v);
+	isSearch.subscribe((v) => (isActive = v));
 </script>
 
 {#if isActive}
@@ -55,7 +55,7 @@
 								<p>{p.description}</p>
 							</div>
 							<div class="price">
-								<h3>Cena: {p.price}</h3>
+								<h3>{p.price}.00 zł</h3>
 							</div>
 						</div>
 					{/each}
@@ -95,7 +95,7 @@
 		gap: 16px;
 
 		@media screen and (max-width: 1200px) {
-			margin: 100px 10px;
+			margin: 20px 10px;
 		}
 	}
 
@@ -107,6 +107,10 @@
 		border-radius: 8px;
 		font-size: 18px;
 		border: 1px solid var(--primary-text);
+
+		@media screen and (max-width: 1200px) {
+			width: calc(80% - 32px);
+		}
 	}
 
 	.products {
@@ -117,6 +121,12 @@
 		color: white;
 		background: var(--primary-transparent);
 		border: 1px solid var(--primary-text);
+
+		@media screen and (max-width: 1200px) {
+			overflow-y: scroll;
+			position: relative;
+			max-height: 65%;
+		}
 	}
 
 	.product {
@@ -146,6 +156,8 @@
 			@media screen and (max-width: 1200px) {
 				width: 100%;
 				height: 120px;
+				grid-column: 1 / 3;
+				grid-row: 1;
 			}
 		}
 
@@ -162,6 +174,11 @@
 			background: var(--primary-transparent);
 			border: 1px solid var(--primary-text);
 			color: var(--primary-text);
+
+			@media screen and (max-width: 1200px) {
+				grid-column: 1;
+				grid-row: 2;
+			}
 
 			p,
 			h2 {
@@ -188,17 +205,21 @@
 				padding: 8px 8px;
 				height: calc(100% - 16px);
 				justify-content: center;
+				grid-column: 2;
+				grid-row: 2;
 			}
 
 			h3 {
 				transform: rotate(-45deg);
 				color: var(--primary-text);
 				border: 2px solid var(--primary-text);
-				width: 100%;
+				width: calc(100% - 16px);
+				padding: 8px;
 				text-align: center;
+				border-radius: 8px;
 
 				@media screen and (max-width: 1200px) {
-					transform: rotate(0);
+					transform: rotate(-15deg);
 					border: 0;
 				}
 			}

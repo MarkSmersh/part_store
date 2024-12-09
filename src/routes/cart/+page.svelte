@@ -5,7 +5,7 @@
 	import Button from '../ui/Button.svelte';
 	import Card from '../ui/Card.svelte';
 	import Image from '../ui/Image.svelte';
-	import cart from "$lib/assets/cart.jpg"
+	import cart from '$lib/assets/cart.jpg';
 
 	let { data }: { data: PageData } = $props();
 
@@ -20,15 +20,17 @@
 		<div class="cart">
 			<div class="cart-items">
 				{#each data.cartItems as ci}
-					<Card
-						title={ci.product.name}
-						description={ci.product.description}
-						img={ci.product.image}
-						price={ci.product.price}
-						quantity={ci.quantity}
-						onClick={() => goto(`/product/${ci.product.id}`)}
-						onRemove={() => deleteCartItem(ci.product.id)}
-					/>
+					<div class="cart-item">
+						<Card
+							title={ci.product.name}
+							description={ci.product.description}
+							img={ci.product.image}
+							price={ci.product.price}
+							quantity={ci.quantity}
+							onClick={() => goto(`/product/${ci.product.id}`)}
+							onRemove={() => deleteCartItem(ci.product.id)}
+						/>
+					</div>
 				{/each}
 			</div>
 			<h2>Cena ogólna: {data.total}.00 zł</h2>
@@ -40,7 +42,7 @@
 				<h1>🛒 Koszyk jest pusty</h1>
 				<p>Wyszukaj produkty i pojawią się tutaj po ich dodaniu</p>
 			</div>
-			<Image src={cart} alt={"Koszyk bazowany"} height={400} />
+			<Image src={cart} alt={'Koszyk bazowany'} height={400} />
 		</div>
 	{/if}
 </main>
@@ -53,12 +55,17 @@
 	}
 
 	.cart-items {
-		display: flex;
 		gap: 16px;
+		display: grid;
+		grid: auto-flow dense / 1fr 1fr 1fr 1fr;
 
 		@media screen and (max-width: 1200px) {
-			flex-wrap: wrap;
+			grid: auto-flow dense / 1fr;
 		}
+	}
+
+	.cart-items {
+		height: 100%;
 	}
 
 	.no-cart {

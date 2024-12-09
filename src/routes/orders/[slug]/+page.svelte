@@ -65,10 +65,11 @@
 	.products {
 		display: flex;
 		gap: 20px;
-        flex: 1;
+        display: grid;
+		grid: auto / 1fr 1fr 1fr 1fr;
 
 		@media screen and (max-width: 1200px) {
-			display: grid;
+			grid: auto / 1fr;
 		}
 		/* background-color: greenyellow; */
 	}

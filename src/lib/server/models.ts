@@ -41,7 +41,7 @@ export class Product {
 	@Property()
 	name!: string;
 
-	@Property({ length: 1000 })
+	@Property({ length: 4000 })
 	description!: string;
 
 	@Property()

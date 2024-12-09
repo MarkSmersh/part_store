@@ -28,6 +28,12 @@ export const POST: RequestHandler = async ({ request }) => {
 
         const { name, image, description, price } = p;
 
+        if (p.description.length > 4000) {
+            return new Response(`W elemencie #${count} atrybut jest większy o ${4000} bajtów`, {
+                status: 400
+            })
+        }
+
         const product = em.create(Product, {
             name: name,
             image: image,

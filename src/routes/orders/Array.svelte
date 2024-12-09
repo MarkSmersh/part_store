@@ -8,11 +8,10 @@
 
 <div class="array">
 	{#each images as i, index}
-		<div
-            style:transform={`translateX(-${(index) * 50}%)`}
-            class="image-wrapper"
-        >
-			<img class="image" src={i} alt={'icon'} />
+		<div class="image-origin">
+			<div class="image-wrapper">
+				<img class="image" src={i} alt={'icon'} />
+			</div>
 		</div>
 	{/each}
 </div>
@@ -20,27 +19,37 @@
 <style>
 	.array {
 		display: flex;
-		justify-content: flex-start;
+		flex-wrap: wrap;
+		/* justify-content: flex-start;
+		flex-wrap: wrap;
 		height: 100%;
 		position: relative;
-		flex: 1;
+		flex: 1; */
+		grid: auto-flow;
 	}
 
 	.image-wrapper {
 		border: 1px solid var(--secondary);
 		border-radius: 100%;
 		padding: 8px;
-		height: calc(100% - 32px);
-		position: static;
-        background: var(--primary-transparent);
-        backdrop-filter: blur(10px);
-        transition: .2s;
+		height: calc(100% - 16px);
+		position: absolute;
+		background: var(--primary-transparent);
+		backdrop-filter: blur(10px);
+		transition: 0.2s;
+		grid-row: 1;
 	}
 
-    .image-wrapper:hover {
-       scale: 110%;
-       z-index: 1;
-    }
+	.image-wrapper:hover {
+		z-index: 1;
+		transform: translateY(-10%);
+	}
+
+	.image-origin {
+		position: relative;
+		height: 100px;
+		width: 75px;
+	}
 
 	.image {
 		height: 100%;

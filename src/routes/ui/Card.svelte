@@ -44,7 +44,7 @@
 
 	$effect(() => {
 		if (description) {
-			cutDesc = description?.slice(0, 100);
+			cutDesc = description?.slice(0, 100) + "...";
 		} else {
 			cutDesc = '';
 		}
@@ -92,9 +92,8 @@
 <style>
 	.card-wrapper {
 		display: flex;
-		/* width: 300px; */
-		flex: 1 0;
-		max-width: 25%;
+		flex: 1 1;
+		height: 100%;
 
 		@media screen and (max-width: 1200px) {
 			max-width: 100%;

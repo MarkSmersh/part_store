@@ -70,6 +70,7 @@
 				display: flex;
 				flex-direction: column;
 				gap: 16px;
+				white-space: pre-line;
 			}
 
 			.price {

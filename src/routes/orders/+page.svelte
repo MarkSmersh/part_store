@@ -99,15 +99,14 @@
 	}
 
 	.order {
-		display: flex;
+		display: grid;
+		grid: auto / 2fr 4fr 1fr 1fr;
 		align-items: center;
-		height: 120px;
+		min-height: 120px;
 		gap: 32px;
 
 		@media screen and (max-width: 1200px) {
-			flex-direction: column;
-			height: fit-content;
-			align-items: self-start;
+			grid: auto / 1fr;
 		}
 	}
 
@@ -118,11 +117,6 @@
 		align-items: flex-start;
 		height: 100%;
 		flex: 1;
-
-		@media screen and (max-width: 1200px) {
-			height: 100px;
-			flex: 0 0 0;
-		}
 	}
 
 	.date,
@@ -133,14 +127,6 @@
 		flex-direction: column;
 		height: 100%;
 		gap: 20%;
-	}
-
-	.date {
-		width: 15%;
-
-		@media screen and (max-width: 1200px) {
-			width: 100%;
-		}
 	}
 
 	p {
